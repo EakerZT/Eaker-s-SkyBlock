@@ -1,3 +1,25 @@
 {
-  "materialMappings": {}
+  "materialMappings": {
+    "platinum_bolt": 18,
+    "stone_plate": 0,
+    "aluminum_bolt": 22,
+    "iron_bolt": 5,
+    "lead_bolt": 10,
+    "nickel_bolt": 19,
+    "steel_bolt": 11,
+    "silver_bolt": 8,
+    "invar_bolt": 13,
+    "gold_bolt": 6,
+    "signalum_bolt": 16,
+    "tin_bolt": 9,
+    "bronze_bolt": 12,
+    "wood_bolt": 3,
+    "enderium_bolt": 17,
+    "electrum_bolt": 14,
+    "lumium_bolt": 21,
+    "iridium_bolt": 20,
+    "stone_bolt": 1,
+    "constantan_bolt": 15,
+    "copper_bolt": 7
+  }
 }

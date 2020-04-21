@@ -1,0 +1,28 @@
+base.material.iron=铁
+base.material.gold=金
+base.material.copper=铜
+base.material.silver=银
+base.material.tin=锡
+base.material.lead=铅
+base.material.steel=钢
+base.material.bronze=青铜
+base.material.invar=殷钢
+base.material.electrum=琥珀金
+base.material.constantan=康铜
+base.material.signalum=信素
+base.material.enderium=末影
+base.material.platinum=铂
+base.material.nickel=镍
+base.material.ridium=铱
+base.material.lumium=流明
+base.material.zinc=锌
+base.material.brass=黄铜
+base.material.osmium.name=锇
+base.material.refined_obsidian=强化黑曜石
+base.material.wood=木
+base.material.stone=石
+base.material.aluminum=铝
+
+
+item.contenttweaker.mold_bolt.name=金属冲压模具 : 螺丝
+// item.contenttweaker.cast_bolt.name=螺丝铸模具
