@@ -1,5 +1,11 @@
 var flint = <minecraft:flint>;
-var plinkWood = <ore:plinkWood>;
+var plankWood = <ore:plankWood>;
 var bowl = <minecraft:bowl>;
-recipes.remove(bowl);
-recipes.addShaped(bowl,[[flint],[plinkWood]]);
+var glassBottle = <minecraft:glass_bottle>;
+var paneGlass = <ore:paneGlass>;
+
+recipes.remove(glassBottle);
+recipes.addShaped(glassBottle,
+    [[plankWood,plankWood,plankWood],
+    [paneGlass,flint,paneGlass],
+    [paneGlass,paneGlass,paneGlass]]);
