@@ -9,3 +9,6 @@ options.txt
 usercache.json
 usernamecache.json
 .curseclient
+resourcepacks
+item.csv
+.zsrc
