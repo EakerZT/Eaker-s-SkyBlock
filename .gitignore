@@ -10,5 +10,8 @@ usercache.json
 usernamecache.json
 .curseclient
 resourcepacks
-item.csv
+items.csv
 .zsrc
+minecraftinstance.json
+icon.png
+server-resource-packs

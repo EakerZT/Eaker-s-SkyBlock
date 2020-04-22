@@ -1,16 +1,4 @@
 {
-  "ore:gravel": [
-    {
-      "drop": "minecraft:flint:-1",
-      "chance": 0.25,
-      "meshLevel": 1
-    },
-    {
-      "drop": "minecraft:flint:-1",
-      "chance": 0.25,
-      "meshLevel": 2
-    }
-  ],
   "ore:dirt": [
     {
       "drop": "exnihilocreatio:item_pebble:0",
@@ -43,9 +31,38 @@
       "meshLevel": 1
     }
   ],
+  "ore:gravel": [
+    {
+      "drop": "minecraft:flint:-1",
+      "chance": 0.5,
+      "meshLevel": 1
+    },
+    {
+      "drop": "exnihilocreatio:item_ore_copper:0",
+      "chance": 0.25,
+      "meshLevel": 1
+    },
+    {
+      "drop": "exnihilocreatio:item_ore_tin:0",
+      "chance": 0.25,
+      "meshLevel": 1
+    }
+  ],
   "ore:sand": [
     {
       "drop": "minecraft:dye:15",
+      "chance": 0.5,
+      "meshLevel": 1
+    }
+  ],
+  "ore:dust": [
+    {
+      "drop": "minecraft:redstone",
+      "chance": 0.5,
+      "meshLevel": 1
+    },
+    {
+      "drop": "minecraft:glowstone_dust",
       "chance": 0.5,
       "meshLevel": 1
     }

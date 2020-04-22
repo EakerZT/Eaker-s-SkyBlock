@@ -9,3 +9,6 @@ recipes.addShaped(glassBottle,
     [[plankWood,plankWood,plankWood],
     [paneGlass,flint,paneGlass],
     [paneGlass,paneGlass,paneGlass]]);
+
+recipes.remove(<minecraft:stick>);
+recipes.addShaped('minecraft_stick',<minecraft:stick> * 2,[[<ore:plankWood>],[<ore:plankWood>]]);
