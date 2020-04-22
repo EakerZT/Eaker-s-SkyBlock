@@ -1,3 +1,5 @@
+import mods.artisanworktables.builder.RecipeBuilder;
+
 var flint = <minecraft:flint>;
 var plankWood = <ore:plankWood>;
 var bowl = <minecraft:bowl>;
@@ -12,3 +14,11 @@ recipes.addShaped(glassBottle,
 
 recipes.remove(<minecraft:stick>);
 recipes.addShaped('minecraft_stick',<minecraft:stick> * 2,[[<ore:plankWood>],[<ore:plankWood>]]);
+
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankWood>],
+    [<ore:plankWood>]])
+  .addTool(<ore:artisansHatchet>, 1)
+  .addOutput(<minecraft:stick>)
+  .create();

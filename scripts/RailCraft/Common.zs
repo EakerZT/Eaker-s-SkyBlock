@@ -7,6 +7,6 @@ RecipeBuilder.get("carpenter")
     [<ore:boltWood>, <ore:plateWood>, <ore:boltWood>],
     [<ore:plateWood>, null, <ore:plateWood>],
     [<ore:boltWood>, <ore:plateWood>, <ore:boltWood>]])
-  .addTool(<ore:artisansDriver>, 1)
+  .addTool(<ore:artisansDriver>, 4)
   .addOutput(<railcraft:tank_water>)
   .create();

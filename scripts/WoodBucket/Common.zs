@@ -9,7 +9,7 @@ function addWoodBucket(bucket as IItemStack,plank as IItemStack) {
             [null,null,null],
             [plank,null,plank],
             [stringV,plank,stringV]])
-        .addTool(<ore:artisansHandsaw>, 1)
+        .addTool(<ore:artisansHandsaw>, 4)
         .addOutput(bucket)
         .create();
 }
@@ -29,7 +29,7 @@ var bigOakPlank = <minecraft:planks:5>;
 
 addWoodBucket(oakBucket,oakPlank);
 addWoodBucket(acaciaBucket,acaciaPlank);
-addWoodBucket(brichBucket,brichBucket);
+addWoodBucket(brichBucket,brichPlank);
 addWoodBucket(jungleBucket,junglePlank);
 addWoodBucket(spurceBucket,spurcePlank);
 addWoodBucket(bigOakBucket,bigOakPlank);

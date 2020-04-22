@@ -16,7 +16,7 @@ var items = [
 for i in 0 to (items.length/2) {
   var i1 as IItemStack = items[i*2];
   var i2 as IItemStack = items[i*2+1];
-  recipes.remove(i2);
+  recipes.remove(i1);
   recipes.addShaped(i1*2, [[i2]]);
 
   RecipeBuilder.get("carpenter")

@@ -27,13 +27,25 @@ for item in items {
     recipes.remove(item);
 }
 
-var clay_ball = <minecraft:clay_ball>;
+// 未烧制的坩埚
 recipes.remove(<exnihilocreatio:block_crucible>);
-recipes.addShaped(
-    clay_ball,
-    [[clay_ball,null,clay_ball],
-    [clay_ball,null,clay_ball],
-    [clay_ball,clay_ball,clay_ball]]);
+RecipeBuilder.get("farmer")
+  .setShaped([
+    [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
+    [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
+    [<minecraft:clay_ball>, <minecraft:clay>, <minecraft:clay_ball>]])
+  .addOutput(<exnihilocreatio:block_crucible>)
+  .create();
+
+// 未烧制的黏土桶
+recipes.remove(<ceramics:unfired_clay>);
+RecipeBuilder.get("farmer")
+  .setShaped([
+    [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
+    [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
+    [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>]])
+  .addOutput(<ceramics:unfired_clay>)
+  .create();
 
 var woodCrook =  <exnihilocreatio:crook_wood>;
 var oreStickWood = <ore:stickWood>;
@@ -87,6 +99,7 @@ RecipeBuilder.get("mason")
   .addOutput(<minecraft:cobblestone> * 4)
   .create();
 
+// 木坩埚
 recipes.remove(<exnihilocreatio:block_crucible_wood>);
 RecipeBuilder.get("carpenter")
   .setShaped([

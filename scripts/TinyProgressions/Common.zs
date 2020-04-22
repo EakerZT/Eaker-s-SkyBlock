@@ -1,5 +1,6 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
+// 木剪
 recipes.remove(<tp:wooden_shears>);
 RecipeBuilder.get("carpenter")
   .setShaped([
