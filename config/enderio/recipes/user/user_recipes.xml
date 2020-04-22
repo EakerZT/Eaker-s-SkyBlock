@@ -1,10 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
     <recipe name="Tweak: Stick from Wood" disabled="true" />
     <recipe name="Tweak: Chest from Wood" disabled="true" />
     <recipe name="Tweak: Wood Hopper" disabled="true" />
-    <recipe name="Gear, Wood" disabled="true" />
-    <recipe name="Gear, better save than sorry" disabled="true" />
-    <recipe name="Gear, ae2 messes things up" disabled="true" />
-    <recipe name="Gear, just to be sure" disabled="true" />
+    <recipe name="Gear Reverse Casting, 1" disabled="true"/>
+    <recipe name="Gear Reverse Casting, 2" disabled="true"/>
+    <recipe name="Gear Reverse Casting, 3" disabled="true"/>
+    <recipe name="Gear, Wood" disabled="true"/>
+    <recipe name="Gear, ae2 messes things up" disabled="true"/>
+    <recipe name="Gear, just to be sure" disabled="true"/>
+    <recipe name="Gear, better save than sorry" disabled="true"/>
+    <recipe name="Gear, Stone" disabled="true"/>
+    <recipe name="Gear, Stone, Upgrade" disabled="true"/>
+    <recipe name="Gear, Stone, Casting" disabled="true"/>
+    <recipe name="Gear, Iron" disabled="true" />
+    <recipe name="Gear, Iron, Casting" disabled="true"/>
+    <recipe name="Gear, Energized" disabled="true"/>
+    <recipe name="Gear, Energized, Casting" disabled="true"/>
+    <recipe name="Gear, Vibrant" disabled="true"/>
+    <recipe name="Gear, Vibrant, Casting" disabled="true"/>
+    <recipe name="Gear, Dark" disabled="true"/>
+    <recipe name="Gear, Dark, Casting" disabled="true"/>
+
+    <!-- <recipe name="Compatibility: Glass 2 Glass" disabled="false">
+    <recipe name="Compatibility: End Crystal">
+    <recipe name="Compatibility: Beacon">
+    <recipe name="Compatibility: Bottle">
+    <recipe name="Compatibility: Glass Pane" disabled="false">
+    <recipe name="Compatibility: Daylight Sensor">
+    <recipe name="Binder Composite" disabled="true">
+    <recipe name="Conduit Binder" disabled="true">
+    <recipe name="Pulsating Crystal" disabled="true">
+    <recipe name="Pulsating Crystal, casting">
+    <recipe name="Vibrant Crystal" disabled="true">
+    <recipe name="Vibrant Crystal, casting">
+    <recipe name="Dark Iron Bars" disabled="true">
+    <recipe name="End Iron Bars" disabled="true">
+    <recipe name="Simple Chassis" disabled="true">
+    <recipe name="End Steel Chassis" disabled="true">
+    <recipe name="Unsouled Chassis" disabled="true">
+    <recipe name="Machine Dye">
+    <recipe name="Enhanced Machine Dye">
+    <recipe name="Soul Machine Dye">
+    <recipe name="Capacitor 1" disabled="true">
+    <recipe name="Capacitor 2" disabled="true">
+    <recipe name="Capacitor 3" disabled="true">
+    <recipe name="Weather Crystal" disabled="true">
+    <recipe name="Reinforced Obsidian" disabled="true">
+    <recipe name="Dark Steel Anvil" disabled="true">
+    <recipe name="Dark Paper Anvil" disabled="true">
+    <recipe name="Dark Steel Ladder" disabled="true">
+    <recipe name="Dark Steel Trap Door" disabled="true">
+    <recipe name="Dark Steel Door" disabled="true">
+    <recipe name="Bread" disabled="true">
+    <recipe name="Enderios" disabled="true">
+    <recipe name="Copper" disabled="false">
+    <recipe name="Tin" disabled="false">
+    <recipe name="Ardite" disabled="false">
+    <recipe name="Cobalt" disabled="false">
+    <recipe name="Obsidian Smelting" disabled="false">
+    <recipe name="Chassis Parts" disabled="true">
+    <recipe name="Simple Chassis Parts" disabled="true">
+    <recipe name="Enhanced Chassis Parts" disabled="true">
+    <recipe name="Deco Block 1/0" disabled="true">
+    <recipe name="Deco Block 1/1 a" disabled="true">
+    <recipe name="Deco Block 1/1 b" disabled="true">
+    <recipe name="Deco Block 1/1 c" disabled="true">
+    <recipe name="Deco Block 1/1 d" disabled="true"> -->
 </enderio:recipes>

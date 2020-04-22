@@ -22,5 +22,11 @@ global odItemMap as IItemStack[string] = {
   ingotEnderium : <thermalfoundation:material:167>,
   plateWood : <techreborn:plates:3>,
   plateStone : scripts.GlobalFunction.getCTItemByODName(<ore:plateStone>),
-  boltWood : scripts.GlobalFunction.getCTItemByODName(<ore:boltWood>)
+  boltWood : scripts.GlobalFunction.getCTItemByODName(<ore:boltWood>),
+  gearWood : <thermalfoundation:material:22>,
+  gearStone : <thermalfoundation:material:23>,
+  gearIron : <thermalfoundation:material:24>,
+  gearGold : <thermalfoundation:material:25>,
+  gearDiamond : <thermalfoundation:material:26>,
+  gearEmerald : <thermalfoundation:material:27>
 } as IItemStack[string];

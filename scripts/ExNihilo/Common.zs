@@ -19,7 +19,8 @@ var items = [
     <exnihilocreatio:crook_netherrack>,
     <exnihilocreatio:crook_prismarine>,
     <exnihilocreatio:crook_purpur>,
-    <exnihilocreatio:crook_stone>
+    <exnihilocreatio:crook_stone>,
+    <exnihilocreatio:item_material:7>
 ] as IItemStack[];
 
 for item in items {
@@ -35,16 +36,6 @@ RecipeBuilder.get("farmer")
     [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
     [<minecraft:clay_ball>, <minecraft:clay>, <minecraft:clay_ball>]])
   .addOutput(<exnihilocreatio:block_crucible>)
-  .create();
-
-// 未烧制的黏土桶
-recipes.remove(<ceramics:unfired_clay>);
-RecipeBuilder.get("farmer")
-  .setShaped([
-    [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
-    [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
-    [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>]])
-  .addOutput(<ceramics:unfired_clay>)
   .create();
 
 var woodCrook =  <exnihilocreatio:crook_wood>;
