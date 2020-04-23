@@ -34,13 +34,11 @@ RecipeBuilder.get("mason")
 
 // 盆栽
 recipes.remove(<bonsaitrees:bonsaipot>);
-mods.jei.JEI.removeAndHide(<bonsaitrees:bonsaipot>);
-recipes.remove(<bonsaitrees:bonsaipot:1>);
 RecipeBuilder.get("farmer")
   .setShaped([
     [<tconstruct:materials>, null, <tconstruct:materials>],
     [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]])
-  .addOutput(<bonsaitrees:bonsaipot:1>)
+  .addOutput(<bonsaitrees:bonsaipot>)
   .create();
 
 // 箱子
@@ -99,4 +97,13 @@ RecipeBuilder.get("blacksmith")
     [<ore:plateIron>, <minecraft:chest>, <ore:plateIron>],
     [null, <ore:plateIron>, null]])
   .addOutput(<minecraft:hopper>)
+  .create();
+
+// 红石火把
+recipes.remove(<minecraft:redstone_torch>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<minecraft:redstone>],
+    [<ore:stickWood>]])
+  .addOutput(<minecraft:redstone_torch>)
   .create();

@@ -10,6 +10,14 @@ for item in items {
     recipes.remove(item);
 }
 
+// 空白模具
+recipes.remove(<tconstruct:pattern>);
+RecipeBuilder.get("carpenter")
+  .setShapeless([<ore:plateWood>])
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<tconstruct:pattern>)
+  .create();
+
 // 水泥
 recipes.remove(<tconstruct:soil>);
 RecipeBuilder.get("farmer")
@@ -21,6 +29,9 @@ RecipeBuilder.get("farmer")
   .addOutput(<tconstruct:soil> * 8)
   .create();
 
+// 焦黑砖
+furnace.remove(<tconstruct:materials>);
+furnace.addRecipe(<tconstruct:materials>, <tconstruct:soil>);
 
 // 浇筑台
 recipes.remove(<tconstruct:casting>);
@@ -47,7 +58,7 @@ recipes.remove(<tconstruct:faucet>);
 RecipeBuilder.get("farmer")
   .setShaped([
     [<tconstruct:materials>, null, <tconstruct:materials>],
-    [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]])
+    [null, <tconstruct:materials>, null]])
   .addOutput(<tconstruct:faucet>)
   .create();
 

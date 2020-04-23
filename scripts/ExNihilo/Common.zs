@@ -97,7 +97,7 @@ RecipeBuilder.get("mason")
   .setShaped([
     [<exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>],
     [<exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>]])
-  .addOutput(<minecraft:cobblestone> * 4)
+  .addOutput(<minecraft:cobblestone> * 2)
   .create();
 
 // 木坩埚

@@ -12,10 +12,18 @@ RecipeBuilder.get("carpenter")
 
 // 造石机
 recipes.remove(<tp:cobblegen_block>);
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("mason")
   .setShaped([
-    [<ore:plateStone>, <ore:plateStone>, <ore:plateStone>],
-    [<minecraft:water_bucket>, <ore:blockGlass>, <minecraft:lava_bucket>],
-    [<ore:plateStone>, <ore:plateStone>, <ore:plateStone>]])
+    [<ore:stone>, <minecraft:lava_bucket>, <ore:stone>],
+    [<ore:stone>, <minecraft:water_bucket>, <ore:stone>],
+    [<ore:stone>, <ore:stone>, <ore:stone>]])
+  .addOutput(<tp:cobblegen_block>)
+  .create();
+
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:stone>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "lava", Amount: 1000}}), <ore:stone>],
+    [<ore:stone>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "water", Amount: 1000}}), <ore:stone>],
+    [<ore:stone>, <ore:stone>, <ore:stone>]])
   .addOutput(<tp:cobblegen_block>)
   .create();
