@@ -1,5 +1,19 @@
 import mods.tconstruct.Casting;
 
-Casting.addTableRecipe(odItemMap['gearStone'], odItemMap['gearWood'], <liquid:stone>, 288, true, 5000);
-
-Casting.addTableRecipe(odItemMap['gearStone'], <tconstruct:cast_custom:4>, <liquid:stone>, 288, false, 1000);
+var plateCast = <tconstruct:cast_custom:3>;
+var gearCast = <tconstruct:cast_custom:4>;
+var gearWood = odItemMap['gearWood'];
+var gearStone = odItemMap['gearStone'];
+var plateStone = odItemMap['plateStone'];
+// 木齿轮 -> 石齿轮
+Casting.addTableRecipe(gearStone, gearWood, <liquid:stone>, 288, true, 100);
+// 熔炼石头 -> 石齿轮
+Casting.addTableRecipe(gearStone, gearCast, <liquid:stone>, 288, false, 20);
+// 熔炼金 石齿轮 齿轮模板
+Casting.addTableRecipe(gearCast, gearStone, <liquid:gold>, 288, true, 60);
+// 熔炼黄铜 石齿轮 齿轮模板
+Casting.addTableRecipe(gearCast, gearStone, <liquid:brass>, 144, true, 20);
+// 熔炼铝黄铜 石齿轮 齿轮模板
+Casting.addTableRecipe(gearCast, gearStone, <liquid:alubrass>, 144, true, 40);
+// 熔炼石头 石板 板模板
+Casting.addTableRecipe(plateStone, plateCast, <liquid:stone>, 288, false, 20);

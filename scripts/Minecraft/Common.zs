@@ -6,6 +6,8 @@ var bowl = <minecraft:bowl>;
 var glassBottle = <minecraft:glass_bottle>;
 var paneGlass = <ore:paneGlass>;
 
+recipes.remove(flint);
+
 // 木棍
 recipes.remove(<minecraft:stick>);
 recipes.addShaped('minecraft_stick',<minecraft:stick> * 2,[[<ore:plankWood>],[<ore:plankWood>]]);

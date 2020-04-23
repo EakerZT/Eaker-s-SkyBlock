@@ -2,11 +2,13 @@ var woodWorktable = <artisanworktables:worktable:1>;
 var stoneWorktable = <artisanworktables:worktable:2>;
 var dirtWorktable = <artisanworktables:worktable:10>;
 var engineerWorktable = <artisanworktables:worktable:6>;
+var jewelerWorktable = <artisanworktables:worktable:4>;
 var plank = <ore:plankWood>;
 var cobblestone = <ore:cobblestone>;
 var craftingTable = <minecraft:crafting_table>;
 var oreDirt = <ore:dirt>;
 var oreWoodGear = <ore:gearWood>;
+var quartz = <minecraft:quartz>;
 
 recipes.addShaped(
     woodWorktable,
@@ -34,3 +36,9 @@ recipes.addShaped(
     [[oreWoodGear, oreWoodGear, oreWoodGear],
     [oreWoodGear, craftingTable, oreWoodGear],
     [oreWoodGear, oreWoodGear, oreWoodGear]]);
+
+recipes.addShaped(
+    jewelerWorktable,
+    [[quartz, quartz, quartz],
+    [quartz, craftingTable, quartz],
+    [quartz, quartz, quartz]]);

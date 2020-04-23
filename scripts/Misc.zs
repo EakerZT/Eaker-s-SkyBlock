@@ -42,5 +42,27 @@ RecipeBuilder.get("farmer")
     [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
     [null, <minecraft:clay_ball>, null]])
   .setFluid(<liquid:water> * 1000)
-  .addOutput(<ceramics:unfired_clay:8>)
+  .addOutput(<ceramics:unfired_clay:8> * 2)
+  .create();
+
+// 石英板
+recipes.remove(<moreplates:nether_quartz_plate>);
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [<minecraft:quartz>]])
+  .setFluid(<liquid:water> * 1000)
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<moreplates:nether_quartz_plate>)
+  .create(); 
+
+// 石英齿轮
+recipes.remove(<moreplates:nether_quartz_gear>);
+RecipeBuilder.get("jeweler")
+  .setShaped([
+    [null, <ore:plateQuartz>, null],
+    [<ore:plateQuartz>, null, <ore:plateQuartz>],
+    [null, <ore:plateQuartz>, null]])
+  .setFluid(<liquid:water> * 1000)
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<moreplates:nether_quartz_gear>)
   .create();

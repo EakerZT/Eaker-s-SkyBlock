@@ -38,7 +38,22 @@
       "meshLevel": 1
     },
     {
+      "drop": "exnihilocreatio:item_ore_gold:0",
+      "chance": 0.25,
+      "meshLevel": 1
+    },
+    {
+      "drop": "exnihilocreatio:item_ore_silver:0",
+      "chance": 0.25,
+      "meshLevel": 1
+    },
+    {
       "drop": "exnihilocreatio:item_ore_copper:0",
+      "chance": 0.25,
+      "meshLevel": 1
+    },
+    {
+      "drop": "exnihilocreatio:item_ore_tin:0",
       "chance": 0.25,
       "meshLevel": 1
     },
@@ -50,7 +65,7 @@
   ],
   "ore:sand": [
     {
-      "drop": "minecraft:dye:15",
+      "drop": "minecraft:quartz",
       "chance": 0.5,
       "meshLevel": 1
     }
