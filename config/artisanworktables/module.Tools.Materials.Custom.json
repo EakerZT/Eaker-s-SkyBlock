@@ -1,19 +1,6 @@
 {
   "list": [
     {
-      "name": "stone",
-      "harvestLevel": 1,
-      "maxUses": 131,
-      "efficiency": 4.0,
-      "damage": 1.0,
-      "enchantability": 5,
-      "color": "969696",
-      "shiny": false,
-      "ingredient": "ore:stone",
-      "langKey": "material.athenaeum.stone",
-      "oreDictKey": "artisansToolStone"
-    },
-    {
       "name": "iron",
       "harvestLevel": 2,
       "maxUses": 250,
@@ -64,19 +51,6 @@
       "ingredient": "minecraft:flint",
       "langKey": "material.athenaeum.flint",
       "oreDictKey": "artisansToolFlint"
-    },
-    {
-      "name": "bone",
-      "harvestLevel": 1,
-      "maxUses": 150,
-      "efficiency": 3.8,
-      "damage": 1.0,
-      "enchantability": 5,
-      "color": "fff6c8",
-      "shiny": false,
-      "ingredient": "ore:bone",
-      "langKey": "material.athenaeum.bone",
-      "oreDictKey": "artisansToolBone"
     },
     {
       "name": "aluminum",

@@ -5,7 +5,11 @@ var removeItem = [
     <ceramics:clay_helmet>,
     <ceramics:clay_chestplate>,
     <ceramics:clay_leggings>,
-    <ceramics:clay_boots>
+    <ceramics:clay_boots>,
+    <ceramics:clay_helmet_raw>,
+    <ceramics:clay_chestplate_raw>,
+    <ceramics:clay_leggings_raw>,
+    <ceramics:clay_boots_raw>
 ] as IItemStack[];
 
 for i in removeItem {

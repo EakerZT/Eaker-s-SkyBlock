@@ -1,4 +1,14 @@
+import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
+
+var items = [
+    <tconstruct:stone_stick>
+] as IItemStack[];
+
+for item in items {
+    mods.jei.JEI.hide(item);
+    recipes.remove(item);
+}
 
 // 水泥
 recipes.remove(<tconstruct:soil>);
@@ -77,4 +87,14 @@ RecipeBuilder.get("farmer")
     [<tconstruct:materials>, <minecraft:furnace>, <tconstruct:materials>],
     [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]])
   .addOutput(<tconstruct:smeltery_controller>)
+  .create();
+
+// 木漏斗
+recipes.remove(<tconstruct:wooden_hopper>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plateWood>, null, <ore:plateWood>],
+    [<ore:plateWood>, <minecraft:chest>, <ore:plateWood>],
+    [null, <ore:plateWood>, null]])
+  .addOutput(<tconstruct:wooden_hopper>)
   .create();

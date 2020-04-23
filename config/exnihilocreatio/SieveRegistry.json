@@ -53,7 +53,7 @@
       "meshLevel": 1
     },
     {
-      "drop": "exnihilocreatio:item_ore_tin:0",
+      "drop": "exnihilocreatio:item_ore_iron:0",
       "chance": 0.25,
       "meshLevel": 1
     },
@@ -67,6 +67,11 @@
     {
       "drop": "minecraft:quartz",
       "chance": 0.5,
+      "meshLevel": 1
+    },
+    {
+      "drop": "minecraft:diamond",
+      "chance": 0.2,
       "meshLevel": 1
     }
   ],

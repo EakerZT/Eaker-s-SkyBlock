@@ -1,7 +1,5 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.chisel.Carving;
-// import mods.railcraft.RockCrusher;
-
 
 Carving.addGroup("brickSandy");
 recipes.remove(<railcraft:brick_sandy:0>);
@@ -43,14 +41,15 @@ recipes.remove(<railcraft:brick_red_sandy:5>);
 furnace.remove(<railcraft:brick_red_sandy:5>);
 Carving.addVariation("brickRedSandy", <railcraft:brick_red_sandy:5>);
 
+// 蓄水器
 recipes.remove(<railcraft:tank_water>);
 RecipeBuilder.get("carpenter")
   .setShaped([
     [<ore:boltWood>, <ore:plateWood>, <ore:boltWood>],
-    [<ore:plateWood>, null, <ore:plateWood>],
+    [<ore:plateWood>, <ore:slimeball>, <ore:plateWood>],
     [<ore:boltWood>, <ore:plateWood>, <ore:boltWood>]])
   .addTool(<ore:artisansDriver>, 4)
-  .addOutput(<railcraft:tank_water>)
+  .addOutput(<railcraft:tank_water> * 3)
   .create();
 
 // 砂岩砖
@@ -91,4 +90,64 @@ RecipeBuilder.get("farmer")
     [<railcraft:brick_red_sandy>],
     [<railcraft:brick_red_sandy>]])
   .addOutput(<railcraft:coke_oven_red> * 3)
+  .create();
+
+// 固态燃烧室
+recipes.remove(<railcraft:boiler_firebox_solid>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:boltIron>, <ore:plateIron>, <ore:boltIron>],
+    [<ore:plateIron>, <minecraft:furnace>, <ore:plateIron>],
+    [<ore:boltIron>, <ore:plateIron>, <ore:boltIron>]])
+  .addTool(<ore:artisansDriver>, 4)
+  .addOutput(<railcraft:boiler_firebox_solid>)
+  .create();
+
+// 流体燃烧室
+recipes.remove(<railcraft:boiler_firebox_fluid>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:boltIron>, <ore:plateIron>, <ore:boltIron>],
+    [<ore:plateIron>, <buildcraftfactory:tank>, <ore:plateIron>],
+    [<ore:boltIron>, <ore:plateIron>, <ore:boltIron>]])
+  .addTool(<ore:artisansDriver>, 4)
+  .addOutput(<railcraft:boiler_firebox_fluid>)
+  .create();
+
+// 低压锅炉
+recipes.remove(<railcraft:boiler_tank_pressure_low>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:boltIron>, <ore:plateIron>, <ore:boltIron>],
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:boltIron>, <ore:plateIron>, <ore:boltIron>]])
+  .addTool(<ore:artisansDriver>, 4)
+  .addOutput(<railcraft:boiler_tank_pressure_low>)
+  .create();
+
+// 铁质壁板
+recipes.remove(<railcraft:tank_iron_wall>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]])
+  .addOutput(<railcraft:tank_iron_wall> * 4)
+  .create();
+
+// 铁质阀门
+recipes.remove(<railcraft:tank_iron_valve>);
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<railcraft:tank_iron_wall>, <minecraft:lever>])
+  .addOutput(<railcraft:tank_iron_valve>)
+  .create();
+
+// 铁质计量器
+recipes.remove(<railcraft:tank_iron_gauge>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:stickIron>, <ore:paneGlass>, <ore:stickIron>],
+    [<ore:paneGlass>, null, <ore:paneGlass>],
+    [<ore:stickIron>, <ore:paneGlass>, <ore:stickIron>]])
+  .addOutput(<railcraft:tank_iron_gauge> * 4)
   .create();

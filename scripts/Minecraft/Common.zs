@@ -7,6 +7,9 @@ var glassBottle = <minecraft:glass_bottle>;
 var paneGlass = <ore:paneGlass>;
 
 recipes.remove(flint);
+recipes.remove(<minecraft:glass>);
+furnace.remove(<minecraft:glass>);
+recipes.remove(<minecraft:glass_pane>);
 
 // 木棍
 recipes.remove(<minecraft:stick>);
@@ -67,4 +70,33 @@ RecipeBuilder.get("engineer")
     [<ore:slimeball>],
     [<minecraft:piston>]])
   .addOutput(<minecraft:sticky_piston>)
+  .create();
+
+// 铁桶
+recipes.remove(<minecraft:bucket>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [null, <ore:plateIron>, null]])
+  .addOutput(<minecraft:bucket>)
+  .create();
+
+// 拉杆
+recipes.remove(<minecraft:lever>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickWood>],
+    [<ore:gearWood>],
+    [<ore:plateStone>]])
+  .addOutput(<minecraft:lever>)
+  .create();
+
+// 漏斗
+recipes.remove(<minecraft:hopper>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateIron>, null, <ore:plateIron>],
+    [<ore:plateIron>, <minecraft:chest>, <ore:plateIron>],
+    [null, <ore:plateIron>, null]])
+  .addOutput(<minecraft:hopper>)
   .create();

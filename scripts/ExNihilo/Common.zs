@@ -72,6 +72,16 @@ RecipeBuilder.get("carpenter")
   .addOutput(<exnihilocreatio:block_barrel0>)
   .create();
 
+//石桶
+recipes.remove(<exnihilocreatio:block_barrel1>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:plateStone>, null, <ore:plateStone>],
+    [<ore:plateStone>, null, <ore:plateStone>],
+    [<ore:plateStone>, <ore:plateStone>, <ore:plateStone>]])
+  .addOutput(<exnihilocreatio:block_barrel1>)
+  .create();
+
 // 石锤
 recipes.remove(<exnihilocreatio:hammer_stone>);
 RecipeBuilder.get("mason")
@@ -98,4 +108,41 @@ RecipeBuilder.get("carpenter")
     [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
     [<ore:stickWood>, null, <ore:stickWood>]])
   .addOutput(<exnihilocreatio:block_crucible_wood>)
+  .create();
+
+// 石棍
+recipes.remove(<exnihilocreatio:item_material:6>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:cobblestone>]])
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<exnihilocreatio:item_material:6> * 4)
+  .create();
+
+//石传动轴
+recipes.remove(<exnihilocreatio:block_axle_stone>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:gearStone>, <ore:rodStone>, <ore:gearStone>]])
+  .addOutput(<exnihilocreatio:block_axle_stone>)
+  .create();
+
+//水车
+recipes.remove(<exnihilocreatio:block_waterwheel>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>],
+    [<ore:plateWood>, <exnihilocreatio:block_axle_stone>, <ore:plateWood>],
+    [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>]])
+  .addOutput(<exnihilocreatio:block_waterwheel>)
+  .create();
+
+//自动筛制机
+recipes.remove(<exnihilocreatio:block_auto_sifter>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<tconstruct:wooden_hopper>, <ore:gearStone>, <tconstruct:wooden_hopper>],
+    [<ore:plateWood>, <exnihilocreatio:block_axle_stone>, <ore:plateWood>],
+    [<ore:plateWood>, <minecraft:sticky_piston>, <ore:plateWood>]])
+  .addOutput(<exnihilocreatio:block_auto_sifter>)
   .create();

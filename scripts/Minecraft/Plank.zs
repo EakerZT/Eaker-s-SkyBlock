@@ -4,10 +4,8 @@ import mods.artisanworktables.builder.RecipeBuilder;
 var items = [
   <minecraft:planks:5>,<minecraft:log2:1>,
   <minecraft:planks:4>,<minecraft:log2>,
-  <extrautils2:ironwood_planks:1>,<extrautils2:ironwood_log:1>,
   <minecraft:planks:2>,<minecraft:log:2>,
   <integrateddynamics:menril_planks>,<integrateddynamics:menril_log>,
-  <extrautils2:ironwood_planks>,<extrautils2:ironwood_log>,
   <minecraft:planks>,<minecraft:log>,
   <minecraft:planks:1>,<minecraft:log:1>,
   <minecraft:planks:3>,<minecraft:log:3>,
