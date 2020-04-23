@@ -1,33 +1,46 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.chisel.Carving;
+// import mods.railcraft.RockCrusher;
 
 
 Carving.addGroup("brickSandy");
 recipes.remove(<railcraft:brick_sandy:0>);
+furnace.remove(<railcraft:brick_sandy:0>);
 Carving.addVariation("brickSandy", <railcraft:brick_sandy:0>);
 recipes.remove(<railcraft:brick_sandy:1>);
+furnace.remove(<railcraft:brick_sandy:1>);
 Carving.addVariation("brickSandy", <railcraft:brick_sandy:1>);
 recipes.remove(<railcraft:brick_sandy:2>);
+furnace.remove(<railcraft:brick_sandy:2>);
 Carving.addVariation("brickSandy", <railcraft:brick_sandy:2>);
 recipes.remove(<railcraft:brick_sandy:3>);
+furnace.remove(<railcraft:brick_sandy:3>);
 Carving.addVariation("brickSandy", <railcraft:brick_sandy:3>);
 recipes.remove(<railcraft:brick_sandy:4>);
+furnace.remove(<railcraft:brick_sandy:4>);
 Carving.addVariation("brickSandy", <railcraft:brick_sandy:4>);
 recipes.remove(<railcraft:brick_sandy:5>);
+furnace.remove(<railcraft:brick_sandy:5>);
 Carving.addVariation("brickSandy", <railcraft:brick_sandy:5>);
 
 Carving.addGroup("brickRedSandy");
-recipes.remove(<railcraft:brick_sandy:0>);
+recipes.remove(<railcraft:brick_red_sandy:0>);
+furnace.remove(<railcraft:brick_red_sandy:0>);
 Carving.addVariation("brickRedSandy", <railcraft:brick_red_sandy:0>);
-recipes.remove(<railcraft:brick_sandy:1>);
+recipes.remove(<railcraft:brick_red_sandy:1>);
+furnace.remove(<railcraft:brick_red_sandy:1>);
 Carving.addVariation("brickRedSandy", <railcraft:brick_red_sandy:1>);
-recipes.remove(<railcraft:brick_sandy:2>);
+recipes.remove(<railcraft:brick_red_sandy:2>);
+furnace.remove(<railcraft:brick_red_sandy:2>);
 Carving.addVariation("brickRedSandy", <railcraft:brick_red_sandy:2>);
-recipes.remove(<railcraft:brick_sandy:3>);
+recipes.remove(<railcraft:brick_red_sandy:3>);
+furnace.remove(<railcraft:brick_red_sandy:3>);
 Carving.addVariation("brickRedSandy", <railcraft:brick_red_sandy:3>);
-recipes.remove(<railcraft:brick_sandy:4>);
+recipes.remove(<railcraft:brick_red_sandy:4>);
+furnace.remove(<railcraft:brick_red_sandy:4>);
 Carving.addVariation("brickRedSandy", <railcraft:brick_red_sandy:4>);
-recipes.remove(<railcraft:brick_sandy:5>);
+recipes.remove(<railcraft:brick_red_sandy:5>);
+furnace.remove(<railcraft:brick_red_sandy:5>);
 Carving.addVariation("brickRedSandy", <railcraft:brick_red_sandy:5>);
 
 recipes.remove(<railcraft:tank_water>);
