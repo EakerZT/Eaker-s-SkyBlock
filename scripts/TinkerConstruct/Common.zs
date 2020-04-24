@@ -14,8 +14,66 @@ for item in items {
 recipes.remove(<tconstruct:pattern>);
 RecipeBuilder.get("carpenter")
   .setShapeless([<ore:plateWood>])
-  .addTool(<ore:artisansFile>, 4)
-  .addOutput(<tconstruct:pattern>)
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<tconstruct:pattern> * 2)
+  .create();
+
+// 模具加工台
+recipes.remove(<tconstruct:tooltables:1>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<tconstruct:pattern>],
+    [<minecraft:crafting_table>]])
+  .addOutput(<tconstruct:tooltables:1>.withTag({textureBlock: {id: "minecraft:planks", Count: 1 as byte, Damage: 0 as short}}))
+  .create();
+
+// 模具箱
+recipes.remove(<tconstruct:tooltables:4>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<tconstruct:pattern>],
+    [<minecraft:chest>]])
+  .addOutput(<tconstruct:tooltables:4>)
+  .create();
+
+// 部件加工台
+recipes.remove(<tconstruct:tooltables:2>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<tconstruct:pattern>],
+    [<minecraft:crafting_table>],
+    [<tconstruct:pattern>]])
+  .addOutput(<tconstruct:tooltables:2>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 0 as short}}))
+  .create();
+
+//部件箱
+recipes.remove(<tconstruct:tooltables:5>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<tconstruct:pattern>],
+    [<minecraft:chest>],
+    [<tconstruct:pattern>]])
+  .addOutput(<tconstruct:tooltables:5>)
+  .create();
+
+//装配台
+recipes.remove(<tconstruct:tooltables:3>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [null, <tconstruct:pattern>, null],
+    [<tconstruct:pattern>, <minecraft:crafting_table>, <tconstruct:pattern>],
+    [null, <tconstruct:pattern>, null]])
+  .addOutput(<tconstruct:tooltables:3>)
+  .create();
+
+// 盔甲组装台
+recipes.remove(<conarm:armorstation>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<tconstruct:pattern>, null, <tconstruct:pattern>],
+    [null, <minecraft:crafting_table>, null],
+    [<tconstruct:pattern>, null, <tconstruct:pattern>]])
+  .addOutput(<conarm:armorstation>)
   .create();
 
 // 水泥

@@ -15,6 +15,7 @@ items.csv
 minecraftinstance.json
 icon.png
 server-resource-packs
-config/buildcraft/detailed.properties
+config/jei
 config/InvTweaks.cfg
 config/splash.properties
+jei
