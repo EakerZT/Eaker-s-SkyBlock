@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.tconstruct.Casting;
 
 var items = [
 ] as IItemStack[];
@@ -136,47 +137,22 @@ RecipeBuilder.get("farmer")
 
 // 铁管道
 removeItemAllRecipes(<buildcrafttransport:pipe_iron_item>);
-RecipeBuilder.get("engineer")
-  .setShapeless([<buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>])
-  .setFluid(<liquid:iron> * 1000)
-  .addOutput(<buildcrafttransport:pipe_iron_item>)
-  .create();
+Casting.addBasinRecipe(<buildcrafttransport:pipe_iron_item>, <buildcrafttransport:pipe_clay_item>, <liquid:iron>, 144, true, 100);
 // 铁流体管道
 removeItemAllRecipes(<buildcrafttransport:pipe_iron_fluid>);
-RecipeBuilder.get("engineer")
-  .setShapeless([<buildcrafttransport:pipe_clay_fluid>, <buildcrafttransport:pipe_clay_fluid>, <buildcrafttransport:pipe_clay_fluid>, <buildcrafttransport:pipe_clay_fluid>])
-  .setFluid(<liquid:iron> * 1000)
-  .addOutput(<buildcrafttransport:pipe_iron_fluid>)
-  .create();
-
+Casting.addBasinRecipe(<buildcrafttransport:pipe_iron_fluid>, <buildcrafttransport:pipe_clay_fluid>, <liquid:iron>, 144, true, 100);
 // 金管道
 removeItemAllRecipes(<buildcrafttransport:pipe_gold_item>);
-RecipeBuilder.get("engineer")
-  .setShapeless([<buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>])
-  .setFluid(<liquid:gold> * 1000)
-  .addOutput(<buildcrafttransport:pipe_gold_item>)
-  .create();
+Casting.addBasinRecipe(<buildcrafttransport:pipe_gold_item>, <buildcrafttransport:pipe_clay_item>, <liquid:gold>, 144, true, 100);
 // 金流体管道
 removeItemAllRecipes(<buildcrafttransport:pipe_gold_fluid>);
-RecipeBuilder.get("engineer")
-  .setShapeless([<buildcrafttransport:pipe_clay_fluid>, <buildcrafttransport:pipe_clay_fluid>, <buildcrafttransport:pipe_clay_fluid>, <buildcrafttransport:pipe_clay_fluid>])
-  .setFluid(<liquid:gold> * 1000)
-  .addOutput(<buildcrafttransport:pipe_gold_fluid>)
-  .create();
-
+Casting.addBasinRecipe(<buildcrafttransport:pipe_gold_fluid>, <buildcrafttransport:pipe_clay_fluid>, <liquid:gold>, 144, true, 100);
 // 黑曜石管道
 removeItemAllRecipes(<buildcrafttransport:pipe_obsidian_item>);
-RecipeBuilder.get("engineer")
-  .setShapeless([<buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>, <ore:obsidian>])
-  .addOutput(<buildcrafttransport:pipe_obsidian_item>)
-  .create();
-
+Casting.addBasinRecipe(<buildcrafttransport:pipe_obsidian_item>, <buildcrafttransport:pipe_clay_item>, <liquid:obsidian>, 288, true, 100);
 // 钻石管道
 removeItemAllRecipes(<buildcrafttransport:pipe_diamond_item>);
-RecipeBuilder.get("engineer")
-  .setShapeless([<buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>, <buildcrafttransport:pipe_clay_item>, <ore:gemDiamond>])
-  .addOutput(<buildcrafttransport:pipe_diamond_item>)
-  .create();
+Casting.addBasinRecipe(<buildcrafttransport:pipe_diamond_item>, <buildcrafttransport:pipe_clay_item>, <liquid:diamond>, 666, true, 100);
 
 var removePipe = [
   <buildcrafttransport:pipe_structure>,

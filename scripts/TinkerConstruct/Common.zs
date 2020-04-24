@@ -148,14 +148,27 @@ RecipeBuilder.get("farmer")
   .addOutput(<tconstruct:seared_tank>)
   .create();
 
-// 控制器
+// 焦黑玻璃
+recipes.remove(<tconstruct:seared_glass>);
+
+// 冶炼炉控制器
 recipes.remove(<tconstruct:smeltery_controller>);
+RecipeBuilder.get("farmer")
+  .setShaped([
+    [<minecraft:furnace>, <tconstruct:materials>, <minecraft:furnace>],
+    [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
+    [<minecraft:furnace>, <tconstruct:materials>, <minecraft:furnace>]])
+  .addOutput(<tconstruct:smeltery_controller>)
+  .create();
+
+// 焦黑熔炉控制器
+recipes.remove(<tconstruct:seared_furnace_controller>);
 RecipeBuilder.get("farmer")
   .setShaped([
     [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
     [<tconstruct:materials>, <minecraft:furnace>, <tconstruct:materials>],
     [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]])
-  .addOutput(<tconstruct:smeltery_controller>)
+  .addOutput(<tconstruct:seared_furnace_controller>)
   .create();
 
 // 木漏斗
