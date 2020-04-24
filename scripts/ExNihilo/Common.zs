@@ -28,6 +28,16 @@ for item in items {
     recipes.remove(item);
 }
 
+// 筛网
+recipes.remove(<exnihilocreatio:item_mesh:1>);
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<minecraft:string>, <minecraft:string>, <minecraft:string>],
+    [<minecraft:string>, <minecraft:string>, <minecraft:string>],
+    [<minecraft:string>, <minecraft:string>, <minecraft:string>]])
+  .addOutput(<exnihilocreatio:item_mesh:1>)
+  .create();
+
 // 未烧制的坩埚
 recipes.remove(<exnihilocreatio:block_crucible>);
 RecipeBuilder.get("farmer")
@@ -94,10 +104,12 @@ RecipeBuilder.get("mason")
   .create();
 
 //石子
+RecipeBuilder.get("basic")
+  .setShapeless([<exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>])
+  .addOutput(<minecraft:cobblestone>)
+  .create();
 RecipeBuilder.get("mason")
-  .setShaped([
-    [<exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>],
-    [<exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>]])
+  .setShapeless([<exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>])
   .addOutput(<minecraft:cobblestone> * 2)
   .create();
 

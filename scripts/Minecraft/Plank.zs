@@ -10,9 +10,7 @@ var items = [
   <minecraft:planks:3>,<minecraft:log:3>,<minecraft:wooden_slab:3>
 ] as IItemStack[];
 
-
-  // <integrateddynamics:menril_planks>,<integrateddynamics:menril_log>,
-
+// <integrateddynamics:menril_planks>,<integrateddynamics:menril_log>,
 
 for i in 0 to (items.length/3) {
   var plank as IItemStack = items[i*3];
@@ -21,6 +19,16 @@ for i in 0 to (items.length/3) {
   recipes.remove(plank);
   recipes.remove(slab);
   recipes.addShaped(plank*2, [[wood]]);
+
+  RecipeBuilder.get("basic")
+    .setShapeless([wood])
+    .addOutput(plank*2)
+    .create();
+
+  RecipeBuilder.get("carpenter")
+    .setShapeless([wood])
+    .addOutput(plank*2)
+    .create();
 
   RecipeBuilder.get("carpenter")
     .setShapeless([wood])

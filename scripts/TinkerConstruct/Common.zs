@@ -2,7 +2,8 @@ import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
 
 var items = [
-    <tconstruct:stone_stick>
+    <tconstruct:stone_stick>,
+    <tconstruct:tooltables>
 ] as IItemStack[];
 
 for item in items {

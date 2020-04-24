@@ -10,6 +10,7 @@ recipes.remove(flint);
 recipes.remove(<minecraft:glass>);
 furnace.remove(<minecraft:glass>);
 recipes.remove(<minecraft:glass_pane>);
+recipes.remove(<minecraft:crafting_table>);
 
 // 木棍
 recipes.remove(<minecraft:stick>);

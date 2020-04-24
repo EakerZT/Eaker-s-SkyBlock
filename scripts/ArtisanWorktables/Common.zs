@@ -1,3 +1,6 @@
+import mods.artisanworktables.builder.RecipeBuilder;
+
+var baseWorktable = <artisanworktables:worktable:5>;
 var woodWorktable = <artisanworktables:worktable:1>;
 var stoneWorktable = <artisanworktables:worktable:2>;
 var dirtWorktable = <artisanworktables:worktable:10>;
@@ -6,44 +9,67 @@ var jewelerWorktable = <artisanworktables:worktable:4>;
 var blacksmithWorktable = <artisanworktables:worktable:3>;
 var plank = <ore:plankWood>;
 var cobblestone = <ore:cobblestone>;
-var craftingTable = <minecraft:crafting_table>;
 var oreDirt = <ore:dirt>;
 var oreWoodGear = <ore:gearWood>;
 var oreIronPlate = <ore:plateIron>;
 var quartz = <minecraft:quartz>;
 
-recipes.addShaped(
-  woodWorktable,
-  [[plank,plank,plank],
-  [plank,craftingTable,plank],
-  [plank,plank,plank]]);
 
-recipes.addShaped(
-  stoneWorktable,
-  [[cobblestone,cobblestone,cobblestone],
-  [cobblestone,craftingTable,cobblestone],
-  [cobblestone,cobblestone,cobblestone]]);
+recipes.addShaped(baseWorktable, 
+  [[<ore:plankWood>, <ore:plankWood>],
+  [<ore:plankWood>, <ore:plankWood>]]);
 
-recipes.addShaped(
-  dirtWorktable,
-  [[oreDirt,oreDirt,oreDirt],
-  [oreDirt,craftingTable,oreDirt],
-  [oreDirt,oreDirt,oreDirt]]);
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:plankWood>, <ore:plankWood>],
+    [<ore:plankWood>, <ore:plankWood>]])
+  .addOutput(baseWorktable)
+  .create();
 
-recipes.addShaped(
-  engineerWorktable,
-  [[oreWoodGear, oreWoodGear, oreWoodGear],
-  [oreWoodGear, craftingTable, oreWoodGear],
-  [oreWoodGear, oreWoodGear, oreWoodGear]]);
+RecipeBuilder.get("basic")
+  .setShaped(
+    [[plank,plank,plank],
+    [plank,baseWorktable,plank],
+    [plank,plank,plank]])
+  .addOutput(woodWorktable)
+  .create();
 
-recipes.addShaped(
-  jewelerWorktable,
-  [[quartz, quartz, quartz],
-  [quartz, craftingTable, quartz],
-  [quartz, quartz, quartz]]);
+RecipeBuilder.get("basic")
+  .setShaped(
+    [[cobblestone,cobblestone,cobblestone],
+    [cobblestone,baseWorktable,cobblestone],
+    [cobblestone,cobblestone,cobblestone]])
+  .addOutput(stoneWorktable)
+  .create();
 
-recipes.addShaped(
-  blacksmithWorktable,
-  [[oreIronPlate, oreIronPlate, oreIronPlate],
-  [oreIronPlate, craftingTable, oreIronPlate],
-  [oreIronPlate, oreIronPlate, oreIronPlate]]);
+RecipeBuilder.get("basic")
+  .setShaped(
+    [[oreDirt,oreDirt,oreDirt],
+    [oreDirt,baseWorktable,oreDirt],
+    [oreDirt,oreDirt,oreDirt]])
+  .addOutput(dirtWorktable)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped(
+    [[oreWoodGear,oreWoodGear,oreWoodGear],
+    [oreWoodGear,baseWorktable,oreWoodGear],
+    [oreWoodGear,oreWoodGear,oreWoodGear]])
+  .addOutput(engineerWorktable)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped(
+    [[quartz,quartz,quartz],
+    [quartz,baseWorktable,quartz],
+    [quartz,quartz,quartz]])
+  .addOutput(jewelerWorktable)
+  .create();
+
+RecipeBuilder.get("basic")
+  .setShaped(
+    [[oreIronPlate,oreIronPlate,oreIronPlate],
+    [oreIronPlate,baseWorktable,oreIronPlate],
+    [oreIronPlate,oreIronPlate,oreIronPlate]])
+  .addOutput(dirtWorktable)
+  .create();
