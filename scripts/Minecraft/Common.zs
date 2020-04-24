@@ -32,15 +32,6 @@ RecipeBuilder.get("mason")
   .addOutput(<minecraft:furnace>)
   .create();
 
-// 盆栽
-recipes.remove(<bonsaitrees:bonsaipot>);
-RecipeBuilder.get("farmer")
-  .setShaped([
-    [<tconstruct:materials>, null, <tconstruct:materials>],
-    [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]])
-  .addOutput(<bonsaitrees:bonsaipot>)
-  .create();
-
 // 箱子
 recipes.remove(<minecraft:chest>);
 RecipeBuilder.get("carpenter")
@@ -72,12 +63,6 @@ RecipeBuilder.get("engineer")
 
 // 铁桶
 recipes.remove(<minecraft:bucket>);
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:plateIron>, null, <ore:plateIron>],
-    [null, <ore:plateIron>, null]])
-  .addOutput(<minecraft:bucket>)
-  .create();
 
 // 拉杆
 recipes.remove(<minecraft:lever>);
@@ -106,4 +91,42 @@ RecipeBuilder.get("engineer")
     [<minecraft:redstone>],
     [<ore:stickWood>]])
   .addOutput(<minecraft:redstone_torch>)
+  .create();
+
+// 黏土
+recipes.remove(<minecraft:clay_ball>);
+RecipeBuilder.get("farmer")
+  .setShapeless([<minecraft:clay>])
+  .addOutput(<minecraft:clay_ball>)
+  .create();
+
+// 黏土块
+recipes.remove(<minecraft:clay>);
+RecipeBuilder.get("farmer")
+  .setShapeless([<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>])
+  .addOutput(<minecraft:clay>)
+  .create();
+
+// 砂岩
+RecipeBuilder.get("farmer")
+  .setShapeless([<minecraft:sand>, <minecraft:sand>, <minecraft:sand>, <minecraft:sand>])
+  .addOutput(<minecraft:sandstone>)
+  .create();
+
+// 沙子
+RecipeBuilder.get("farmer")
+  .setShapeless([<minecraft:sandstone>])
+  .addOutput(<minecraft:sand> * 4)
+  .create();
+
+// 红砂岩
+RecipeBuilder.get("farmer")
+  .setShapeless([<minecraft:sand:1>, <minecraft:sand:1>, <minecraft:sand:1>, <minecraft:sand:1>])
+  .addOutput(<minecraft:red_sandstone>)
+  .create();
+
+// 红沙
+RecipeBuilder.get("farmer")
+  .setShapeless([<minecraft:red_sandstone>])
+  .addOutput(<minecraft:sand:1> * 4)
   .create();

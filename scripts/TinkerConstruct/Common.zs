@@ -93,7 +93,7 @@ furnace.addRecipe(<tconstruct:materials>, <tconstruct:soil>);
 
 // 浇筑台
 recipes.remove(<tconstruct:casting>);
-RecipeBuilder.get("farmer")
+RecipeBuilder.get("mason")
   .setShaped([
     [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
     [<tconstruct:materials>, null, <tconstruct:materials>],
@@ -103,7 +103,7 @@ RecipeBuilder.get("farmer")
 
 // 浇筑盆
 recipes.remove(<tconstruct:casting:1>);
-RecipeBuilder.get("farmer")
+RecipeBuilder.get("mason")
   .setShaped([
     [<ore:ingotBrickSeared>, null, <ore:ingotBrickSeared>],
     [<ore:ingotBrickSeared>, null, <ore:ingotBrickSeared>],
@@ -113,7 +113,7 @@ RecipeBuilder.get("farmer")
 
 // 浇筑口
 recipes.remove(<tconstruct:faucet>);
-RecipeBuilder.get("farmer")
+RecipeBuilder.get("mason")
   .setShaped([
     [<tconstruct:materials>, null, <tconstruct:materials>],
     [null, <tconstruct:materials>, null]])
@@ -123,14 +123,14 @@ RecipeBuilder.get("farmer")
 
 // 浇筑道
 recipes.remove(<tconstruct:channel>);
-RecipeBuilder.get("farmer")
+RecipeBuilder.get("mason")
   .setShapeless([<tconstruct:faucet>, <tconstruct:faucet>])
   .addOutput(<tconstruct:channel>)
   .create();
 
 // 排液口
 recipes.remove(<tconstruct:smeltery_io>);
-RecipeBuilder.get("farmer")
+RecipeBuilder.get("mason")
   .setShaped([
     [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
     [<tconstruct:materials>, <tconstruct:faucet>, <tconstruct:materials>],
@@ -140,7 +140,7 @@ RecipeBuilder.get("farmer")
 
 // 储罐
 recipes.remove(<tconstruct:seared_tank>);
-RecipeBuilder.get("farmer")
+RecipeBuilder.get("mason")
   .setShaped([
     [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
     [<tconstruct:materials>, null, <tconstruct:materials>],
@@ -153,7 +153,7 @@ recipes.remove(<tconstruct:seared_glass>);
 
 // 冶炼炉控制器
 recipes.remove(<tconstruct:smeltery_controller>);
-RecipeBuilder.get("farmer")
+RecipeBuilder.get("mason")
   .setShaped([
     [<minecraft:furnace>, <tconstruct:materials>, <minecraft:furnace>],
     [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
@@ -163,7 +163,7 @@ RecipeBuilder.get("farmer")
 
 // 焦黑熔炉控制器
 recipes.remove(<tconstruct:seared_furnace_controller>);
-RecipeBuilder.get("farmer")
+RecipeBuilder.get("mason")
   .setShaped([
     [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>],
     [<tconstruct:materials>, <minecraft:furnace>, <tconstruct:materials>],

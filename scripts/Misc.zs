@@ -24,7 +24,7 @@ RecipeBuilder.get("farmer")
     [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
     [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
     [<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 500)
   .addOutput(<ceramics:unfired_clay>)
   .create();
 
@@ -34,7 +34,7 @@ RecipeBuilder.get("farmer")
   .setShaped([
     [null, <minecraft:clay_ball>],
     [<minecraft:clay_ball>, null]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 500)
   .addOutput(<ceramics:unfired_clay:1>)
   .create();
 
@@ -45,7 +45,7 @@ RecipeBuilder.get("farmer")
     [null, <minecraft:clay_ball>, null],
     [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
     [null, <minecraft:clay_ball>, null]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 500)
   .addOutput(<ceramics:unfired_clay:8> * 2)
   .create();
 
@@ -54,7 +54,7 @@ recipes.remove(<moreplates:nether_quartz_plate>);
 RecipeBuilder.get("jeweler")
   .setShaped([
     [<minecraft:quartz>]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 500)
   .addTool(<ore:artisansFile>, 4)
   .addOutput(<moreplates:nether_quartz_plate>)
   .create(); 
@@ -66,7 +66,16 @@ RecipeBuilder.get("jeweler")
     [null, <ore:plateQuartz>, null],
     [<ore:plateQuartz>, null, <ore:plateQuartz>],
     [null, <ore:plateQuartz>, null]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 500)
   .addTool(<ore:artisansFile>, 4)
   .addOutput(<moreplates:nether_quartz_gear>)
+  .create();
+
+// 盆栽
+recipes.remove(<bonsaitrees:bonsaipot>);
+RecipeBuilder.get("farmer")
+  .setShaped([
+    [<tconstruct:materials>, null, <tconstruct:materials>],
+    [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]])
+  .addOutput(<bonsaitrees:bonsaipot>)
   .create();

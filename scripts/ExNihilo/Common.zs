@@ -32,9 +32,10 @@ for item in items {
 recipes.remove(<exnihilocreatio:block_crucible>);
 RecipeBuilder.get("farmer")
   .setShaped([
-    [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
-    [<minecraft:clay_ball>, null, <minecraft:clay_ball>],
-    [<minecraft:clay_ball>, <minecraft:clay>, <minecraft:clay_ball>]])
+    [<tconstruct:soil>, null, <tconstruct:soil>],
+    [<tconstruct:soil>, null, <tconstruct:soil>],
+    [<tconstruct:soil>, <tconstruct:soil>, <tconstruct:soil>]])
+  .setFluid(<liquid:water> * 500)
   .addOutput(<exnihilocreatio:block_crucible>)
   .create();
 
@@ -104,8 +105,8 @@ RecipeBuilder.get("mason")
 recipes.remove(<exnihilocreatio:block_crucible_wood>);
 RecipeBuilder.get("carpenter")
   .setShaped([
-    [<ore:plankWood>, null, <ore:plankWood>],
-    [<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+    [<ore:logWood>, null, <ore:logWood>],
+    [<ore:logWood>, <ore:logWood>, <ore:logWood>],
     [<ore:stickWood>, null, <ore:stickWood>]])
   .addOutput(<exnihilocreatio:block_crucible_wood>)
   .create();

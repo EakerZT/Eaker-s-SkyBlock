@@ -58,7 +58,7 @@ RecipeBuilder.get("farmer")
     [<minecraft:brick>, <minecraft:brick>, <minecraft:brick>],
     [<minecraft:sandstone>, <minecraft:sandstone>, <minecraft:sandstone>],
     [<minecraft:brick>, <minecraft:brick>, <minecraft:brick>]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 250)
   .addOutput(<railcraft:brick_sandy> * 3)
   .create();
 
@@ -68,7 +68,7 @@ RecipeBuilder.get("farmer")
     [<minecraft:brick>, <minecraft:brick>, <minecraft:brick>],
     [<minecraft:red_sandstone>, <minecraft:red_sandstone>, <minecraft:red_sandstone>],
     [<minecraft:brick>, <minecraft:brick>, <minecraft:brick>]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 250)
   .addOutput(<railcraft:brick_red_sandy> * 3)
   .create();
 

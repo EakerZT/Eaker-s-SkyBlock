@@ -120,7 +120,7 @@ RecipeBuilder.get("farmer")
     [<ceramics:unfired_clay:8>, <ceramics:unfired_clay:8>, <ceramics:unfired_clay:8>],
     [<ceramics:unfired_clay:8>, null, <ceramics:unfired_clay:8>],
     [<ceramics:unfired_clay:8>, <ceramics:unfired_clay:8>, <ceramics:unfired_clay:8>]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 500)
   .addOutput(<buildcrafttransport:pipe_clay_item> * 8)
   .create();
 
@@ -131,7 +131,7 @@ RecipeBuilder.get("farmer")
     [<ceramics:unfired_clay:8>, <ceramics:unfired_clay:8>, <ceramics:unfired_clay:8>],
     [<ceramics:unfired_clay:8>, waterproof, <ceramics:unfired_clay:8>],
     [<ceramics:unfired_clay:8>, <ceramics:unfired_clay:8>, <ceramics:unfired_clay:8>]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 500)
   .addOutput(<buildcrafttransport:pipe_clay_fluid> * 8)
   .create();
 
