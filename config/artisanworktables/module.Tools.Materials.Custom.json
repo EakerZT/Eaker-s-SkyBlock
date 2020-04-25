@@ -1,6 +1,19 @@
 {
   "list": [
     {
+      "name": "flint",
+      "harvestLevel": 1,
+      "maxUses": 150,
+      "efficiency": 3.8,
+      "damage": 1.0,
+      "enchantability": 5,
+      "color": "1a1a1a",
+      "shiny": true,
+      "ingredient": "minecraft:flint",
+      "langKey": "material.athenaeum.flint",
+      "oreDictKey": "artisansToolFlint"
+    },
+    {
       "name": "iron",
       "harvestLevel": 2,
       "maxUses": 250,
@@ -25,32 +38,6 @@
       "ingredient": "ore:ingotGold",
       "langKey": "material.athenaeum.gold",
       "oreDictKey": "artisansToolGold"
-    },
-    {
-      "name": "diamond",
-      "harvestLevel": 3,
-      "maxUses": 1561,
-      "efficiency": 8.0,
-      "damage": 3.0,
-      "enchantability": 10,
-      "color": "33ebcb",
-      "shiny": false,
-      "ingredient": "ore:gemDiamond",
-      "langKey": "material.athenaeum.diamond",
-      "oreDictKey": "artisansToolDiamond"
-    },
-    {
-      "name": "flint",
-      "harvestLevel": 1,
-      "maxUses": 150,
-      "efficiency": 3.8,
-      "damage": 1.0,
-      "enchantability": 5,
-      "color": "1a1a1a",
-      "shiny": true,
-      "ingredient": "minecraft:flint",
-      "langKey": "material.athenaeum.flint",
-      "oreDictKey": "artisansToolFlint"
     },
     {
       "name": "aluminum",

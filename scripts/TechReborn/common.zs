@@ -1,5 +1,5 @@
 import crafttweaker.item.IItemStack;
-
+import mods.jei.JEI;
 
 var refinedIron = <techreborn:ingot:19>;
 
@@ -45,7 +45,6 @@ var removeItem = [
 ] as IItemStack[];
 
 for i in removeItem {
-    recipes.remove(i);
-    mods.jei.JEI.removeAndHide(i);
+    JEI.removeAndHide(i);
 }
 

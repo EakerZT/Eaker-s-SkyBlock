@@ -30,13 +30,3 @@ var removeReceipItems = [
 for item in removeReceipItems {
     recipes.remove(item);
 }
-
-// 木齿轮
-RecipeBuilder.get("carpenter")
-  .setShaped([
-    [null, <minecraft:stick>, null],
-    [<minecraft:stick>, <techreborn:plates:3>, <minecraft:stick>],
-    [null, <minecraft:stick>, null]])
-  .addTool(<artisanworktables:artisans_file_flint>, 4)
-  .addOutput(<thermalfoundation:material:22>)
-  .create();

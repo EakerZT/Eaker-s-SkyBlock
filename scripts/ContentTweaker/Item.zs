@@ -3,8 +3,8 @@
 import mods.contenttweaker.Item;
 import mods.contenttweaker.VanillaFactory;
 
-val moldBolt as Item = VanillaFactory.createItem("mold_bolt");
-moldBolt.register();
+VanillaFactory.createItem("mold_bolt")
+  .register();
 
-// val castBolt as Item = VanillaFactory.createItem("cast_bolt");
-// castBolt.register();
+VanillaFactory.createItem("cast_bolt")
+  .register();

@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.jei.JEI;
 
 var removeItem = [
     <ceramics:clay_helmet>,
@@ -13,8 +14,7 @@ var removeItem = [
 ] as IItemStack[];
 
 for i in removeItem {
-    recipes.remove(i);
-    mods.jei.JEI.removeAndHide(i);
+    JEI.removeAndHide(i);
 }
 
 // 未烧制的黏土桶

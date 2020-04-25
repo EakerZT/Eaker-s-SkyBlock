@@ -1,6 +1,6 @@
 {
-    "registryname": "steam_alloy_furnace",
-    "localizedname": "Steam Alloy Furnace",
+    "registryname": "steam_fluid_foremer",
+    "localizedname": "Steam Fluid Former",
     "parts": [
         {
             "x": -1,
@@ -199,7 +199,7 @@
             "y": -1,
             "z": 2,
             "elements": [
-                "modularmachinery:blockinputbus@0"
+                "modularmachinery:blockfluidinputhatch@0"
             ]
         }
     ]}

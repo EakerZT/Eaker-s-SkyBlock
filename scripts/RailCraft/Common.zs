@@ -49,7 +49,7 @@ RecipeBuilder.get("carpenter")
     [<ore:plateWood>, <ore:slimeball>, <ore:plateWood>],
     [<ore:boltWood>, <ore:plateWood>, <ore:boltWood>]])
   .addTool(<ore:artisansDriver>, 4)
-  .addOutput(<railcraft:tank_water> * 3)
+  .addOutput(<railcraft:tank_water>)
   .create();
 
 // 砂岩砖

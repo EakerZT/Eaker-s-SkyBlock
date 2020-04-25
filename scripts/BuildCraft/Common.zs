@@ -1,13 +1,13 @@
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.tconstruct.Casting;
+import mods.jei.JEI;
 
 var items = [
 ] as IItemStack[];
 
 for item in items {
-    mods.jei.JEI.hide(item);
-    recipes.remove(item);
+    JEI.removeAndHide(item);
 }
 
 function removeItemAllRecipes(item as IItemStack) {
@@ -188,6 +188,7 @@ RecipeBuilder.get("engineer")
     [null, <ore:plankWood>, null],
     [<ore:plateWood>, <ore:gearWood>, <ore:plateWood>],
     [<ore:plateWood>, <minecraft:piston>, <ore:plateWood>]])
+  .addTool(<ore:artisansSpanner>, 4)
   .addOutput(<buildcraftcore:engine>)
   .create();
 
@@ -210,13 +211,7 @@ RecipeBuilder.get("engineer")
     [<ore:rodStone>, null, null]])
   .addOutput(<buildcraftcore:wrench>)
   .create();
+
 // 储罐
 recipes.remove(<buildcraftfactory:tank>);
-RecipeBuilder.get("jeweler")
-  .setShaped([
-    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>],
-    [<ore:paneGlass>, null, <ore:paneGlass>],
-    [<ore:paneGlass>, <ore:paneGlass>, <ore:paneGlass>]])
-  .addTool(<ore:artisansFile>, 4)
-  .addOutput(<buildcraftfactory:tank>)
-  .create();
+Casting.addBasinRecipe(<buildcraftfactory:tank>, <actuallyadditions:block_misc:4>, <liquid:glass>, 1000, true, 100);

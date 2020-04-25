@@ -12,9 +12,22 @@ furnace.remove(<minecraft:glass>);
 recipes.remove(<minecraft:glass_pane>);
 recipes.remove(<minecraft:crafting_table>);
 
+furnace.remove(<minecraft:iron_ingot>);
+
 // 木棍
 recipes.remove(<minecraft:stick>);
-recipes.addShaped('minecraft_stick',<minecraft:stick> * 2,[[<ore:plankWood>],[<ore:plankWood>]]);
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:plankWood>],
+    [<ore:plankWood>]])
+  .addOutput(<minecraft:stick> * 2)
+  .create();
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankWood>],
+    [<ore:plankWood>]])
+  .addOutput(<minecraft:stick> * 2)
+  .create();
 RecipeBuilder.get("carpenter")
   .setShaped([
     [<ore:plankWood>],
@@ -50,6 +63,7 @@ RecipeBuilder.get("engineer")
     [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>],
     [<ore:cobblestone>, <ore:gearWood>, <ore:cobblestone>],
     [<ore:cobblestone>, <minecraft:redstone>, <ore:cobblestone>]])
+  .addTool(<ore:artisansSpanner>, 4)
   .addOutput(<minecraft:piston>)
   .create();
 
@@ -72,6 +86,7 @@ RecipeBuilder.get("engineer")
     [<ore:stickWood>],
     [<ore:gearWood>],
     [<ore:plateStone>]])
+  .addTool(<ore:artisansSpanner>, 4)
   .addOutput(<minecraft:lever>)
   .create();
 

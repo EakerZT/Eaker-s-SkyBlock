@@ -1,14 +1,14 @@
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.jei.JEI;
 
-var items = [
+var removeItems = [
     <tconstruct:stone_stick>,
     <tconstruct:tooltables>
 ] as IItemStack[];
 
-for item in items {
-    mods.jei.JEI.hide(item);
-    recipes.remove(item);
+for item in removeItems {
+    JEI.removeAndHide(item);
 }
 
 // 空白模具
@@ -180,4 +180,15 @@ RecipeBuilder.get("carpenter")
     [<ore:plateWood>, <minecraft:chest>, <ore:plateWood>],
     [null, <ore:plateWood>, null]])
   .addOutput(<tconstruct:wooden_hopper>)
+  .create();
+
+// 石桶
+recipes.remove(<tcomplement:materials>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:plateStone>, null, <ore:plateStone>],
+    [<ore:plateStone>, null, <ore:plateStone>],
+    [null, <ore:plateStone>, null]])
+  .addTool(<ore:artisansFile>, 1)
+  .addOutput(<tcomplement:materials>)
   .create();

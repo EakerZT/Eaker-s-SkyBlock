@@ -1,7 +1,8 @@
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.jei.JEI;
 
-var items = [
+var removeItems = [
     <exnihilocreatio:hammer_wood>,
     <exnihilocreatio:hammer_iron>,
     <exnihilocreatio:hammer_diamond>,
@@ -23,9 +24,8 @@ var items = [
     <exnihilocreatio:item_material:7>
 ] as IItemStack[];
 
-for item in items {
-    mods.jei.JEI.hide(item);
-    recipes.remove(item);
+for item in removeItems {
+    JEI.removeAndHide(item);
 }
 
 // 筛网

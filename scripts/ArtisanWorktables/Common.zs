@@ -1,12 +1,12 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 
-var baseWorktable = <artisanworktables:worktable:5>;
-var woodWorktable = <artisanworktables:worktable:1>;
-var stoneWorktable = <artisanworktables:worktable:2>;
-var dirtWorktable = <artisanworktables:worktable:10>;
-var engineerWorktable = <artisanworktables:worktable:6>;
-var jewelerWorktable = <artisanworktables:worktable:4>;
-var blacksmithWorktable = <artisanworktables:worktable:3>;
+var baseWorktable = <artisanworktables:workstation:5>;
+var woodWorktable = <artisanworktables:workstation:1>;
+var stoneWorktable = <artisanworktables:workstation:2>;
+var dirtWorktable = <artisanworktables:workstation:10>;
+var engineerWorktable = <artisanworktables:workstation:6>;
+var jewelerWorktable = <artisanworktables:workstation:4>;
+var blacksmithWorktable = <artisanworktables:workstation:3>;
 var plank = <ore:plankWood>;
 var cobblestone = <ore:cobblestone>;
 var oreDirt = <ore:dirt>;
@@ -71,5 +71,5 @@ RecipeBuilder.get("basic")
     [[oreIronPlate,oreIronPlate,oreIronPlate],
     [oreIronPlate,baseWorktable,oreIronPlate],
     [oreIronPlate,oreIronPlate,oreIronPlate]])
-  .addOutput(dirtWorktable)
+  .addOutput(blacksmithWorktable)
   .create();

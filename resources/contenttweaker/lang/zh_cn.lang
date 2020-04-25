@@ -25,4 +25,4 @@ base.material.aluminum=铝
 
 
 item.contenttweaker.mold_bolt.name=金属冲压模具 : 螺丝
-// item.contenttweaker.cast_bolt.name=螺丝铸模具
+item.contenttweaker.cast_bolt.name=螺丝铸模
