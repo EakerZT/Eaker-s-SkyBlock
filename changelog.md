@@ -1,8 +1,14 @@
 # 0.0.7
 
+升级
+-
+* ArtisanWorktables 1.22.17 -> 1.22.20
+* PackagedAuto 1.0.2.9 -> 1.0.2.11
+
 移除
 -
 * 移除*TinyProcess*中的 **装备&工具**
+
 
 # 0.0.6
 
