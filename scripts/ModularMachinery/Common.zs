@@ -76,3 +76,24 @@ RecipeBuilder.get("blacksmith")
   .addTool(<ore:artisansHammer>, 4)
   .addOutput(<modularmachinery:blockfluidoutputhatch>)
   .create();
+
+// 螺丝箱
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:boltBronze>, <ore:plateBronze>, <ore:boltBronze>],
+    [<ore:plateBronze>, <ore:gearBronze>, <ore:plateBronze>],
+    [<ore:boltBronze>, <ore:plateBronze>, <ore:boltBronze>]])
+  .addTool(<ore:artisansHammer>, 4)
+  .addTool(<ore:artisansDriver>, 4)
+  .addOutput(<modularmachinery:blockcasing:3>)
+  .create();
+
+// 通风口
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>],
+    [<ore:stickBronze>, <ore:stickBronze>, <ore:stickBronze>],
+    [<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>]])
+  .addTool(<ore:artisansHammer>, 4)
+  .addOutput(<modularmachinery:blockcasing:1>)
+  .create();

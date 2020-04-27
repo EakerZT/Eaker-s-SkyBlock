@@ -7,19 +7,12 @@ var removeItems = [
     <chisel:chisel_diamond>
 ] as IItemStack[];
 
-for item in removeItems {
-    JEI.removeAndHide(item);
-}
+removeAndHideItemList(removeItems);
+
+removeOreDictItemsRecipes(<ore:paneGlass>);
+
+removeOreDictItemsRecipes(<ore:sandstone>);
+
+removeOreDictItemsRecipes(<ore:sand>);
+
 recipes.remove(<chisel:chisel_hitech>);
-
-function removeOreItemRecipes(oreName as IOreDictEntry) {
-  for i in oreName.items {
-    recipes.remove(i);
-  }
-}
-
-removeOreItemRecipes(<ore:paneGlass>);
-
-removeOreItemRecipes(<ore:sandstone>);
-
-removeOreItemRecipes(<ore:sand>);

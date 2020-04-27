@@ -212,6 +212,15 @@ RecipeBuilder.get("engineer")
   .addOutput(<buildcraftcore:wrench>)
   .create();
 
+// 管塞
+recipes.remove(<buildcrafttransport:plug_blocker>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<buildcrafttransport:waterproof>, <buildcrafttransport:pipe_cobble_item>, <buildcrafttransport:waterproof>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<buildcrafttransport:plug_blocker> * 2)
+  .create();
+
 // 储罐
 recipes.remove(<buildcraftfactory:tank>);
 Casting.addBasinRecipe(<buildcraftfactory:tank>, <actuallyadditions:block_misc:4>, <liquid:glass>, 1000, true, 100);

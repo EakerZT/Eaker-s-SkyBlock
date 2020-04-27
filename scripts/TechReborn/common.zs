@@ -1,11 +1,11 @@
 import crafttweaker.item.IItemStack;
-import mods.jei.JEI;
+import mods.artisanworktables.builder.RecipeBuilder;
 
 var refinedIron = <techreborn:ingot:19>;
 
 furnace.remove(refinedIron);
 
-var removeItem = [
+var removeItems = [
     <techreborn:bronzesword>,
     <techreborn:bronzepickaxe>,
     <techreborn:bronzespade>,
@@ -44,7 +44,14 @@ var removeItem = [
     <techreborn:peridotboots>
 ] as IItemStack[];
 
-for i in removeItem {
-    JEI.removeAndHide(i);
-}
+removeAndHideItemList(removeItems);
 
+
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<buildcrafttransport:pipe_wood_item>, <buildcrafttransport:pipe_wood_item>, <buildcrafttransport:pipe_wood_item>],
+    [null, <buildcrafttransport:waterproof>, <buildcrafttransport:pipe_wood_item>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<techreborn:treetap>)
+  .create();

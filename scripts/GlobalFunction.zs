@@ -22,3 +22,9 @@ global removeAndHideItemList as function(IItemStack[])void = function(items as I
     JEI.removeAndHide(item);
   }
 };
+
+global removeOreDictItemsRecipes as function(IOreDictEntry)void = function(oreName as IOreDictEntry) as void {
+  for i in oreName.items {
+    recipes.remove(i);
+  }
+};
