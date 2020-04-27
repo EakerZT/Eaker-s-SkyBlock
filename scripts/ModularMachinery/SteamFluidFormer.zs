@@ -7,7 +7,7 @@ var moldStick = <immersiveengineering:mold:2>;
 
 function addBaseReceipes(receipeName as string,castItem as IItemStack,inputFluid as ILiquidStack,num as int,ouputItem as IItemStack) {
   RecipeBuilder.newBuilder(receipeName, "steam_fluid_foremer", 100, 0)
-    .addFluidInput(<liquid:steam> *  1000)
+    .addFluidInput(<liquid:steam> *  500)
     .addFluidInput(inputFluid *  num)
     .addItemInput(castItem)
     .setChance(0)

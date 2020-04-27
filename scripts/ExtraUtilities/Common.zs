@@ -15,7 +15,7 @@ recipes.remove(<extrautils2:pipe>);
 RecipeBuilder.get("jeweler")
   .setShaped([
     [<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>],
-    [<enderio:item_material:2>, null, <enderio:item_material:4>],
+    [<enderio:item_material:2>, null, <enderio:item_material:2>],
     [<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>]])
   .addTool(<ore:artisansFile>, 4)
   .addOutput(<extrautils2:pipe>)

@@ -4,6 +4,13 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 global odItemMap as IItemStack[string] = {
+  dustIron: <thermalfoundation:material:0>,
+  dustGold: <thermalfoundation:material:1>,
+  dustCopper: <thermalfoundation:material:64>,
+  dustTin: <thermalfoundation:material:65>,
+  dustSilver: <thermalfoundation:material:66>,
+  dustLead: <thermalfoundation:material:67>,
+
   ingotIron : <minecraft:iron_ingot>,
   ingotGold : <minecraft:gold_ingot>,
   ingotCopper : <thermalfoundation:material:128>,

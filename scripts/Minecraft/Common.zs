@@ -26,12 +26,6 @@ RecipeBuilder.get("carpenter")
   .setShaped([
     [<ore:plankWood>],
     [<ore:plankWood>]])
-  .addOutput(<minecraft:stick> * 2)
-  .create();
-RecipeBuilder.get("carpenter")
-  .setShaped([
-    [<ore:plankWood>],
-    [<ore:plankWood>]])
   .addTool(<ore:artisansHatchet>, 4)
   .addOutput(<minecraft:stick> * 4)
   .create();
@@ -113,7 +107,7 @@ RecipeBuilder.get("engineer")
 recipes.remove(<minecraft:clay_ball>);
 RecipeBuilder.get("farmer")
   .setShapeless([<minecraft:clay>])
-  .addOutput(<minecraft:clay_ball>)
+  .addOutput(<minecraft:clay_ball> * 4)
   .create();
 
 // 黏土块
