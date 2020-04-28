@@ -6,7 +6,7 @@ import crafttweaker.liquid.ILiquidStack;
 RecipeBuilder.newBuilder("se_leaves", "steam_extractor", 500, 0)
   .addFluidInput(<liquid:steam> *  1000)
   .addItemInput(<ore:treeLeaves>, 16)
-  .addItemOutput(<exnihilocreatio:item_seed_rubber>)
+  .addItemOutput(<techreborn:rubber_sapling>)
   .setChance(0.1)
   .addItemOutput(<integrateddynamics:menril_sapling>)
   .setChance(0.1)

@@ -140,3 +140,25 @@ RecipeBuilder.get("farmer")
   .setShapeless([<minecraft:red_sandstone>])
   .addOutput(<minecraft:sand:1> * 4)
   .create();
+
+// 火把
+recipes.remove(<minecraft:torch>);
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<minecraft:coal:1>],
+    [<minecraft:stick>]])
+  .addOutput(<minecraft:torch> * 2)
+  .create();
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<minecraft:coal>],
+    [<minecraft:stick>]])
+  .addOutput(<minecraft:torch> * 4)
+  .create();
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:fuelCroal>],
+    [<minecraft:stick>]])
+  .addOutput(<minecraft:torch> * 8)
+  .create();
+
