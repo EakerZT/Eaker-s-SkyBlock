@@ -1,4 +1,5 @@
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.modularmachinery.RecipeBuilder as mRecipeBuilder;
 
 // 木剪
 recipes.remove(<tp:wooden_shears>);
@@ -19,7 +20,6 @@ RecipeBuilder.get("mason")
     [<ore:stone>, <ore:stone>, <ore:stone>]])
   .addOutput(<tp:cobblegen_block>)
   .create();
-
 RecipeBuilder.get("mason")
   .setShaped([
     [<ore:stone>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "lava", Amount: 1000}}), <ore:stone>],
@@ -27,3 +27,11 @@ RecipeBuilder.get("mason")
     [<ore:stone>, <ore:stone>, <ore:stone>]])
   .addOutput(<tp:cobblegen_block>)
   .create();
+
+// 压缩遂石块
+recipes.remove(<tp:flint_block>);
+mRecipeBuilder.newBuilder("sc_flint_block", "steam_compressor", 500, 0)
+  .addFluidInput(<liquid:steam> *  1000)
+  .addItemInput(<minecraft:flint> *  9)
+  .addItemOutput(<tp:flint_block>)
+  .build();

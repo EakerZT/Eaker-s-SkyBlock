@@ -10,15 +10,26 @@ RecipeBuilder.get("engineer")
   .addOutput(<extrautils2:redstoneclock>)
   .create();
 
+// 压缩圆石
+recipes.remove(<extrautils2:compressedcobblestone>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
+    [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
+    [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]])
+  .addTool(<artisanworktables:artisans_hammer_iron>, 1)
+  .addOutput(<extrautils2:compressedcobblestone>)
+  .create();
+
 // 传输节点
 recipes.remove(<extrautils2:pipe>);
 RecipeBuilder.get("jeweler")
   .setShaped([
     [<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>],
-    [<enderio:item_material:2>, null, <enderio:item_material:2>],
+    [<enderio:item_material:4>, null, <enderio:item_material:4>],
     [<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>]])
   .addTool(<ore:artisansFile>, 4)
-  .addOutput(<extrautils2:pipe>)
+  .addOutput(<extrautils2:pipe> * 4)
   .create();
 
 // 物品传输节点

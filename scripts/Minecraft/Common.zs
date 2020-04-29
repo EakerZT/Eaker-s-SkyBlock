@@ -12,8 +12,6 @@ furnace.remove(<minecraft:glass>);
 recipes.remove(<minecraft:glass_pane>);
 recipes.remove(<minecraft:crafting_table>);
 
-furnace.remove(<minecraft:iron_ingot>);
-
 // 木棍
 recipes.remove(<minecraft:stick>);
 RecipeBuilder.get("basic")
@@ -157,7 +155,7 @@ RecipeBuilder.get("basic")
   .create();
 RecipeBuilder.get("basic")
   .setShaped([
-    [<ore:fuelCroal>],
+    [<ore:fuelCoke>],
     [<minecraft:stick>]])
   .addOutput(<minecraft:torch> * 8)
   .create();

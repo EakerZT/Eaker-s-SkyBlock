@@ -29,3 +29,15 @@ RecipeBuilder.newBuilder("se_leaves", "steam_extractor", 500, 0)
   .addItemOutput(<minecraft:sapling:5>)
   .setChance(0.1)
   .build();
+
+RecipeBuilder.newBuilder("se_sap", "steam_extractor", 500, 0)
+  .addFluidInput(<liquid:steam> *  1000)
+  .addItemInput(<techreborn:rubber_log>)
+  .addItemOutput(<techreborn:part:31> * 2)
+  .build();
+
+RecipeBuilder.newBuilder("se_rubber", "steam_extractor", 500, 0)
+  .addFluidInput(<liquid:steam> *  1000)
+  .addItemInput(<techreborn:part:31>)
+  .addItemOutput(<techreborn:part:32> * 2)
+  .build();

@@ -46,7 +46,7 @@ var removeItems = [
 
 removeAndHideItemList(removeItems);
 
-
+recipes.remove(<techreborn:treetap>);
 RecipeBuilder.get("carpenter")
   .setShaped([
     [<buildcrafttransport:pipe_wood_item>, <buildcrafttransport:pipe_wood_item>, <buildcrafttransport:pipe_wood_item>],
