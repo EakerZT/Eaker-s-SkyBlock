@@ -103,16 +103,6 @@ RecipeBuilder.get("mason")
   .addOutput(<exnihilocreatio:hammer_stone>)
   .create();
 
-//石子
-RecipeBuilder.get("basic")
-  .setShapeless([<exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>])
-  .addOutput(<minecraft:cobblestone>)
-  .create();
-RecipeBuilder.get("mason")
-  .setShapeless([<exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>])
-  .addOutput(<minecraft:cobblestone> * 2)
-  .create();
-
 // 木坩埚
 recipes.remove(<exnihilocreatio:block_crucible_wood>);
 RecipeBuilder.get("carpenter")

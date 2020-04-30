@@ -73,7 +73,7 @@ for i in <ore:artisansHatchet>.items {
                 [orePlate, <ore:stickWood>, null],
                 [null, <ore:stickWood>, null]])
               .addTool(<ore:artisansFile>, 4)
-              .addOutput(i)
+              .addOutput(i.definition.makeStack(0))
               .create();
             break;
         }
@@ -98,7 +98,7 @@ for i in <ore:artisansFile>.items {
                   [orePlate],
                   [<minecraft:stick>]])
               .addTool(<ore:artisansFile>, 4)
-              .addOutput(i)
+              .addOutput(i.definition.makeStack(0))
               .create();
             break;
         }
@@ -123,7 +123,7 @@ for i in <ore:artisansHandsaw>.items {
                 [orePlate, <minecraft:stick>, null],
                 [<minecraft:stick>, null, null]])
               .addTool(<ore:artisansFile>, 4)
-              .addOutput(i)
+              .addOutput(i.definition.makeStack(0))
               .create();
             break;
         }
@@ -149,7 +149,7 @@ for i in <ore:artisansDriver>.items {
                 [null, <ore:stickWood>, null],
                 [<ore:plankWood>, null, null]])
               .addTool(<ore:artisansFile>, 4)
-              .addOutput(i)
+              .addOutput(i.definition.makeStack(0))
               .create();
             break;
         }
@@ -175,7 +175,7 @@ for i in <ore:artisansSpanner>.items {
                 [null, <ore:stickWood>, oreStick],
                 [<ore:stickWood>, null, null]])
               .addTool(<ore:artisansFile>, 4)
-              .addOutput(i)
+              .addOutput(i.definition.makeStack(0))
               .create();
             break;
         }
@@ -193,7 +193,28 @@ for i in <ore:artisansHammer>.items {
                 [orePlate, <ore:plankWood>, orePlate],
                 [null, <ore:stickWood>, null],
                 [null, <ore:stickWood>, null]])
-              .addOutput(i)
+              .addOutput(i.definition.makeStack(0))
+              .create();
+            break;
+        }
+    }
+}
+  
+// 铁匠剪
+JEI.removeAndHide(<artisanworktables:artisans_cutters_flint>);
+for i in <ore:artisansCutters>.items {
+    var toolId = i.definition.id;
+    for name in materialNames {
+        if( toolId in name.toLowerCase()) {
+            var oreStick = oreDict["stick"+name];
+            var oreGear = oreDict["gear"+name];
+            RecipeBuilder.get("blacksmith")
+              .setShaped([
+                [oreStick, null, oreStick],
+                [null, oreGear, null],
+                [<ore:stickWood>, null, <ore:stickWood>]])
+              .addTool(<ore:artisansFile>, 4)
+              .addOutput(i.definition.makeStack(0))
               .create();
             break;
         }

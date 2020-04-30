@@ -1,5 +1,6 @@
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
+import moretweaker.railcraft.BlastFurnace;
 
 var refinedIron = <techreborn:ingot:19>;
 
@@ -54,4 +55,77 @@ RecipeBuilder.get("carpenter")
   .addTool(<ore:artisansHandsaw>, 4)
   .addTool(<ore:artisansFile>, 4)
   .addOutput(<techreborn:treetap>)
+  .create();
+
+BlastFurnace.add(odItemMap["ingotRefinedIron"], <ore:ingotSteel>, 64 * 20, 1);
+
+// 铜导线
+recipes.remove(<techreborn:cable>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateCopper>]])
+  .addTool(<ore:artisansCutters>, 4)
+  .addOutput(<techreborn:cable> * 3)
+  .create();
+
+// 锡导线
+recipes.remove(<techreborn:cable:1>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateTin>]])
+  .addTool(<ore:artisansCutters>, 4)
+  .addOutput(<techreborn:cable:1> * 3)
+  .create();
+
+// 金导线
+recipes.remove(<techreborn:cable:1>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateGold>]])
+  .addTool(<ore:artisansCutters>, 4)
+  .addOutput(<techreborn:cable:2> * 3)
+  .create();
+
+// 高压导线
+recipes.remove(<techreborn:cable:1>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateRefinedIron>]])
+  .addTool(<ore:artisansCutters>, 4)
+  .addOutput(<techreborn:cable:3> * 3)
+  .create();
+
+// 绝缘铜导线
+recipes.remove(<techreborn:cable:5>);
+RecipeBuilder.get("basic")
+  .setShapeless([<techreborn:cable>, <techreborn:part:32>])
+  .addOutput(<techreborn:cable:5>)
+  .create();
+
+// 绝缘锡导线
+recipes.remove(<techreborn:cable:6>);
+RecipeBuilder.get("basic")
+  .setShapeless([<techreborn:cable:1>, <techreborn:part:32>])
+  .addOutput(<techreborn:cable:6>)
+  .create();
+// 绝缘锡导线
+recipes.remove(<techreborn:cable:7>);
+RecipeBuilder.get("basic")
+  .setShapeless([<techreborn:cable:2>, <techreborn:part:32>, <techreborn:part:32>])
+  .addOutput(<techreborn:cable:7>)
+  .create();
+// 空白电路板
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<techreborn:cable>, <techreborn:cable>, <techreborn:cable>],
+    [<minecraft:redstone>, <ore:plateRefinedIron>, <minecraft:redstone>],
+    [<techreborn:cable>, <techreborn:cable>, <techreborn:cable>]])
+  .addOutput(<techreborn:part:40>)
+  .create();
+// 电路板
+recipes.remove(<techreborn:part:29>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<techreborn:cable:5>, <techreborn:part:40>, <techreborn:cable:5>]])
+  .addOutput(<techreborn:part:29>)
   .create();

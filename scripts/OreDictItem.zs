@@ -4,6 +4,13 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 global odItemMap as IItemStack[string] = {
+  oreIron: <exnihilocreatio:item_ore_iron:1>,
+  oreGold: <exnihilocreatio:item_ore_gold:1>,
+  oreCopper: <exnihilocreatio:item_ore_copper:1>,
+  oreTin: <exnihilocreatio:item_ore_tin:1>,
+  oreSilver: <exnihilocreatio:item_ore_silver:1>,
+  oreLead: <exnihilocreatio:item_ore_lead:1>,
+
   dustIron: <thermalfoundation:material:0>,
   dustGold: <thermalfoundation:material:1>,
   dustCopper: <thermalfoundation:material:64>,
@@ -29,6 +36,7 @@ global odItemMap as IItemStack[string] = {
   ingotSignalum : <thermalfoundation:material:165>,
   ingotLumium : <thermalfoundation:material:166>,
   ingotEnderium : <thermalfoundation:material:167>,
+  ingotRefinedIron : <techreborn:ingot:19>,
 
   plateWood : <techreborn:plates:3>,
   plateStone : getCTItemByODName("plateStone"),
@@ -51,6 +59,7 @@ global odItemMap as IItemStack[string] = {
   plateSignalum : <thermalfoundation:material:357>,
   plateLumium : <thermalfoundation:material:358>,
   plateEnderium : <thermalfoundation:material:359>,
+  plateRefinedIron : <techreborn:plates:35>,
 
   boltWood : getCTItemByODName("boltWood"),
   boltStone : getCTItemByODName("boltStone"),

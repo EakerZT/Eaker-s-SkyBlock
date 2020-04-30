@@ -1,4 +1,5 @@
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.modularmachinery.RecipeBuilder as mRecipeBuilder;
 
 var flint = <minecraft:flint>;
 var plankWood = <ore:plankWood>;
@@ -111,7 +112,9 @@ RecipeBuilder.get("farmer")
 // 黏土块
 recipes.remove(<minecraft:clay>);
 RecipeBuilder.get("farmer")
-  .setShapeless([<minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>, <minecraft:clay_ball>])
+  .setShaped([
+    [<minecraft:clay_ball>, <minecraft:clay_ball>],
+    [<minecraft:clay_ball>, <minecraft:clay_ball>]])
   .addOutput(<minecraft:clay>)
   .create();
 
@@ -160,3 +163,18 @@ RecipeBuilder.get("basic")
   .addOutput(<minecraft:torch> * 8)
   .create();
 
+// 圆石
+RecipeBuilder.get("basic")
+  .setShapeless([<exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>])
+  .addOutput(<minecraft:cobblestone>)
+  .create();
+RecipeBuilder.get("mason")
+  .setShapeless([<exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>, <exnihilocreatio:item_pebble>])
+  .addOutput(<minecraft:cobblestone> * 2)
+  .create();
+
+mRecipeBuilder.newBuilder("sg_cobble_gravel", "steam_grinder", 200, 0)
+  .addFluidInput(<liquid:steam> *  200)
+  .addItemInput(<minecraft:cobblestone>)
+  .addItemOutput(<minecraft:gravel>)
+  .build();

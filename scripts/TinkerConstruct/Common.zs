@@ -24,7 +24,7 @@ recipes.remove(<tconstruct:tooltables:1>);
 RecipeBuilder.get("carpenter")
   .setShaped([
     [<tconstruct:pattern>],
-    [<minecraft:crafting_table>]])
+    [<artisanworktables:workstation:5>]])
   .addOutput(<tconstruct:tooltables:1>.withTag({textureBlock: {id: "minecraft:planks", Count: 1 as byte, Damage: 0 as short}}))
   .create();
 
@@ -42,7 +42,7 @@ recipes.remove(<tconstruct:tooltables:2>);
 RecipeBuilder.get("carpenter")
   .setShaped([
     [<tconstruct:pattern>],
-    [<minecraft:crafting_table>],
+    [<artisanworktables:workstation:5>],
     [<tconstruct:pattern>]])
   .addOutput(<tconstruct:tooltables:2>.withTag({textureBlock: {id: "minecraft:log", Count: 1 as byte, Damage: 0 as short}}))
   .create();
@@ -62,7 +62,7 @@ recipes.remove(<tconstruct:tooltables:3>);
 RecipeBuilder.get("carpenter")
   .setShaped([
     [null, <tconstruct:pattern>, null],
-    [<tconstruct:pattern>, <minecraft:crafting_table>, <tconstruct:pattern>],
+    [<tconstruct:pattern>, <artisanworktables:workstation:5>, <tconstruct:pattern>],
     [null, <tconstruct:pattern>, null]])
   .addOutput(<tconstruct:tooltables:3>)
   .create();
@@ -72,7 +72,7 @@ recipes.remove(<conarm:armorstation>);
 RecipeBuilder.get("carpenter")
   .setShaped([
     [<tconstruct:pattern>, null, <tconstruct:pattern>],
-    [null, <minecraft:crafting_table>, null],
+    [null, <artisanworktables:workstation:5>, null],
     [<tconstruct:pattern>, null, <tconstruct:pattern>]])
   .addOutput(<conarm:armorstation>)
   .create();
@@ -84,7 +84,7 @@ RecipeBuilder.get("farmer")
     [<ore:sand>, <minecraft:gravel>, <ore:sand>],
     [<minecraft:gravel>, <minecraft:clay>, <minecraft:gravel>],
     [<ore:sand>, <minecraft:gravel>, <ore:sand>]])
-  .setFluid(<liquid:water> * 1000)
+  .setFluid(<liquid:water> * 500)
   .addOutput(<tconstruct:soil> * 8)
   .create();
 
@@ -191,4 +191,13 @@ RecipeBuilder.get("mason")
     [null, <ore:plateStone>, null]])
   .addTool(<ore:artisansFile>, 1)
   .addOutput(<tcomplement:materials>)
+  .create();
+
+// 焦黑石砖
+recipes.remove(<tconstruct:seared:3>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<tconstruct:materials>, <tconstruct:materials>],
+    [<tconstruct:materials>, <tconstruct:materials>]])
+  .addOutput(<tconstruct:seared:3>)
   .create();

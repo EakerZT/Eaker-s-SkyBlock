@@ -79,3 +79,12 @@ RecipeBuilder.get("farmer")
     [<tconstruct:materials>, <tconstruct:materials>, <tconstruct:materials>]])
   .addOutput(<bonsaitrees:bonsaipot>)
   .create();
+
+// 漏斗盆栽
+recipes.remove(<bonsaitrees:bonsaipot:1>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<bonsaitrees:bonsaipot>],
+    [<minecraft:hopper>]])
+  .addOutput(<bonsaitrees:bonsaipot:1>)
+  .create();

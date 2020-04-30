@@ -44,7 +44,7 @@ RecipeBuilder.get("engineer")
     [<ore:boltWood>, waterproof, <ore:boltWood>],
     [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>]])
   .addTool(<ore:artisansDriver>, 4)
-  .addOutput(<buildcrafttransport:pipe_wood_fluid> * 2)
+  .addOutput(<buildcrafttransport:pipe_wood_fluid> * 8)
   .create();
 
 // 圆石管道

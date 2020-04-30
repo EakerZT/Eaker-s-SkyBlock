@@ -1,5 +1,19 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.chisel.Carving;
+import mods.tconstruct.Casting;
+import moretweaker.railcraft.BlastFurnace;
+import moretweaker.railcraft.RockCrusher;
+import moretweaker.railcraft.RollingMachine;
+import crafttweaker.item.IItemStack;
+
+var removeItems =  [
+  <railcraft:equipment:1>,
+  <railcraft:rock_crusher>,
+] as IItemStack[];
+
+removeAndHideItemList(removeItems);
+
+BlastFurnace.add(odItemMap["ingotSteel"], <ore:ingotIron>, 64 * 20, 1);
 
 Carving.addGroup("brickSandy");
 recipes.remove(<railcraft:brick_sandy:0>);
@@ -151,3 +165,13 @@ RecipeBuilder.get("blacksmith")
     [<ore:stickIron>, <ore:paneGlass>, <ore:stickIron>]])
   .addOutput(<railcraft:tank_iron_gauge> * 4)
   .create();
+
+// 高炉砖
+recipes.remove(<railcraft:blast_furnace>);
+Casting.addBasinRecipe(
+  <railcraft:blast_furnace>,
+  <minecraft:nether_brick>,
+  <liquid:steel>,
+  144,
+  true,
+  100);

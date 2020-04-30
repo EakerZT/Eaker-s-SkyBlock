@@ -25,10 +25,10 @@ for i in 0 to (items.length/3) {
     .addOutput(plank*2)
     .create();
 
-  RecipeBuilder.get("carpenter")
-    .setShapeless([wood])
-    .addOutput(plank*2)
-    .create();
+  // RecipeBuilder.get("carpenter")
+  //   .setShapeless([wood])
+  //   .addOutput(plank*2)
+  //   .create();
 
   RecipeBuilder.get("carpenter")
     .setShapeless([wood])
