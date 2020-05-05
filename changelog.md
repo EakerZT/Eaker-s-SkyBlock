@@ -7,7 +7,10 @@
 
 升级
 -
-* ArtisanWorktables 1.22.20 -> 1.22.21
+* ArtisanWorktables 1.22.20 -> 1.23.0
+* Athenaeum 1.17.4 -> 1.18.0
+* ImmersiveTechnology 1.7.59 -> 1.7.60
+* PackagedAuto 1.0.2.11 -> 1.0.3.12
 
 配方
 -
