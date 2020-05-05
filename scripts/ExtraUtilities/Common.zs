@@ -17,7 +17,7 @@ RecipeBuilder.get("mason")
     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]])
-  .addTool(<artisanworktables:artisans_hammer_iron>, 1)
+  .addTool(<ore:artisansHammer>, 1)
   .addOutput(<extrautils2:compressedcobblestone>)
   .create();
 

@@ -178,3 +178,13 @@ mRecipeBuilder.newBuilder("sg_cobble_gravel", "steam_grinder", 200, 0)
   .addItemInput(<minecraft:cobblestone>)
   .addItemOutput(<minecraft:gravel>)
   .build();
+
+// 地狱砖块
+recipes.remove(<minecraft:nether_brick>);
+RecipeBuilder.get("mason")
+  .setShaped([
+    [<ore:netherrack>, <tconstruct:soil>, <ore:netherrack>],
+    [<tconstruct:soil>, <ore:netherrack>, <tconstruct:soil>],
+    [<ore:netherrack>, <tconstruct:soil>, <ore:netherrack>]])
+  .addOutput(<minecraft:nether_brick> * 4)
+  .create();
