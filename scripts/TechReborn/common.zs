@@ -1,7 +1,6 @@
 import crafttweaker.item.IItemStack;
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.modularmachinery.RecipeBuilder as mRecipeBuilder;
-import moretweaker.railcraft.BlastFurnace;
 
 var refinedIron = <techreborn:ingot:19>;
 
@@ -58,8 +57,6 @@ RecipeBuilder.get("carpenter")
   .addOutput(<techreborn:treetap>)
   .create();
 
-// 精炼铁
-BlastFurnace.add(odItemMap["ingotRefinedIron"], <ore:ingotSteel>, 64 * 20, 1);
 
 // 精炼铁板
 mRecipeBuilder.newBuilder("sc_plate_refined_iron", "steam_compressor", 500, 0)

@@ -3,9 +3,6 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 import mods.jei.JEI;
-import moretweaker.railcraft.BlastFurnace;
-import moretweaker.railcraft.RockCrusher;
-import moretweaker.railcraft.RollingMachine;
 
 global getCTItemByODName as function(string)IItemStack = function(odName as string) as IItemStack {
   var itemStack = null;
@@ -32,6 +29,3 @@ global removeOreDictItemsRecipes as function(IOreDictEntry)void = function(oreNa
   }
 };
 
-RollingMachine.removeAll();
-RockCrusher.removeAll();
-BlastFurnace.removeAll();

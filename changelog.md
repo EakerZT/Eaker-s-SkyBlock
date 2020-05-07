@@ -1,3 +1,18 @@
+# 0.0.10
+
+添加
+-
+* Artisan Automation
+* Engineer's Decor
+* Immersive Petroleum
+* Mystical Agriculture
+* Mystical Agradditions
+* MystAgrad Cloche Compat
+
+移除
+-
+* *RC*的大量方块 物品
+
 # 0.0.9
 
 添加
