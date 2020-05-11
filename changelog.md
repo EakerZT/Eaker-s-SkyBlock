@@ -1,3 +1,13 @@
+# 0.0.11
+
+升级
+-
+* CyclopsCore 1.6.3 -> 1.6.4
+* Engineer's Decor 1.0.19 -> 1.0.20
+* IntegratedDynamics 1.1.5 -> 1.1.6
+* SmoothFont 2.1.1 -> 2.1.2
+* StorageDrawers 5.4.1 -> 5.4.2
+
 # 0.0.10
 
 添加
