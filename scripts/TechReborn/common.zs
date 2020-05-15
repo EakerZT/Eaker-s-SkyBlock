@@ -47,6 +47,7 @@ var removeItems = [
 
 removeAndHideItemList(removeItems);
 
+// 橡胶树苗
 recipes.remove(<techreborn:treetap>);
 RecipeBuilder.get("carpenter")
   .setShaped([
@@ -57,6 +58,12 @@ RecipeBuilder.get("carpenter")
   .addOutput(<techreborn:treetap>)
   .create();
 
+// 精炼铁
+mods.immersiveengineering.BlastFurnace.addRecipe(
+  odItemMap["ingotRefinedIron"],
+  <ore:ingotSteel>,
+  1600,
+  <immersiveengineering:material:7>);
 
 // 精炼铁板
 mRecipeBuilder.newBuilder("sc_plate_refined_iron", "steam_compressor", 500, 0)

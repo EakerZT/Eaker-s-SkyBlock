@@ -3,13 +3,6 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import mods.tconstruct.Casting;
 import mods.jei.JEI;
 
-var items = [
-] as IItemStack[];
-
-for item in items {
-    JEI.removeAndHide(item);
-}
-
 function removeItemAllRecipes(item as IItemStack) {
   for i in 0 to 17{
     recipes.remove(item.definition.makeStack(i));
