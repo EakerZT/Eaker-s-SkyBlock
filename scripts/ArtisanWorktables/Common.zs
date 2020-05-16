@@ -73,3 +73,11 @@ RecipeBuilder.get("basic")
     [oreIronPlate,oreIronPlate,oreIronPlate]])
   .addOutput(blacksmithWorktable)
   .create();
+
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<minecraft:string>, <minecraft:string>, <minecraft:string>],
+    [<minecraft:string>, <artisanworktables:workstation:5>, <minecraft:string>],
+    [<minecraft:string>, <minecraft:string>, <minecraft:string>]])
+  .addOutput(<artisanworktables:workstation>)
+  .create();

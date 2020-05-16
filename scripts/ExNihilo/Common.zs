@@ -30,7 +30,7 @@ for item in removeItems {
 
 // 筛网
 recipes.remove(<exnihilocreatio:item_mesh:1>);
-RecipeBuilder.get("basic")
+RecipeBuilder.get("tailor")
   .setShaped([
     [<minecraft:string>, <minecraft:string>, <minecraft:string>],
     [<minecraft:string>, <minecraft:string>, <minecraft:string>],

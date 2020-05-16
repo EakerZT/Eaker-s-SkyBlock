@@ -1,5 +1,72 @@
 import mods.artisanworktables.builder.RecipeBuilder;
+import crafttweaker.item.IIngredient;
 
+// 防腐木
+recipes.remove(<immersiveengineering:treated_wood>);
+recipes.remove(<immersiveengineering:treated_wood:1>);
+recipes.remove(<immersiveengineering:treated_wood:2>);
+mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood> * 8, <liquid:creosote>, <ore:plankWood> * 8, true);
+
+// 防腐木棍
+recipes.remove(<immersiveengineering:material>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankTreatedWood>]])
+  .addTool(<ore:artisansHatchet>, 4)
+  .addOutput(<immersiveengineering:material> * 4)
+  .create();
+
+// 防腐木珊栏
+recipes.remove(<immersiveengineering:wooden_decoration>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankTreatedWood>, <immersiveengineering:material>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <immersiveengineering:material>, <ore:plankTreatedWood>]])
+  .addOutput(<immersiveengineering:wooden_decoration> * 2)
+  .create();
+
+// 防腐木脚手架
+recipes.remove(<immersiveengineering:wooden_decoration:1>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankTreatedWood>, <immersiveengineering:material>, <ore:plankTreatedWood>],
+    [<immersiveengineering:material>, <immersiveengineering:material>, <immersiveengineering:material>],
+    [<ore:plankTreatedWood>, <immersiveengineering:material>, <ore:plankTreatedWood>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:wooden_decoration:1> * 4)
+  .create();
+
+// 防腐木台阶
+mods.chisel.Carving.addGroup("treated_wood_slab");
+mods.chisel.Carving.addVariation("treated_wood_slab", <immersiveengineering:treated_wood_slab>);
+mods.chisel.Carving.addVariation("treated_wood_slab", <immersiveengineering:treated_wood_slab:1>);
+mods.chisel.Carving.addVariation("treated_wood_slab", <immersiveengineering:treated_wood_slab:2>);
+recipes.remove(<immersiveengineering:treated_wood_slab>);
+recipes.remove(<immersiveengineering:treated_wood_slab:1>);
+recipes.remove(<immersiveengineering:treated_wood_slab:2>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankTreatedWood>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:treated_wood_slab> * 2)
+  .create();
+
+// 防腐木楼梯
+mods.chisel.Carving.addGroup("treated_wood_stair");
+mods.chisel.Carving.addVariation("treated_wood_stair", <immersiveengineering:treated_wood_stairs0>);
+mods.chisel.Carving.addVariation("treated_wood_stair", <immersiveengineering:treated_wood_stairs1>);
+mods.chisel.Carving.addVariation("treated_wood_stair", <immersiveengineering:treated_wood_stairs2>);
+recipes.remove(<immersiveengineering:treated_wood_stairs0>);
+recipes.remove(<immersiveengineering:treated_wood_stairs1>);
+recipes.remove(<immersiveengineering:treated_wood_stairs2>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plankTreatedWood>, null, null],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, null],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:treated_wood_stairs0> * 4)
+  .create();
 
 // 工程师锤
 recipes.remove(<immersiveengineering:tool>);
@@ -79,4 +146,256 @@ RecipeBuilder.get("engineer")
     [<techreborn:cable:5>, <techreborn:part:29>, <techreborn:cable:5>],
     [<ore:plateIron>, <minecraft:redstone>, <ore:plateIron>]])
   .addOutput(<immersiveengineering:metal_decoration0:3>)
+  .create();
+
+// 坚韧布料
+recipes.remove(<immersiveengineering:material:5>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<immersiveengineering:material:4>, <immersiveengineering:material:4>, <immersiveengineering:material:4>],
+    [<immersiveengineering:material:4>, <immersiveengineering:material:4>, <immersiveengineering:material:4>],
+    [<immersiveengineering:material>, <immersiveengineering:material:4>, <immersiveengineering:material:4>]])
+  .addTool(<ore:artisansNeedle>, 4)
+  .addOutput(<immersiveengineering:material:5>)
+  .create();
+
+// 风车叶片
+recipes.remove(<immersiveengineering:material:11>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [null, <ore:boltWood>, <ore:stickTreatedWood>],
+    [null, <ore:stickTreatedWood>, <ore:stickTreatedWood>],
+    [<ore:stickTreatedWood>, null, null]])
+  .addTool(<ore:artisansDriver>, 4)
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<immersiveengineering:material:11>)
+  .create();
+
+// 风车
+recipes.remove(<immersiveengineering:wooden_device1:1>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>],
+    [<immersiveengineering:material:11>, <ore:stickSteel>, <immersiveengineering:material:11>],
+    [<immersiveengineering:material:11>, <immersiveengineering:material:11>, <immersiveengineering:material:11>]])
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<immersiveengineering:wooden_device1:1>)
+  .create();
+
+// 水车部件
+recipes.remove(<immersiveengineering:material:10>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [null, <ore:stickTreatedWood>, null],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [null, <ore:stickTreatedWood>, null]])
+  .addTool(<ore:artisansDriver>, 4)
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<immersiveengineering:material:10>)
+  .create();
+
+// 水车
+recipes.remove(<immersiveengineering:wooden_device1>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<immersiveengineering:material:10>, <immersiveengineering:material:10>, <immersiveengineering:material:10>],
+    [<immersiveengineering:material:10>, <ore:stickSteel>, <immersiveengineering:material:10>],
+    [<immersiveengineering:material:10>, <immersiveengineering:material:10>, <immersiveengineering:material:10>]])
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<immersiveengineering:wooden_device1>)
+  .create();
+
+// 改良风车叶片
+recipes.remove(<immersiveengineering:material:12>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<immersiveengineering:material:5>, <immersiveengineering:material:5>, <immersiveengineering:material:5>],
+    [<immersiveengineering:material:5>, <immersiveengineering:material:5>, <immersiveengineering:material:5>],
+    [<immersiveengineering:material>, <immersiveengineering:material:5>, <immersiveengineering:material:5>]])
+  .addTool(<ore:artisansNeedle>, 4)
+  .addOutput(<immersiveengineering:material:12>)
+  .create();
+
+// 铜线
+recipes.remove(<immersiveengineering:material:20>);
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<ore:stickCopper>])
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<immersiveengineering:material:20>)
+  .create();
+
+// 琥珀金线
+recipes.remove(<immersiveengineering:material:21>);
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<moreplates:electrum_stick>])
+  .addTool(<ore:artisansFile>, 1)
+  .addOutput(<immersiveengineering:material:21>)
+  .create();
+
+// 铝线
+recipes.remove(<immersiveengineering:material:22>);
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<ore:stickAluminum>])
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<immersiveengineering:material:22>)
+  .create();
+
+// 钢线
+recipes.remove(<immersiveengineering:material:23>);
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<ore:stickSteel>])
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(<immersiveengineering:material:23>)
+  .create();
+
+// 低压线圈
+recipes.remove(<immersiveengineering:wirecoil>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<immersiveengineering:material:20>, null, null],
+    [null, <immersiveengineering:material>, null],
+    [null, null, <immersiveengineering:material:20>]])
+  .addOutput(<immersiveengineering:wirecoil>)
+  .create();
+
+// 中压线圈
+recipes.remove(<immersiveengineering:wirecoil:1>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<immersiveengineering:material:21>, null, null],
+    [null, <immersiveengineering:material>, null],
+    [null, null, <immersiveengineering:material:21>]])
+  .addOutput(<immersiveengineering:wirecoil:1>)
+  .create();
+
+// 高压线圈
+recipes.remove(<immersiveengineering:wirecoil:2>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<immersiveengineering:material:23>, null, null],
+    [null, <immersiveengineering:material>, null],
+    [null, null, <immersiveengineering:material:22>]])
+  .addOutput(<immersiveengineering:wirecoil:2>)
+  .create();
+
+// 麻绳线圈
+recipes.remove(<immersiveengineering:wirecoil:3>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<immersiveengineering:material:4>, null, null],
+    [null, <immersiveengineering:material>, null],
+    [null, null, <immersiveengineering:material:4>]])
+  .addOutput(<immersiveengineering:wirecoil:3>)
+  .create();
+
+// 钢线圈
+recipes.remove(<immersiveengineering:wirecoil:4>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<immersiveengineering:material:23>, null, null],
+    [null, <immersiveengineering:material>, null],
+    [null, null, <immersiveengineering:material:23>]])
+  .addOutput(<immersiveengineering:wirecoil:4>)
+  .create();
+
+// 红石线圈
+recipes.remove(<immersiveengineering:wirecoil:5>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<minecraft:redstone>, null, null],
+    [null, <immersiveengineering:material>, null],
+    [null, null, <immersiveengineering:material:22>]])
+  .addOutput(<immersiveengineering:wirecoil:5>)
+  .create();
+
+// 绝缘低压线圈
+recipes.remove(<immersiveengineering:wirecoil:6>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<immersiveengineering:material:20>, null, null],
+    [<immersiveengineering:material:5>, <immersiveengineering:material>, <immersiveengineering:material:5>],
+    [null, null, <immersiveengineering:material:20>]])
+  .addTool(<ore:artisansNeedle>, 4)
+  .addOutput(<immersiveengineering:wirecoil:6>)
+  .create();
+
+// 绝缘中压线圈
+recipes.remove(<immersiveengineering:wirecoil:6>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<immersiveengineering:material:21>, null, null],
+    [<immersiveengineering:material:5>, <immersiveengineering:material>, <immersiveengineering:material:5>],
+    [null, null, <immersiveengineering:material:21>]])
+  .addTool(<ore:artisansNeedle>, 4)
+  .addOutput(<immersiveengineering:wirecoil:7>)
+  .create();
+
+// 铜线圈
+recipes.remove(<immersiveengineering:metal_decoration0>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>],
+    [<immersiveengineering:wirecoil>, <ore:stickIron>, <immersiveengineering:wirecoil>],
+    [<immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>, <immersiveengineering:wirecoil>]])
+  .addOutput(<immersiveengineering:metal_decoration0>)
+  .create();
+
+// 琥珀金线圈
+recipes.remove(<immersiveengineering:metal_decoration0:1>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>],
+    [<immersiveengineering:wirecoil:1>, <ore:stickIron>, <immersiveengineering:wirecoil:1>],
+    [<immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>, <immersiveengineering:wirecoil:1>]])
+  .addOutput(<immersiveengineering:metal_decoration0:1>)
+  .create();
+
+// 钢线圈
+recipes.remove(<immersiveengineering:metal_decoration0:2>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>],
+    [<immersiveengineering:wirecoil:2>, <ore:stickIron>, <immersiveengineering:wirecoil:2>],
+    [<immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>, <immersiveengineering:wirecoil:2>]])
+  .addOutput(<immersiveengineering:metal_decoration0:2>)
+  .create();
+
+// 动能发电机
+recipes.remove(<immersiveengineering:metal_device1:2>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:plateIron>, <immersiveengineering:metal_decoration0>, <ore:plateIron>],
+    [<ore:plateIron>, <minecraft:redstone>, <ore:plateIron>],
+    [<ore:plateIron>, <immersiveengineering:metal_decoration0>, <ore:plateIron>]])
+  .addOutput(<immersiveengineering:metal_device1:2>)
+  .create();
+
+// 低压电容
+recipes.remove(<immersiveengineering:metal_device0>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <immersiveengineering:wirecoil>, null],
+    [<ore:plateTin>, <minecraft:redstone>, <ore:plateTin>],
+    [<ore:plateTin>, <minecraft:redstone>, <ore:plateTin>]])
+  .addOutput(<immersiveengineering:metal_device0>)
+  .create();
+
+// 中压电容
+recipes.remove(<immersiveengineering:metal_device0:1>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <immersiveengineering:wirecoil:1>, null],
+    [<ore:plateElectrum>, <immersiveengineering:metal_device0>, <ore:plateElectrum>],
+    [<ore:plateElectrum>, <immersiveengineering:metal_device0>, <ore:plateElectrum>]])
+  .addOutput(<immersiveengineering:metal_device0:1>)
+  .create();
+
+// 高压电容
+recipes.remove(<immersiveengineering:metal_device0:2>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [null, <immersiveengineering:wirecoil:2>, null],
+    [<ore:plateAluminum>, <immersiveengineering:metal_device0:1>, <ore:plateAluminum>],
+    [<ore:plateSteel>, <immersiveengineering:metal_device0:1>, <ore:plateSteel>]])
+  .addOutput(<immersiveengineering:metal_device0:2>)
   .create();

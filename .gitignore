@@ -5,7 +5,7 @@ local
 logs
 saves
 crafttweaker.log
-options.txt
+/options.txt
 usercache.json
 usernamecache.json
 .curseclient

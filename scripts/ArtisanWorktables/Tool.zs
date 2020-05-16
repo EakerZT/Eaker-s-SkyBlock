@@ -220,3 +220,23 @@ for i in <ore:artisansCutters>.items {
         }
     }
 }
+
+// 裁缝针
+JEI.removeAndHide(<artisanworktables:artisans_needle_flint>);
+for i in <ore:artisansNeedle>.items {
+    var toolId = i.definition.id;
+    for name in materialNames {
+        if( toolId in name.toLowerCase()) {
+            var oreStick = oreDict["stick"+name];
+            RecipeBuilder.get("blacksmith")
+              .setShaped([
+                [null, <minecraft:string>, null],
+                [null, oreStick, <minecraft:string>],
+                [oreStick, null, null]])
+              .addTool(<ore:artisansFile>, 4)
+              .addOutput(i.definition.makeStack(0))
+              .create();
+            break;
+        }
+    }
+}
