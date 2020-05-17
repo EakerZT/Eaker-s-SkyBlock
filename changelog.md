@@ -3,18 +3,21 @@
 添加
 -
 * Default Options
-* InWorldCrafting
+* FTB Utilities
 * Just Enough Throwing In Fluids
+* InWorldCrafting
 
 升级
 -
+* Artisan Automation 1.0.2 -> 1.0.4
+* Artisan Worktables 1.23.0 -> 1.23.1
+* CraftTweaker 4.1.20.562 -> 4.1.20.574
 * CyclopsCore 1.6.3 -> 1.6.4
 * Engineer's Decor 1.0.19 -> 1.0.20
 * IntegratedDynamics 1.1.5 -> 1.1.6
+* Nuclear Craft 2.18r -> 2.18s
 * SmoothFont 2.1.1 -> 2.1.2
 * StorageDrawers 5.4.1 -> 5.4.2
-* Artisan Automation 1.0.2 -> 1.0.3
-* CraftTweaker 4.1.20.562 -> 4.1.20.573
 
 移除
 -

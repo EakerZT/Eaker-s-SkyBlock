@@ -45,10 +45,19 @@ recipes.remove(<immersiveengineering:treated_wood_slab>);
 recipes.remove(<immersiveengineering:treated_wood_slab:1>);
 recipes.remove(<immersiveengineering:treated_wood_slab:2>);
 RecipeBuilder.get("carpenter")
-  .setShaped([
-    [<ore:plankTreatedWood>]])
+  .setShapeless([<immersiveengineering:treated_wood>])
   .addTool(<ore:artisansHandsaw>, 4)
   .addOutput(<immersiveengineering:treated_wood_slab> * 2)
+  .create();
+RecipeBuilder.get("carpenter")
+  .setShapeless([<immersiveengineering:treated_wood:1>])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:treated_wood_slab:1> * 2)
+  .create();
+RecipeBuilder.get("carpenter")
+  .setShapeless([<immersiveengineering:treated_wood:2>])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:treated_wood_slab:2> * 2)
   .create();
 
 // 防腐木楼梯
@@ -61,11 +70,27 @@ recipes.remove(<immersiveengineering:treated_wood_stairs1>);
 recipes.remove(<immersiveengineering:treated_wood_stairs2>);
 RecipeBuilder.get("carpenter")
   .setShaped([
-    [<ore:plankTreatedWood>, null, null],
-    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, null],
-    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]])
+    [<immersiveengineering:treated_wood>, null, null],
+    [<immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>, null],
+    [<immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>, <immersiveengineering:treated_wood>]])
   .addTool(<ore:artisansHandsaw>, 4)
   .addOutput(<immersiveengineering:treated_wood_stairs0> * 4)
+  .create();
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<immersiveengineering:treated_wood:1>, null, null],
+    [<immersiveengineering:treated_wood:1>, <immersiveengineering:treated_wood:1>, null],
+    [<immersiveengineering:treated_wood:1>, <immersiveengineering:treated_wood:1>, <immersiveengineering:treated_wood:1>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:treated_wood_stairs1> * 4)
+  .create();
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<immersiveengineering:treated_wood:2>, null, null],
+    [<immersiveengineering:treated_wood:2>, <immersiveengineering:treated_wood:2>, null],
+    [<immersiveengineering:treated_wood:2>, <immersiveengineering:treated_wood:2>, <immersiveengineering:treated_wood:2>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:treated_wood_stairs2> * 4)
   .create();
 
 // 工程师锤
@@ -398,4 +423,66 @@ RecipeBuilder.get("engineer")
     [<ore:plateAluminum>, <immersiveengineering:metal_device0:1>, <ore:plateAluminum>],
     [<ore:plateSteel>, <immersiveengineering:metal_device0:1>, <ore:plateSteel>]])
   .addOutput(<immersiveengineering:metal_device0:2>)
+  .create();
+
+// 钢脚手架
+recipes.remove(<immersiveengineering:metal_decoration1:1>);
+recipes.remove(<immersiveengineering:metal_decoration1:2>);
+recipes.remove(<immersiveengineering:metal_decoration1:3>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:boltSteel>, <ore:plateSteel>, <ore:boltSteel>],
+    [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>],
+    [<ore:boltSteel>, <ore:plateSteel>, <ore:boltSteel>]])
+  .addTool(<artisanworktables:artisans_driver_flint>, 4)
+  .addOutput(<immersiveengineering:metal_decoration1:1>)
+  .create();
+
+// 钢脚手架台阶
+recipes.remove(<immersiveengineering:metal_decoration1_slab:1>);
+recipes.remove(<immersiveengineering:metal_decoration1_slab:2>);
+recipes.remove(<immersiveengineering:metal_decoration1_slab:3>);
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<immersiveengineering:metal_decoration1:1>])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:metal_decoration1_slab:1>)
+  .create();
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<immersiveengineering:metal_decoration1:2>])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:metal_decoration1_slab:2>)
+  .create();
+RecipeBuilder.get("blacksmith")
+  .setShapeless([<immersiveengineering:metal_decoration1:3>])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:metal_decoration1_slab:3>)
+  .create();
+
+// 钢脚手架楼梯
+recipes.remove(<immersiveengineering:steel_scaffolding_stairs0>);
+recipes.remove(<immersiveengineering:steel_scaffolding_stairs1>);
+recipes.remove(<immersiveengineering:steel_scaffolding_stairs2>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<immersiveengineering:metal_decoration1:1>, null, null],
+    [<immersiveengineering:metal_decoration1:1>, <immersiveengineering:metal_decoration1:1>, null],
+    [<immersiveengineering:metal_decoration1:1>, <immersiveengineering:metal_decoration1:1>, <immersiveengineering:metal_decoration1:1>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:steel_scaffolding_stairs0>)
+  .create();
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<immersiveengineering:metal_decoration1:2>, null, null],
+    [<immersiveengineering:metal_decoration1:2>, <immersiveengineering:metal_decoration1:2>, null],
+    [<immersiveengineering:metal_decoration1:2>, <immersiveengineering:metal_decoration1:2>, <immersiveengineering:metal_decoration1:2>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:steel_scaffolding_stairs1>)
+  .create();
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<immersiveengineering:metal_decoration1:3>, null, null],
+    [<immersiveengineering:metal_decoration1:3>, <immersiveengineering:metal_decoration1:3>, null],
+    [<immersiveengineering:metal_decoration1:3>, <immersiveengineering:metal_decoration1:3>, <immersiveengineering:metal_decoration1:3>]])
+  .addTool(<ore:artisansHandsaw>, 4)
+  .addOutput(<immersiveengineering:steel_scaffolding_stairs2>)
   .create();
