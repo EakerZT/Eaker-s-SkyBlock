@@ -4,12 +4,12 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 global odItemMap as IItemStack[string] = {
-  oreIron: <exnihilocreatio:item_ore_iron:1>,
-  oreGold: <exnihilocreatio:item_ore_gold:1>,
-  oreCopper: <exnihilocreatio:item_ore_copper:1>,
-  oreTin: <exnihilocreatio:item_ore_tin:1>,
-  oreSilver: <exnihilocreatio:item_ore_silver:1>,
-  oreLead: <exnihilocreatio:item_ore_lead:1>,
+  // oreIron: <exnihilocreatio:item_ore_iron:1>,
+  // oreGold: <exnihilocreatio:item_ore_gold:1>,
+  // oreCopper: <exnihilocreatio:item_ore_copper:1>,
+  // oreTin: <exnihilocreatio:item_ore_tin:1>,
+  // oreSilver: <exnihilocreatio:item_ore_silver:1>,
+  // oreLead: <exnihilocreatio:item_ore_lead:1>,
 
   dustIron: <thermalfoundation:material:0>,
   dustGold: <thermalfoundation:material:1>,
