@@ -42,7 +42,7 @@ key_Toggle Freeze Effect:19:NONE
 key_Enable/Disable:0:NONE
 key_Kill Particles:0:NONE
 key_Blacklist Block:45:NONE
-key_key.ftbquests.quests:0:NONE
+key_key.ftbquests.quests:41:CONTROL
 key_key.moreoverlays.lightoverlay.desc:65:NONE
 key_key.moreoverlays.chunkbounds.desc:67:NONE
 key_oreexcavation.key.excavate:41:NONE
