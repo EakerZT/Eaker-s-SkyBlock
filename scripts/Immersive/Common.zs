@@ -1,6 +1,16 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IIngredient;
 
+// 工程师装配台
+recipes.remove(<immersiveengineering:wooden_device0:2>);
+RecipeBuilder.get("basic")
+  .setShaped([
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <artisanworktables:workstation:5>, <ore:plankTreatedWood>],
+    [<ore:plankTreatedWood>, <ore:plankTreatedWood>, <ore:plankTreatedWood>]])
+  .addOutput(<immersiveengineering:wooden_device0:2>)
+  .create();
+
 // 防腐木
 recipes.remove(<immersiveengineering:treated_wood>);
 recipes.remove(<immersiveengineering:treated_wood:1>);
@@ -345,7 +355,7 @@ RecipeBuilder.get("tailor")
   .create();
 
 // 绝缘中压线圈
-recipes.remove(<immersiveengineering:wirecoil:6>);
+recipes.remove(<immersiveengineering:wirecoil:7>);
 RecipeBuilder.get("tailor")
   .setShaped([
     [<immersiveengineering:material:21>, null, null],

@@ -194,7 +194,10 @@ RecipeBuilder.get("mason")
   .create();
 
 // 焦黑石砖
-recipes.remove(<tconstruct:seared:3>);
+for i in 0 to 11{
+  recipes.remove(<tconstruct:seared>.definition.makeStack(i));
+  furnace.remove(<tconstruct:seared>.definition.makeStack(i));
+}
 RecipeBuilder.get("mason")
   .setShaped([
     [<tconstruct:materials>, <tconstruct:materials>],
