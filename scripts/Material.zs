@@ -24,6 +24,16 @@ function addOreRecipes(materialName as string) {
       .create();
 }
 
+var alloyMaterialName = [
+  "Steel",
+] as string[];
+
+for materialName in alloyMaterialName {
+  for i in oreDict["stick" + materialName].items {
+    recipes.remove(i);
+  }
+}
+
 // addOreRecipes("Aluminium");
 // addOreRecipes("Ardite");
 // addOreRecipes("Boron");

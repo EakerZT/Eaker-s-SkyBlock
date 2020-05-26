@@ -175,12 +175,32 @@ RecipeBuilder.get("blacksmith")
 
 // 红石工程块
 recipes.remove(<immersiveengineering:metal_decoration0:3>);
-RecipeBuilder.get("engineer")
+RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:plateIron>, <minecraft:redstone>, <ore:plateIron>],
-    [<techreborn:cable:5>, <techreborn:part:29>, <techreborn:cable:5>],
+    [<ore:ingotTin>, <ore:ingotTin>, <ore:ingotTin>],
     [<ore:plateIron>, <minecraft:redstone>, <ore:plateIron>]])
   .addOutput(<immersiveengineering:metal_decoration0:3>)
+  .create();
+
+// 轻型工程块
+recipes.remove(<immersiveengineering:metal_decoration0:4>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>],
+    [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
+    [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>]])
+  .addOutput(<immersiveengineering:metal_decoration0:4>)
+  .create();
+
+// 重型工程快
+recipes.remove(<immersiveengineering:metal_decoration0:5>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<immersiveengineering:metal:38>, <immersiveengineering:material:9>, <immersiveengineering:metal:38>],
+    [<minecraft:piston>, <minecraft:piston>, <minecraft:piston>],
+    [<immersiveengineering:metal:38>, <immersiveengineering:material:9>, <immersiveengineering:metal:38>]])
+  .addOutput(<immersiveengineering:metal_decoration0:5>)
   .create();
 
 // 坚韧布料
@@ -478,7 +498,7 @@ RecipeBuilder.get("blacksmith")
     [<immersiveengineering:metal_decoration1:1>, <immersiveengineering:metal_decoration1:1>, null],
     [<immersiveengineering:metal_decoration1:1>, <immersiveengineering:metal_decoration1:1>, <immersiveengineering:metal_decoration1:1>]])
   .addTool(<ore:artisansHandsaw>, 4)
-  .addOutput(<immersiveengineering:steel_scaffolding_stairs0>)
+  .addOutput(<immersiveengineering:steel_scaffolding_stairs0> * 8)
   .create();
 RecipeBuilder.get("blacksmith")
   .setShaped([
@@ -486,7 +506,7 @@ RecipeBuilder.get("blacksmith")
     [<immersiveengineering:metal_decoration1:2>, <immersiveengineering:metal_decoration1:2>, null],
     [<immersiveengineering:metal_decoration1:2>, <immersiveengineering:metal_decoration1:2>, <immersiveengineering:metal_decoration1:2>]])
   .addTool(<ore:artisansHandsaw>, 4)
-  .addOutput(<immersiveengineering:steel_scaffolding_stairs1>)
+  .addOutput(<immersiveengineering:steel_scaffolding_stairs1> * 8)
   .create();
 RecipeBuilder.get("blacksmith")
   .setShaped([
@@ -494,5 +514,25 @@ RecipeBuilder.get("blacksmith")
     [<immersiveengineering:metal_decoration1:3>, <immersiveengineering:metal_decoration1:3>, null],
     [<immersiveengineering:metal_decoration1:3>, <immersiveengineering:metal_decoration1:3>, <immersiveengineering:metal_decoration1:3>]])
   .addTool(<ore:artisansHandsaw>, 4)
-  .addOutput(<immersiveengineering:steel_scaffolding_stairs2>)
+  .addOutput(<immersiveengineering:steel_scaffolding_stairs2> * 8)
+  .create();
+
+// 钢栅栏
+recipes.remove(<immersiveengineering:metal_decoration1>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:stickSteel>, <ore:stickSteel>, <ore:stickSteel>],
+    [<ore:ingotSteel>, <ore:stickSteel>, <ore:ingotSteel>]])
+  .addTool(<ore:artisansFile>, 1)
+  .addOutput(<immersiveengineering:metal_decoration1>)
+  .create();
+
+// 散热器模块
+recipes.remove(<immersiveengineering:metal_decoration0:7>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:plateSteel>, <ore:stickSteel>, <ore:plateSteel>],
+    [<ore:stickSteel>, <ore:scaffoldingSteel>, <ore:stickSteel>],
+    [<ore:plateSteel>, <ore:stickSteel>, <ore:plateSteel>]])
+  .addOutput(<immersiveengineering:metal_decoration0:7>)
   .create();
