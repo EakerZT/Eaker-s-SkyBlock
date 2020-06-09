@@ -8,10 +8,16 @@
 升级
 -
 * Artisan Automation 1.0.4 -> 1.0.5
-* Artisan Worktables 1.23.1 -> 1.23.2
+* Artisan Worktables 1.23.1 -> 1.23.3
 * Athenaeum  1.18.0 -> 1.18.1
-* Nuclear Craft 2.18s -> 2.18t
+* EnderCore 0.5.75 -> 0.5.76
 * FTB Quests 1.8.0.237 -> 1.8.1.239
+* ImmersiveEngineering 92 -> 98
+* ImmersiveTechnology *** -> 1.7.61
+* Nuclear Craft 2.18s -> 2.18t
+* PackagedAuto 1.0.3.12 -> 1.0.3.13
+* RebornCore 3.19.3.524 -> 3.19.4.529
+* TechReborn 2.27.2.1079 -> 2.27.3.1084
 
 调整
 -

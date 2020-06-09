@@ -4,27 +4,6 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
 global odItemMap as IItemStack[string] = {
-  oreAluminium:getJAOPCAItemByODName("oreAluminium"),
-  oreArdite:getJAOPCAItemByODName("oreArdite"),
-  oreBoron:getJAOPCAItemByODName("oreBoron"),
-  oreCobalt:getJAOPCAItemByODName("oreCobalt"),
-  oreCopper:getJAOPCAItemByODName("oreCopper"),
-  oreDraconium:getJAOPCAItemByODName("oreDraconium"),
-  oreGold:getJAOPCAItemByODName("oreGold"),
-  oreIridium:getJAOPCAItemByODName("oreIridium"),
-  oreIron:getJAOPCAItemByODName("oreIron"),
-  oreLead:getJAOPCAItemByODName("oreLead"),
-  oreLithium:getJAOPCAItemByODName("oreLithium"),
-  oreMagnesium:getJAOPCAItemByODName("oreMagnesium"),
-  oreMithril:getJAOPCAItemByODName("oreMithril"),
-  oreNickel:getJAOPCAItemByODName("oreNickel"),
-  oreOsmium:getJAOPCAItemByODName("oreOsmium"),
-  orePlatinum:getJAOPCAItemByODName("orePlatinum"),
-  oreSilver:getJAOPCAItemByODName("oreSilver"),
-  oreThorium:getJAOPCAItemByODName("oreThorium"),
-  oreTin:getJAOPCAItemByODName("oreTin"),
-  oreTungsten:getJAOPCAItemByODName("oreTungsten"),
-  oreUranium:getJAOPCAItemByODName("oreUranium"),
 
   dustIron: <thermalfoundation:material:0>,
   dustGold: <thermalfoundation:material:1>,
@@ -142,3 +121,32 @@ global odItemMap as IItemStack[string] = {
   gearEmerald : <thermalfoundation:material:27>,
   gearQuartz : <moreplates:nether_quartz_gear>
 } as IItemStack[string];
+
+var joapcaOreName = [
+  "Aluminium",
+  "Ardite",
+  "Boron",
+  "Cobalt",
+  "Copper",
+  "Draconium",
+  "Gold",
+  "Iridium",
+  "Iron",
+  "Lead",
+  "Lithium",
+  "Magnesium",
+  "Mithril",
+  "Nickel",
+  "Osmium",
+  "Platinum",
+  "Silver",
+  "Thorium",
+  "Tin",
+  "Tungsten",
+  "Uranium"
+] as string[];
+
+for i in joapcaOreName {
+  odItemMap['piece' + i] = getJAOPCAItemByODName("piece" + i);
+  odItemMap['ore' + i] = getJAOPCAItemByODName("ore" + i);
+}
