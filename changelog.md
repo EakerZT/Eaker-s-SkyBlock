@@ -13,7 +13,7 @@
 * EnderCore 0.5.75 -> 0.5.76
 * FTB Quests 1.8.0.237 -> 1.8.1.239
 * ImmersiveEngineering 92 -> 98
-* ImmersiveTechnology *** -> 1.7.61
+* ImmersiveTechnology 1.7.60 -> 1.7.61
 * Nuclear Craft 2.18s -> 2.18t
 * PackagedAuto 1.0.3.12 -> 1.0.3.13
 * RebornCore 3.19.3.524 -> 3.19.4.529
