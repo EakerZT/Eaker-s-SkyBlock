@@ -46,7 +46,7 @@ recipes.remove(<extrautils2:grocket:1>);
 RecipeBuilder.get("jeweler")
   .setShaped([
     [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:pipe>, <integrateddynamics:crystalized_menril_chunk>],
-    [<integrateddynamics:crystalized_menril_chunk>, <buildcraftfactory:tank>, <integrateddynamics:crystalized_menril_chunk>]])
+    [<integrateddynamics:crystalized_menril_chunk>, <minecraft:bucket>, <integrateddynamics:crystalized_menril_chunk>]])
   .addOutput(<extrautils2:grocket:1>)
   .create();
 
@@ -63,7 +63,7 @@ RecipeBuilder.get("jeweler")
 recipes.remove(<extrautils2:grocket:4>);
 RecipeBuilder.get("jeweler")
   .setShaped([
-    [<integrateddynamics:crystalized_menril_chunk>, <buildcraftfactory:tank>, <integrateddynamics:crystalized_menril_chunk>],
+    [<integrateddynamics:crystalized_menril_chunk>, <minecraft:bucket>, <integrateddynamics:crystalized_menril_chunk>],
     [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:pipe>, <integrateddynamics:crystalized_menril_chunk>]])
   .addOutput(<extrautils2:grocket:4>)
   .create();

@@ -47,16 +47,16 @@ var removeItems = [
 
 removeAndHideItemList(removeItems);
 
-// 橡胶树苗
-recipes.remove(<techreborn:treetap>);
-RecipeBuilder.get("carpenter")
-  .setShaped([
-    [<buildcrafttransport:pipe_wood_item>, <buildcrafttransport:pipe_wood_item>, <buildcrafttransport:pipe_wood_item>],
-    [null, <buildcrafttransport:waterproof>, <buildcrafttransport:pipe_wood_item>]])
-  .addTool(<ore:artisansHandsaw>, 4)
-  .addTool(<ore:artisansFile>, 4)
-  .addOutput(<techreborn:treetap>)
-  .create();
+// 木龙头
+// recipes.remove(<techreborn:treetap>);
+// RecipeBuilder.get("carpenter")
+//   .setShaped([
+//     [<buildcrafttransport:pipe_wood_item>, <buildcrafttransport:pipe_wood_item>, <buildcrafttransport:pipe_wood_item>],
+//     [null, <ore:materialRubber>, <buildcrafttransport:pipe_wood_item>]])
+//   .addTool(<ore:artisansHandsaw>, 4)
+//   .addTool(<ore:artisansFile>, 4)
+//   .addOutput(<techreborn:treetap>)
+//   .create();
 
 // 精炼铁
 mods.immersiveengineering.BlastFurnace.addRecipe(

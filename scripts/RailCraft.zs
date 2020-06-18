@@ -10,10 +10,9 @@ import crafttweaker.item.IItemStack;
 recipes.remove(<railcraft:tank_water>);
 RecipeBuilder.get("carpenter")
   .setShaped([
-    [<ore:boltWood>, <ore:plateWood>, <ore:boltWood>],
-    [<ore:plateWood>, <ore:slimeball>, <ore:plateWood>],
-    [<ore:boltWood>, <ore:plateWood>, <ore:boltWood>]])
-  .addTool(<ore:artisansDriver>, 4)
+    [<techreborn:plates:3>, <ore:plateWood>, <techreborn:plates:3>],
+    [<ore:plateWood>, <ore:materialRubber>, <ore:plateWood>],
+    [<techreborn:plates:3>, <ore:plateWood>, <techreborn:plates:3>]])
   .addOutput(<railcraft:tank_water>)
   .create();
 
@@ -33,7 +32,7 @@ recipes.remove(<railcraft:boiler_firebox_fluid>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:boltIron>, <ore:plateIron>, <ore:boltIron>],
-    [<ore:plateIron>, <buildcraftfactory:tank>, <ore:plateIron>],
+    [<ore:plateIron>, <minecraft:bucket>, <ore:plateIron>],
     [<ore:boltIron>, <ore:plateIron>, <ore:boltIron>]])
   .addTool(<ore:artisansDriver>, 4)
   .addOutput(<railcraft:boiler_firebox_fluid>)

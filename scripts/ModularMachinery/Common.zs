@@ -60,7 +60,7 @@ recipes.remove(<modularmachinery:blockfluidinputhatch>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:plateBronze>, <minecraft:hopper>, <ore:plateBronze>],
-    [<ore:plateBronze>, <buildcraftfactory:tank>, <ore:plateBronze>],
+    [<ore:plateBronze>, <minecraft:bucket>, <ore:plateBronze>],
     [<ore:plateBronze>, <ore:plateBronze>, <ore:plateBronze>]])
   .addTool(<ore:artisansHammer>, 4)
   .addOutput(<modularmachinery:blockfluidinputhatch>)
@@ -71,7 +71,7 @@ recipes.remove(<modularmachinery:blockfluidoutputhatch>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:plateBronze>, <ore:plaplateBronzete>, <ore:plateBronze>],
-    [<ore:plateBronze>, <buildcraftfactory:tank>, <ore:plateBronze>],
+    [<ore:plateBronze>, <minecraft:bucket>, <ore:plateBronze>],
     [<ore:plateBronze>, <minecraft:hopper>, <ore:plateBronze>]])
   .addTool(<ore:artisansHammer>, 4)
   .addOutput(<modularmachinery:blockfluidoutputhatch>)

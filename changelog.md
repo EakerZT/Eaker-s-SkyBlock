@@ -5,23 +5,29 @@
 -
 * JAOPCA
 
+移除
+-
+* 移除所有**模块化机械**
+* 移除*无中生有*中所有**矿物**
+* *BuildCraft*
+
 升级
 -
 * Artisan Automation 1.0.4 -> 1.0.5
-* Artisan Worktables 1.23.1 -> 1.23.3
+* Artisan Worktables 1.23.1 -> 1.23.4
 * Athenaeum  1.18.0 -> 1.18.1
 * EnderCore 0.5.75 -> 0.5.76
 * FTB Quests 1.8.0.237 -> 1.8.1.239
 * ImmersiveEngineering 92 -> 98
-* ImmersiveTechnology 1.7.60 -> 1.7.61
+* ImmersiveTechnology 1.7.60 -> 1.7.62
 * Nuclear Craft 2.18s -> 2.18t
-* PackagedAuto 1.0.3.12 -> 1.0.3.13
+* PackagedAuto 1.0.3.12 -> 1.0.3.14
 * RebornCore 3.19.3.524 -> 3.19.4.529
 * TechReborn 2.27.2.1079 -> 2.27.3.1084
 
 调整
 -
-* 用 *JAOPCA* 中的 *矿物* 代替 *无中生有* 中的 *矿物*
+* 用 *JAOPCA* 中的 **矿物** 代替 *无中生有* 中的 **矿物**
 
 # 0.0.11
 
