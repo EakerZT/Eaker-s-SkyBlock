@@ -14,8 +14,10 @@ for item in removeItems {
 // 空白模具
 recipes.remove(<tconstruct:pattern>);
 RecipeBuilder.get("carpenter")
-  .setShapeless([<ore:plateWood>])
-  .addTool(<ore:artisansHandsaw>, 4)
+  .setShaped([
+    [<minecraft:paper>],
+    [<techreborn:plates:3>],
+    [<minecraft:paper>]])
   .addOutput(<tconstruct:pattern> * 2)
   .create();
 

@@ -88,3 +88,13 @@ RecipeBuilder.get("blacksmith")
     [<minecraft:hopper>]])
   .addOutput(<bonsaitrees:bonsaipot:1>)
   .create();
+
+// 锻造锤
+recipes.remove(<practicallogistics2:hammer>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>],
+    [<ore:stickWood>, null, <ore:stickWood>],
+    [<ore:stickWood>, <ore:cobblestone>, <ore:stickWood>]])
+  .addOutput(<practicallogistics2:hammer>)
+  .create();

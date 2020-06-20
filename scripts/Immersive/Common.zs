@@ -529,10 +529,105 @@ RecipeBuilder.get("blacksmith")
 
 // 散热器模块
 recipes.remove(<immersiveengineering:metal_decoration0:7>);
-RecipeBuilder.get("blacksmith")
+RecipeBuilder.get("engineer")
   .setShaped([
     [<ore:plateSteel>, <ore:stickSteel>, <ore:plateSteel>],
     [<ore:stickSteel>, <ore:scaffoldingSteel>, <ore:stickSteel>],
     [<ore:plateSteel>, <ore:stickSteel>, <ore:plateSteel>]])
   .addOutput(<immersiveengineering:metal_decoration0:7>)
+  .create();
+
+// 帘子
+recipes.remove(<immersiveengineering:cloth_device:2>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<ore:stickIron>],
+    [<immersiveengineering:material:5>]])
+  .addTool(<ore:artisansNeedle>, 1)
+  .addOutput(<immersiveengineering:cloth_device:2>)
+  .create();
+
+// 传送带
+recipes.remove(<immersiveengineering:conveyor>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<ore:stickIron>, <immersiveengineering:material:5>, <ore:stickIron>]])
+  .addTool(<ore:artisansNeedle>, 4)
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}))
+  .create();
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"})]])
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}))
+  .create();
+
+// 忽略红石传送带
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})]])
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"}))
+  .create();
+
+// 垂直传送带
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:stickIron>],
+    [<immersiveengineering:material:5>],
+    [<ore:stickIron>]])
+  .addTool(<ore:artisansNeedle>, 4)
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:vertical"}))
+  .create();
+
+// 抽取传送带
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:material:8>, <immersiveengineering:cloth_device:2>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})]])
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extract"}))
+  .create();
+
+// 卸货传送带
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"})],
+    [<minecraft:hopper>]])
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:dropper"}))
+  .create();
+
+// 分流传送带
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}), <immersiveengineering:material:1>, <immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})]])
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:uncontrolled"}))
+  .create();
+
+// 绝缘传送带
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:scaffoldingSteel>],
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"})]])
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:covered"}))
+  .create();
+
+// 绝缘卸货传送带
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:scaffoldingSteel>],
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:dropper"})]])
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:droppercovered"}))
+  .create();
+
+// 绝缘垂直传送带
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:scaffoldingSteel>],
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:vertical"})]])
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:verticalcovered"}))
+  .create();
+
+// 绝缘抽取传送带
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<ore:scaffoldingSteel>],
+    [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extract"})]])
+  .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extractcovered"}))
   .create();

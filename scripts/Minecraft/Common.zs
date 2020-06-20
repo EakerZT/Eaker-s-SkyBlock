@@ -1,5 +1,6 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.modularmachinery.RecipeBuilder as mRecipeBuilder;
+import mods.logistics.hammer;
 
 var flint = <minecraft:flint>;
 var plankWood = <ore:plankWood>;
@@ -188,3 +189,8 @@ RecipeBuilder.get("mason")
     [<ore:netherrack>, <tconstruct:soil>, <ore:netherrack>]])
   .addOutput(<minecraft:nether_brick> * 4)
   .create();
+
+
+// <纸
+recipes.remove(<minecraft:paper>);
+hammer.addRecipe(<minecraft:reeds> * 3, <minecraft:paper>);

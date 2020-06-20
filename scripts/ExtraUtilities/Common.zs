@@ -23,7 +23,7 @@ RecipeBuilder.get("mason")
 
 // 传输节点
 recipes.remove(<extrautils2:pipe>);
-RecipeBuilder.get("jeweler")
+RecipeBuilder.get("engineer")
   .setShaped([
     [<integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>, <integrateddynamics:crystalized_menril_chunk>],
     [<enderio:item_material:4>, null, <enderio:item_material:4>],
@@ -34,25 +34,34 @@ RecipeBuilder.get("jeweler")
 
 // 物品传输节点
 recipes.remove(<extrautils2:grocket>);
-RecipeBuilder.get("jeweler")
+RecipeBuilder.get("engineer")
   .setShaped([
     [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:pipe>, <integrateddynamics:crystalized_menril_chunk>],
     [<integrateddynamics:crystalized_menril_chunk>, <minecraft:chest>, <integrateddynamics:crystalized_menril_chunk>]])
   .addOutput(<extrautils2:grocket>)
   .create();
 
-// 流体传输节点
+// 抽取过滤节点
 recipes.remove(<extrautils2:grocket:1>);
-RecipeBuilder.get("jeweler")
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:filter>, <integrateddynamics:crystalized_menril_chunk>],
+    [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:pipe>, <integrateddynamics:crystalized_menril_chunk>]])
+  .addOutput(<extrautils2:grocket:1>)
+  .create();
+
+// 流体传输节点
+recipes.remove(<extrautils2:grocket:2>);
+RecipeBuilder.get("engineer")
   .setShaped([
     [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:pipe>, <integrateddynamics:crystalized_menril_chunk>],
     [<integrateddynamics:crystalized_menril_chunk>, <minecraft:bucket>, <integrateddynamics:crystalized_menril_chunk>]])
-  .addOutput(<extrautils2:grocket:1>)
+  .addOutput(<extrautils2:grocket:2>)
   .create();
 
 // 物品抽取节点
 recipes.remove(<extrautils2:grocket:3>);
-RecipeBuilder.get("jeweler")
+RecipeBuilder.get("engineer")
   .setShaped([
     [<integrateddynamics:crystalized_menril_chunk>, <minecraft:chest>, <integrateddynamics:crystalized_menril_chunk>],
     [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:pipe>, <integrateddynamics:crystalized_menril_chunk>]])
@@ -61,10 +70,67 @@ RecipeBuilder.get("jeweler")
 
 // 流体抽取节点
 recipes.remove(<extrautils2:grocket:4>);
-RecipeBuilder.get("jeweler")
+RecipeBuilder.get("engineer")
   .setShaped([
     [<integrateddynamics:crystalized_menril_chunk>, <minecraft:bucket>, <integrateddynamics:crystalized_menril_chunk>],
     [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:pipe>, <integrateddynamics:crystalized_menril_chunk>]])
   .addOutput(<extrautils2:grocket:4>)
   .create();
-  
+
+// 过滤传输节点
+recipes.remove(<extrautils2:grocket:5>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<extrautils2:filter>],
+    [<extrautils2:pipe>]])
+  .addOutput(<extrautils2:grocket:5>)
+  .create();
+
+// 能量传输节点
+recipes.remove(<extrautils2:grocket:6>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:pipe>, <integrateddynamics:crystalized_menril_chunk>],
+    [<integrateddynamics:crystalized_menril_chunk>, <minecraft:redstone>, <integrateddynamics:crystalized_menril_chunk>]])
+  .addOutput(<extrautils2:grocket:6>)
+  .create();
+
+// 平面物品传输节点
+recipes.remove(<extrautils2:flattransfernode>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<extrautils2:grocket>]])
+  .addTool(<artisanworktables:artisans_hammer_iron>, 4)
+  .addOutput(<extrautils2:flattransfernode>)
+  .create();
+
+// 平面流体传输节点
+recipes.remove(<extrautils2:flattransfernode:1>);
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<extrautils2:grocket:2>]])
+  .addTool(<ore:artisansHammer>, 4)
+  .addOutput(<extrautils2:flattransfernode:1>)
+  .create();
+
+// 物品过滤器
+recipes.remove(<extrautils2:filter>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [null, <ore:stickWood>, null],
+    [<ore:stickWood>, <exnihilocreatio:item_mesh:1>, <ore:stickWood>],
+    [null, <ore:stickWood>, null]])
+  .addTool(<ore:artisansNeedle>, 4)
+  .addOutput(<extrautils2:filter>)
+  .create();
+
+// 流体过滤器
+recipes.remove(<extrautils2:filterfluids>);
+RecipeBuilder.get("tailor")
+  .setShaped([
+    [<ore:stickWood>, null, <ore:stickWood>],
+    [null, <exnihilocreatio:item_mesh:1>, null],
+    [<ore:stickWood>, null, <ore:stickWood>]])
+  .addTool(<ore:artisansNeedle>, 4)
+  .addOutput(<extrautils2:filterfluids>)
+  .create();
