@@ -10,9 +10,9 @@ import crafttweaker.item.IItemStack;
 recipes.remove(<railcraft:tank_water>);
 RecipeBuilder.get("carpenter")
   .setShaped([
-    [<techreborn:plates:3>, <ore:plateWood>, <techreborn:plates:3>],
+    [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>],
     [<ore:plateWood>, <ore:materialRubber>, <ore:plateWood>],
-    [<techreborn:plates:3>, <ore:plateWood>, <techreborn:plates:3>]])
+    [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>]])
   .addOutput(<railcraft:tank_water>)
   .create();
 

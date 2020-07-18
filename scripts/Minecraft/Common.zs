@@ -42,13 +42,7 @@ RecipeBuilder.get("mason")
 
 // 箱子
 recipes.remove(<minecraft:chest>);
-RecipeBuilder.get("carpenter")
-  .setShaped([
-    [<techreborn:plates:3>, <techreborn:plates:3>, <techreborn:plates:3>],
-    [<techreborn:plates:3>, null, <techreborn:plates:3>],
-    [<techreborn:plates:3>, <techreborn:plates:3>, <techreborn:plates:3>]])
-  .addOutput(<minecraft:chest>)
-  .create();
+
 
 // 活塞
 recipes.remove(<minecraft:piston>);

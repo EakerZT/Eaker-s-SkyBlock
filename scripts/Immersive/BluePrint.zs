@@ -24,10 +24,3 @@ RecipeBuilder.get("engineer")
 
 // 螺丝冲压模具
 Blueprint.addRecipe("molds", <contenttweaker:mold_bolt>, [<ore:plateSteel>, <ore:plateSteel>,<ore:plateSteel>,<ore:plateSteel>,<ore:plateSteel>, <immersiveengineering:tool:1>]);
-
-// 真空管
-Blueprint.removeRecipe(<immersiveengineering:material:26>);
-Blueprint.addRecipe("components", <immersiveengineering:material:26>, [<techreborn:cable>, <ore:blockGlass>,<minecraft:redstone>]);
-
-//电路板
-Blueprint.addRecipe("components", <techreborn:part:40>, [<techreborn:plates:35>, <techreborn:cable>,<immersiveengineering:material:26>]);

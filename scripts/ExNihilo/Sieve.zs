@@ -31,7 +31,6 @@ Sieve.addStringMeshRecipe(<minecraft:sand>, <minecraft:quartz>, 0.1);
 Sieve.addStringMeshRecipe(<ore:dust>, <minecraft:redstone>, 0.5);
 Sieve.addStringMeshRecipe(<ore:dust>, <minecraft:glowstone_dust>, 0.5);
 
-Sieve.addStringMeshRecipe(<ore:treeLeaves>, <techreborn:rubber_sapling>, 0.05);
 Sieve.addStringMeshRecipe(<ore:treeLeaves>, <integrateddynamics:menril_sapling>, 0.05);
 Sieve.addStringMeshRecipe(<ore:treeLeaves>, <tconstruct:slime_sapling>, 0.05);
 Sieve.addStringMeshRecipe(<ore:treeLeaves>, <tconstruct:slime_sapling:1>, 0.05);

@@ -1,0 +1,30 @@
+{
+	x: -25.5d,
+	y: -7.0d,
+	shape: "gear",
+	dependencies: [
+		"5bd14e49",
+		"fd686233"
+	],
+	tasks: [{
+		uid: "53160f74",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_axle_stone"
+		}]
+	},
+	{
+		uid: "9911dfa5",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_waterwheel"
+		}]
+	},
+	{
+		uid: "3efe07ec",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_auto_sifter"
+		}]
+	}]
+}

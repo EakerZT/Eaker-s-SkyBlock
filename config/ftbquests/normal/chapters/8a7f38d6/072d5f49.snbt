@@ -1,0 +1,29 @@
+{
+	x: -33.5d,
+	y: -5.0d,
+	shape: "square",
+	dependencies: [
+		"b9078c04"
+	],
+	tasks: [{
+		uid: "0c673c2c",
+		type: "item",
+		items: [{
+			item: "tcomplement:materials"
+		}]
+	},
+	{
+		uid: "4fbc6de8",
+		type: "item",
+		items: [{
+			item: "tcomplement:cast"
+		}]
+	},
+	{
+		uid: "a5a1bcc2",
+		type: "item",
+		items: [{
+			item: "minecraft:bucket"
+		}]
+	}]
+}

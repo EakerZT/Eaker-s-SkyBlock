@@ -1,0 +1,26 @@
+{
+	x: -39.5d,
+	y: -9.0d,
+	shape: "circle",
+	dependencies: [
+		"89438650"
+	],
+	tasks: [{
+		uid: "6474156e",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration"
+		}],
+		count: 27L
+	}],
+	rewards: [{
+		uid: "ea79373d",
+		type: "item",
+		item: {
+			id: "immersivepetroleum:schematic",
+			tag: {
+				multiblock: "IE:CokeOven"
+			}
+		}
+	}]
+}

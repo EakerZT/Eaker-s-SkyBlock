@@ -1,0 +1,72 @@
+{
+	x: -21.5d,
+	y: -17.0d,
+	dependencies: [
+		"9107f869"
+	],
+	tasks: [{
+		uid: "daa79a4a",
+		type: "item",
+		items: [{
+			item: "tconstruct:pattern"
+		}]
+	},
+	{
+		uid: "86f00aba",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "minecraft:planks",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 1s
+		}]
+	},
+	{
+		uid: "8ecd84cf",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 4"
+		}]
+	},
+	{
+		uid: "233b4569",
+		type: "item",
+		items: [{
+			id: "tconstruct:tooltables",
+			tag: {
+				textureBlock: {
+					id: "minecraft:log",
+					Count: 1b,
+					Damage: 0s
+				}
+			},
+			Damage: 2s
+		}]
+	},
+	{
+		uid: "a0ffa8c0",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 5"
+		}]
+	},
+	{
+		uid: "7ff1c24e",
+		type: "item",
+		items: [{
+			item: "tconstruct:tooltables 1 3"
+		}]
+	},
+	{
+		uid: "7dcb97bb",
+		type: "item",
+		items: [{
+			item: "conarm:armorstation"
+		}]
+	}]
+}

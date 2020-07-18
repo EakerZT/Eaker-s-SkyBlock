@@ -1,0 +1,36 @@
+{
+	x: -29.5d,
+	y: -15.0d,
+	dependencies: [
+		"73051cad",
+		"d5d24bf5"
+	],
+	tasks: [{
+		uid: "42fb2563",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_crucible"
+		}]
+	},
+	{
+		uid: "b017b09e",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_crucible 1 1"
+		}]
+	},
+	{
+		uid: "9ff46a6d",
+		type: "item",
+		items: [{
+			item: "ceramics:unfired_clay"
+		}]
+	},
+	{
+		uid: "5bee6dd2",
+		type: "item",
+		items: [{
+			item: "ceramics:clay_bucket"
+		}]
+	}]
+}

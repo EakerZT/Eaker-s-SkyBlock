@@ -1,0 +1,21 @@
+{
+	x: -31.5d,
+	y: -7.0d,
+	dependencies: [
+		"0587a5e7"
+	],
+	tasks: [{
+		uid: "d8aea27a",
+		type: "item",
+		items: [{
+			item: "tconstruct:clear_glass"
+		}]
+	},
+	{
+		uid: "3d626d1c",
+		type: "item",
+		items: [{
+			item: "minecraft:glass_pane"
+		}]
+	}]
+}

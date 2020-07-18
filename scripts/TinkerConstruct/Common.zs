@@ -16,7 +16,7 @@ recipes.remove(<tconstruct:pattern>);
 RecipeBuilder.get("carpenter")
   .setShaped([
     [<minecraft:paper>],
-    [<techreborn:plates:3>],
+    [<ore:plateWood>],
     [<minecraft:paper>]])
   .addOutput(<tconstruct:pattern> * 2)
   .create();

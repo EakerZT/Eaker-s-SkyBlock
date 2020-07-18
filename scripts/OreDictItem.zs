@@ -30,9 +30,8 @@ global odItemMap as IItemStack[string] = {
   ingotSignalum : <thermalfoundation:material:165>,
   ingotLumium : <thermalfoundation:material:166>,
   ingotEnderium : <thermalfoundation:material:167>,
-  ingotRefinedIron : <techreborn:ingot:19>,
 
-  plateWood : <techreborn:plates:3>,
+  plateWood : getCTItemByODName("plateWood"),
   plateStone : getCTItemByODName("plateStone"),
   plateQuartz : <moreplates:nether_quartz_plate>,
   plateIron : <thermalfoundation:material:32>,
@@ -53,7 +52,6 @@ global odItemMap as IItemStack[string] = {
   plateSignalum : <thermalfoundation:material:357>,
   plateLumium : <thermalfoundation:material:358>,
   plateEnderium : <thermalfoundation:material:359>,
-  plateRefinedIron : <techreborn:plates:35>,
 
   boltWood : getCTItemByODName("boltWood"),
   boltStone : getCTItemByODName("boltStone"),

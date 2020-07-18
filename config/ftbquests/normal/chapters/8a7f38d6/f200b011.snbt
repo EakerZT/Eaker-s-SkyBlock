@@ -1,0 +1,30 @@
+{
+	x: -31.5d,
+	y: -19.0d,
+	dependencies: [
+		"3d66ba70"
+	],
+	tasks: [{
+		uid: "bd7616ff",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:crook_wood"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "0152c61c",
+		type: "item",
+		items: [{
+			item: "minecraft:string"
+		}]
+	},
+	{
+		uid: "d1c8aa4a",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:item_material 1 2"
+		}]
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: -33.5d,
+	y: -21.0d,
+	shape: "square",
+	dependencies: [
+		"3d66ba70"
+	],
+	hide: true,
+	tasks: [{
+		uid: "6d784680",
+		type: "item",
+		items: [{
+			item: "tp:wooden_shears"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,57 @@
+{
+	x: -7.5d,
+	y: -5.5d,
+	dependencies: [
+		"4f78813e"
+	],
+	tasks: [{
+		uid: "3692d2a4",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 2L
+	},
+	{
+		uid: "d1edefaf",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "c2ad79b8",
+		type: "item",
+		items: [{
+			item: "minecraft:piston"
+		}]
+	},
+	{
+		uid: "1b4899e8",
+		type: "item",
+		items: [{
+			id: "immersiveengineering:conveyor",
+			tag: {
+				conveyorType: "immersiveengineering:conveyor"
+			}
+		}],
+		count: 2L
+	},
+	{
+		uid: "cb36cdb0",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "e39c7756",
+		type: "item",
+		item: {
+			id: "immersivepetroleum:schematic",
+			tag: {
+				multiblock: "IE:MetalPress"
+			}
+		}
+	}]
+}

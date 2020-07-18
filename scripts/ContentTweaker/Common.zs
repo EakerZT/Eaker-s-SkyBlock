@@ -20,7 +20,7 @@ RecipeBuilder.get("carpenter")
 RecipeBuilder.get("carpenter")
   .setShaped([
     [null, <minecraft:stick>, null],
-    [<minecraft:stick>, <techreborn:plates:3>, <minecraft:stick>],
+    [<minecraft:stick>, null, <minecraft:stick>],
     [null, <minecraft:stick>, null]])
   .addTool(<ore:artisansFile>, 4)
   .addOutput(odItemMap['gearWood'])
@@ -47,49 +47,6 @@ var materialNames = [
     "Enderium",
 ] as string[];
 
-for name in materialNames {
-  var oreIngot = oreDict["ingot"+name];
-  var orePlate = oreDict["plate"+name];
-  var orePlateItem = odItemMap["plate"+name];
-  var oreStick = oreDict["stick"+name];
-  var oreStickItem = odItemMap["stick"+name];
-  var oreBolt = oreDict["bolt"+name];
-  var oreBoltItem = odItemMap["bolt"+name];
-  var oreGear = oreDict["gear"+name];
-  var oreGearItem = odItemMap["gear"+name];
-  // 板
-  RecipeBuilder.get("blacksmith")
-    .setShaped([[oreIngot],[oreIngot]])
-    .addTool(<ore:artisansHammer>, 4)
-    .addOutput(orePlateItem)
-    .create();
-
-  // 棒
-  RecipeBuilder.get("blacksmith")
-    .setShapeless([oreIngot])
-    .addTool(<ore:artisansFile>, 4)
-    .addOutput(oreStickItem)
-    .create();
-
-  // 螺丝
-  RecipeBuilder.get("blacksmith")
-    .setShapeless([oreStick])
-    .addTool(<ore:artisansHandsaw>, 4)
-    .addTool(<ore:artisansFile>, 4)
-    .addOutput(oreBoltItem * 2)
-    .create();
-
-  // 齿轮
-  RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [null, oreStick, null],
-    [oreStick, orePlate, oreStick],
-    [null, oreStick, null]])
-  .addTool(<ore:artisansFile>, 4)
-  .addTool(<ore:artisansHammer>, 4)
-  .addOutput(oreGearItem)
-  .create();
-}
 // 石螺丝
 RecipeBuilder.get("mason")
   .setShapeless([<ore:stickStone>])

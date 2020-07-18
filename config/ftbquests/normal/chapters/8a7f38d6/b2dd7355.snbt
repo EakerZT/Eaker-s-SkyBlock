@@ -1,0 +1,19 @@
+{
+	x: -27.5d,
+	y: -15.0d,
+	dependencies: [
+		"8b0bbd2d"
+	],
+	tasks: [{
+		uid: "b06450d2",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					bucket_cap: {}
+				}
+			},
+			id: "vefluids:vebucket"
+		}]
+	}]
+}

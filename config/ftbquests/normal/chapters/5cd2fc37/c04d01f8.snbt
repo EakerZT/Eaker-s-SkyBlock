@@ -1,0 +1,11 @@
+{
+	x: -17.0d,
+	y: -7.5d,
+	tasks: [{
+		uid: "ae432e95",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 128"
+		}]
+	}]
+}

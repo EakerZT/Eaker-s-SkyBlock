@@ -1,0 +1,51 @@
+{
+	x: -27.5d,
+	y: -17.0d,
+	dependencies: [
+		"e4916885",
+		"ed43be62"
+	],
+	tasks: [{
+		uid: "708fa3d9",
+		type: "item",
+		items: [{
+			item: "artisanworktables:artisans_hatchet_flint"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "61c5eff5",
+		type: "item",
+		items: [{
+			item: "artisanworktables:artisans_handsaw_flint"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "72bc4825",
+		type: "item",
+		items: [{
+			item: "artisanworktables:artisans_file_flint"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7b69731a",
+		type: "item",
+		items: [{
+			item: "artisanworktables:artisans_driver_flint"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ac3f4df7",
+		type: "item",
+		items: [{
+			item: "minecraft:flint"
+		}]
+	}]
+}

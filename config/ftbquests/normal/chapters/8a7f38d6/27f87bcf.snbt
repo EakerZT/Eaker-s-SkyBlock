@@ -1,0 +1,28 @@
+{
+	x: -21.5d,
+	y: -21.0d,
+	shape: "square",
+	dependencies: [
+		"8a4ec525"
+	],
+	tasks: [{
+		uid: "3e6b3c98",
+		type: "item",
+		items: [{
+			id: "exnihilocreatio:crook_tconstruct",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "9d93bc84",
+		type: "item",
+		items: [{
+			id: "tcomplement:sledge_hammer",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

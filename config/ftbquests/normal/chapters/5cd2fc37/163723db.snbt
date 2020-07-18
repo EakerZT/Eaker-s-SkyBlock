@@ -1,0 +1,22 @@
+{
+	x: -5.0d,
+	y: -9.5d,
+	tasks: [{
+		uid: "6a2c411f",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:stone_decoration 1 1"
+		}],
+		count: 27L
+	}],
+	rewards: [{
+		uid: "4f446529",
+		type: "item",
+		item: {
+			id: "immersivepetroleum:schematic",
+			tag: {
+				multiblock: "IE:BlastFurnace"
+			}
+		}
+	}]
+}

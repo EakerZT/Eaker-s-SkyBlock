@@ -1,0 +1,21 @@
+{
+	x: -29.5d,
+	y: -7.0d,
+	dependencies: [
+		"0587a5e7"
+	],
+	tasks: [{
+		uid: "db6a4599",
+		type: "item",
+		items: [{
+			item: "thermalfoundation:material 1 23"
+		}]
+	},
+	{
+		uid: "1f650ab2",
+		type: "item",
+		items: [{
+			item: "tconstruct:cast_custom 1 4"
+		}]
+	}]
+}

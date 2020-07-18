@@ -1,0 +1,28 @@
+{
+	x: -17.5d,
+	y: -17.0d,
+	shape: "square",
+	dependencies: [
+		"ddd5b399"
+	],
+	tasks: [{
+		uid: "afacffcf",
+		type: "item",
+		items: [{
+			id: "tconstruct:hatchet",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "31098f22",
+		type: "item",
+		items: [{
+			id: "tconstruct:pickaxe",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

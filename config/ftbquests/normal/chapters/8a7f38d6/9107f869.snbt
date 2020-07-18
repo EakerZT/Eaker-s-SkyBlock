@@ -1,0 +1,7 @@
+{
+	x: -23.5d,
+	y: -17.0d,
+	dependencies: [
+		"8b0bbd2d"
+	]
+}

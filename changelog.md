@@ -1,16 +1,37 @@
 # 0.0.13
 
+添加
+-
+* Advanced Rocketry 229
+
+移除
+-
+* Tech Reborn
+* Reborn Core
+
 升级
 -
+* CarryOn 1.12.3 -> 1.12.3.15
 * Construct's Armory 1.2.5.4 -> 1.2.5.9
-* EnderIO 5.1.55 -> 5.2.56
-* EndrIO endergy 5.1.55 -> 5.2.56
-* Nuclear Craft 2.18t -> 2.18u
+* EnderIO 5.1.55 -> 5.2.59
+* EndrIO endergy 5.1.55 -> 5.2.59
+* FTBLib 5.4.7.0 -> 5.4.7.2
+* FTB Quests 1.8.1.239 -> 1.9.0.10
+* FTB Utilities 5.4.0.124 -> 5.4.1.129
+* Immersive Technology 1.7.62 -> 1.7.68
+* JEI 4.15.0.291 -> 4.15.0.296
+* Nuclear Craft 2.18t -> 2.18v
+* Tweakers Construct -> 1.5.3
 
 配方添加
 -
 * *EU2* 中的 **节点**
 * *沉浸工程* 中的 **传送带**
+
+配方移除
+-
+* 移除 *金属*的*棍* *棒* *板* *齿轮* *螺丝* 的合成配方
+* 移除 *更多板* 中的 合成配方
 
 # 0.0.12
 

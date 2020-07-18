@@ -1,0 +1,18 @@
+{
+	x: -19.5d,
+	y: -21.0d,
+	shape: "square",
+	dependencies: [
+		"3bbfa30a"
+	],
+	tasks: [{
+		uid: "a587a8bd",
+		type: "item",
+		items: [{
+			id: "tcomplement:chisel",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

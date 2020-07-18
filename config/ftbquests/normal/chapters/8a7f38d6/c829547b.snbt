@@ -1,0 +1,21 @@
+{
+	x: -31.5d,
+	y: -11.0d,
+	dependencies: [
+		"73051cad"
+	],
+	tasks: [{
+		uid: "ecfce0aa",
+		type: "item",
+		items: [{
+			item: "tconstruct:soil"
+		}]
+	},
+	{
+		uid: "93367c5a",
+		type: "item",
+		items: [{
+			item: "tconstruct:materials"
+		}]
+	}]
+}

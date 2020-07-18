@@ -1,0 +1,16 @@
+{
+	x: -21.5d,
+	y: -15.0d,
+	shape: "square",
+	dependencies: [
+		"9107f869"
+	],
+	tasks: [{
+		uid: "fb985d04",
+		type: "item",
+		items: [{
+			item: "railcraft:tank_water"
+		}],
+		count: 26L
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: -11.0d,
+	y: -9.5d,
+	dependencies: [
+		"4d4e4e30"
+	],
+	tasks: [{
+		uid: "7e9268cd",
+		type: "item",
+		items: [{
+			item: "railcraft:boiler_tank_pressure_low"
+		}]
+	},
+	{
+		uid: "631b39ee",
+		type: "item",
+		items: [{
+			item: "railcraft:boiler_firebox_solid"
+		}]
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	x: -9.5d,
+	y: -5.5d,
+	tasks: [{
+		uid: "0a9c453e",
+		type: "item",
+		items: [{
+			item: "railcraft:tank_steel_wall"
+		}]
+	},
+	{
+		uid: "38903254",
+		type: "item",
+		items: [{
+			item: "railcraft:tank_steel_valve"
+		}]
+	},
+	{
+		uid: "85ac18ac",
+		type: "item",
+		items: [{
+			item: "railcraft:tank_steel_gauge"
+		}]
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	x: -19.5d,
+	y: -19.0d,
+	dependencies: [
+		"dd002328"
+	],
+	tasks: [{
+		uid: "248ad228",
+		type: "item",
+		items: [{
+			id: "tconstruct:pattern",
+			tag: {
+				PartType: "tconstruct:tool_rod"
+			}
+		}]
+	},
+	{
+		uid: "52ea21e1",
+		type: "item",
+		items: [{
+			id: "tconstruct:pattern",
+			tag: {
+				PartType: "tcomplement:chisel_head"
+			}
+		}]
+	}]
+}

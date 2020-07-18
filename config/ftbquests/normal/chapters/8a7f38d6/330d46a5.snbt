@@ -1,0 +1,15 @@
+{
+	x: -35.5d,
+	y: -11.0d,
+	shape: "square",
+	dependencies: [
+		"c829547b"
+	],
+	tasks: [{
+		uid: "6a71f201",
+		type: "item",
+		items: [{
+			item: "bonsaitrees:bonsaipot"
+		}]
+	}]
+}

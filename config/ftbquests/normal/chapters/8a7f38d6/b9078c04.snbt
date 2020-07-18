@@ -1,0 +1,21 @@
+{
+	x: -33.5d,
+	y: -7.0d,
+	dependencies: [
+		"929c2285"
+	],
+	tasks: [{
+		uid: "cb974373",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:block_barrel1"
+		}]
+	},
+	{
+		uid: "a9a766e6",
+		type: "item",
+		items: [{
+			item: "contenttweaker:material_part"
+		}]
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	x: -29.5d,
+	y: -19.0d,
+	dependencies: [
+		"c63c1e94",
+		"8e4e10f7"
+	],
+	tasks: [{
+		uid: "2c33d07c",
+		type: "item",
+		items: [{
+			item: "exnihilocreatio:item_pebble"
+		}],
+		count: 4L
+	},
+	{
+		uid: "8b617195",
+		type: "item",
+		items: [{
+			item: "minecraft:cobblestone"
+		}]
+	}]
+}

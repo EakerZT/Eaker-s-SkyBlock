@@ -30,8 +30,10 @@ addBoltPart("Iridium",15723763);
 addBoltPart("Lumium",14541705);
 addBoltPart("Aluminum",14541705);
 
-var stone = MaterialSystem.getMaterialBuilder().setName("Stone").setColor(Color.fromHex("7b7b7b")).build();
+var stone = MaterialSystem.getMaterialBuilder().setName("Stone").setColor(Color.fromInt(8092539)).build();
 stone.registerParts(["plate"] as string[]);
+var wood = MaterialSystem.getMaterialBuilder().setName("Wood").setColor(Color.fromInt(6374953)).build();
+wood.registerParts(["plate"] as string[]);
 
 // addBoltPart("Zinc",15790322);
 // addBoltPart("Brass",16769567);

@@ -1,5 +1,52 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import crafttweaker.item.IIngredient;
+import crafttweaker.item.IItemStack;
+
+var removeItems = [
+<immersiveengineering:metal:0>,
+<immersiveengineering:metal:1>,
+<immersiveengineering:metal:2>,
+<immersiveengineering:metal:3>,
+<immersiveengineering:metal:4>,
+// <immersiveengineering:metal:5>,
+<immersiveengineering:metal:6>,
+<immersiveengineering:metal:7>,
+<immersiveengineering:metal:8>,
+<immersiveengineering:metal:9>,
+<immersiveengineering:metal:10>,
+<immersiveengineering:metal:11>,
+<immersiveengineering:metal:12>,
+<immersiveengineering:metal:13>,
+// <immersiveengineering:metal:14>,
+<immersiveengineering:metal:15>,
+<immersiveengineering:metal:16>,
+<immersiveengineering:metal:17>,
+<immersiveengineering:metal:18>,
+<immersiveengineering:metal:19>,
+<immersiveengineering:metal:20>,
+<immersiveengineering:metal:21>,
+<immersiveengineering:metal:22>,
+<immersiveengineering:metal:23>,
+<immersiveengineering:metal:24>,
+// <immersiveengineering:metal:25>,
+<immersiveengineering:metal:26>,
+<immersiveengineering:metal:27>,
+<immersiveengineering:metal:28>,
+<immersiveengineering:metal:29>,
+<immersiveengineering:metal:30>,
+<immersiveengineering:metal:31>,
+<immersiveengineering:metal:32>,
+<immersiveengineering:metal:33>,
+<immersiveengineering:metal:34>,
+// <immersiveengineering:metal:35>,
+<immersiveengineering:metal:36>,
+<immersiveengineering:metal:37>,
+<immersiveengineering:metal:38>,
+<immersiveengineering:metal:39>,
+<immersiveengineering:metal:40>
+] as IItemStack[];
+
+removeAndHideItemList(removeItems);
 
 // 工程师装配台
 recipes.remove(<immersiveengineering:wooden_device0:2>);
@@ -197,9 +244,9 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<immersiveengineering:metal_decoration0:5>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<immersiveengineering:metal:38>, <immersiveengineering:material:9>, <immersiveengineering:metal:38>],
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
     [<minecraft:piston>, <minecraft:piston>, <minecraft:piston>],
-    [<immersiveengineering:metal:38>, <immersiveengineering:material:9>, <immersiveengineering:metal:38>]])
+    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]])
   .addOutput(<immersiveengineering:metal_decoration0:5>)
   .create();
 

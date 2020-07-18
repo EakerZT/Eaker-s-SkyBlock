@@ -1,0 +1,23 @@
+{
+	x: -37.5d,
+	y: -11.0d,
+	shape: "gear",
+	dependencies: [
+		"330d46a5",
+		"0ea55266"
+	],
+	tasks: [{
+		uid: "2491ee03",
+		type: "item",
+		items: [{
+			item: "minecraft:hopper"
+		}]
+	},
+	{
+		uid: "ff66316b",
+		type: "item",
+		items: [{
+			item: "bonsaitrees:bonsaipot 1 1"
+		}]
+	}]
+}
