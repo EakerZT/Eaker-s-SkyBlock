@@ -1,6 +1,45 @@
 import mods.artisanworktables.builder.RecipeBuilder;
 import mods.modularmachinery.RecipeBuilder as mRecipeBuilder;
 import mods.logistics.hammer;
+import crafttweaker.item.IItemStack;
+
+
+val toolsToNerf = [
+	<minecraft:golden_axe>,
+	<minecraft:golden_shovel>,
+	<minecraft:golden_hoe>,
+	<minecraft:golden_pickaxe>,
+	<minecraft:golden_sword>,
+	
+	<minecraft:diamond_shovel>,
+	<minecraft:diamond_axe>,
+	<minecraft:diamond_pickaxe>,
+	<minecraft:diamond_hoe>,
+	<minecraft:diamond_sword>,
+
+	<minecraft:iron_shovel>,
+	<minecraft:iron_axe>,
+	<minecraft:iron_pickaxe>,
+	<minecraft:iron_hoe>,
+	<minecraft:iron_sword>,
+
+	<minecraft:wooden_pickaxe>,
+	<minecraft:wooden_sword>,
+	<minecraft:wooden_hoe>,
+	<minecraft:wooden_shovel>,
+	<minecraft:wooden_axe>,
+	
+	<minecraft:stone_pickaxe>,
+  <minecraft:stone_sword>,
+	<minecraft:stone_hoe>,
+	<minecraft:stone_axe>,
+	<minecraft:stone_shovel>
+	
+] as IItemStack[];
+		
+for tool in toolsToNerf {
+	tool.maxDamage = 1;
+}
 
 var flint = <minecraft:flint>;
 var plankWood = <ore:plankWood>;

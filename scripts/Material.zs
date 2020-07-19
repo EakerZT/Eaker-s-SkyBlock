@@ -10,9 +10,7 @@ function addOreRecipes(materialName as string) {
     for i in oreDict["stick" + materialName].items {
       recipes.remove(i);
     }
-    furnace.addRecipe(odItemMap["ingot" + materialName],oreDict["dust" + materialName]);
-    recipes.remove(odItemMap["ore" + materialName]);
-    
+    furnace.addRecipe(odItemMap['ingot' + materialName], odItemMap['dust' + materialName]);
     RecipeBuilder.get("mason")
       .setShapeless([orePiece, orePiece, orePiece, orePiece])
       .addOutput(oreOreItem)
@@ -53,7 +51,6 @@ addOreRecipes("Iron");
 addOreRecipes("Silver");
 // addOreRecipes("Thorium");
 addOreRecipes("Tin");
-// addOreRecipes("Tungsten");
 // addOreRecipes("Uranium");
 
 

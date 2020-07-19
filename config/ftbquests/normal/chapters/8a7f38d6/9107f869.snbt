@@ -3,5 +3,12 @@
 	y: -17.0d,
 	dependencies: [
 		"8b0bbd2d"
-	]
+	],
+	tasks: [{
+		uid: "efd82d00",
+		type: "item",
+		items: [{
+			item: "contenttweaker:material_part 1 23"
+		}]
+	}]
 }

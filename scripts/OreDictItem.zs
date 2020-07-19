@@ -5,53 +5,67 @@ import crafttweaker.oredict.IOreDictEntry;
 
 global odItemMap as IItemStack[string] = {
 
-  dustIron: <thermalfoundation:material:0>,
-  dustGold: <thermalfoundation:material:1>,
-  dustCopper: <thermalfoundation:material:64>,
-  dustTin: <thermalfoundation:material:65>,
-  dustSilver: <thermalfoundation:material:66>,
-  dustLead: <thermalfoundation:material:67>,
+  dustIron: getTEItemByODName("dustIron"),
+  dustGold: getTEItemByODName("dustGold"),
+  dustCopper : getTEItemByODName("dustCopper"),
+  dustTin : getTEItemByODName("dustTin"),
+  dustSilver : getTEItemByODName("dustSilver"),
+  dustLead : getTEItemByODName("dustLead"),
+  dustAluminum : getTEItemByODName("dustAluminum"),
+  dustNickel : getTEItemByODName("dustNickel"),
+  dustPlatinum : getTEItemByODName("dustPlatinum"),
+  dustIridium : getTEItemByODName("dustIridium"),
+  dustSteel : getTEItemByODName("dustSteel"),
+  dustElectrum : getTEItemByODName("dustElectrum"),
+  dustInvar : getTEItemByODName("dustInvar"),
+  dustBronze : getTEItemByODName("dustBronze"),
+  dustConstantan : getTEItemByODName("dustConstantan"),
+  dustSignalum : getTEItemByODName("dustSignalum"),
+  dustLumium : getTEItemByODName("dustLumium"),
+  dustEnderium : getTEItemByODName("dustEnderium"),
+
+  dustObsidian : getTEItemByODName("dustObsidian"),
 
   ingotIron : <minecraft:iron_ingot>,
   ingotGold : <minecraft:gold_ingot>,
-  ingotCopper : <thermalfoundation:material:128>,
-  ingotTin : <thermalfoundation:material:129>,
-  ingotSilver : <thermalfoundation:material:130>,
-  ingotLead : <thermalfoundation:material:131>,
-  ingotAluminum : <thermalfoundation:material:132>,
-  ingotNickel : <thermalfoundation:material:133>,
-  ingotPlatinum : <thermalfoundation:material:134>,
-  ingotIridium : <thermalfoundation:material:135>,
-  ingotSteel : <thermalfoundation:material:160>,
-  ingotElectrum : <thermalfoundation:material:161>,
-  ingotInvar : <thermalfoundation:material:162>,
-  ingotBronze : <thermalfoundation:material:163>,
-  ingotConstantan : <thermalfoundation:material:164>,
-  ingotSignalum : <thermalfoundation:material:165>,
-  ingotLumium : <thermalfoundation:material:166>,
-  ingotEnderium : <thermalfoundation:material:167>,
+  ingotCopper : getTEItemByODName("ingotCopper"),
+  ingotTin : getTEItemByODName("ingotTin"),
+  ingotSilver : getTEItemByODName("ingotSilver"),
+  ingotLead : getTEItemByODName("ingotLead"),
+  ingotAluminum : getTEItemByODName("ingotAluminum"),
+  ingotNickel : getTEItemByODName("ingotNickel"),
+  ingotPlatinum : getTEItemByODName("ingotPlatinum"),
+  ingotIridium : getTEItemByODName("ingotIridium"),
+  ingotSteel : getTEItemByODName("ingotSteel"),
+  ingotElectrum : getTEItemByODName("ingotElectrum"),
+  ingotInvar : getTEItemByODName("ingotInvar"),
+  ingotBronze : getTEItemByODName("ingotBronze"),
+  ingotConstantan : getTEItemByODName("ingotConstantan"),
+  ingotSignalum : getTEItemByODName("ingotSignalum"),
+  ingotLumium : getTEItemByODName("ingotLumium"),
+  ingotEnderium : getTEItemByODName("ingotEnderium"),
 
   plateWood : getCTItemByODName("plateWood"),
   plateStone : getCTItemByODName("plateStone"),
   plateQuartz : <moreplates:nether_quartz_plate>,
-  plateIron : <thermalfoundation:material:32>,
-  plateGold : <thermalfoundation:material:33>,
-  plateCopper : <thermalfoundation:material:320>,
-  plateTin : <thermalfoundation:material:321>,
-  plateSilver : <thermalfoundation:material:322>,
-  plateLead : <thermalfoundation:material:323>,
-  plateAluminum : <thermalfoundation:material:324>,
-  plateNickel : <thermalfoundation:material:325>,
-  platePlatinum : <thermalfoundation:material:326>,
-  plateIridium : <thermalfoundation:material:327>,
-  plateSteel : <thermalfoundation:material:352>,
-  plateElectrum : <thermalfoundation:material:353>,
-  plateInvar : <thermalfoundation:material:354>,
-  plateBronze : <thermalfoundation:material:355>,
-  plateConstantan : <thermalfoundation:material:356>,
-  plateSignalum : <thermalfoundation:material:357>,
-  plateLumium : <thermalfoundation:material:358>,
-  plateEnderium : <thermalfoundation:material:359>,
+  plateIron : getTEItemByODName("plateIron"),
+  plateGold : getTEItemByODName("plateGold"),
+  plateCopper : getTEItemByODName("plateCopper"),
+  plateTin : getTEItemByODName("plateTin"),
+  plateSilver : getTEItemByODName("plateSilver"),
+  plateLead : getTEItemByODName("plateLead"),
+  plateAluminum : getTEItemByODName("plateAluminum"),
+  plateNickel : getTEItemByODName("plateNickel"),
+  platePlatinum : getTEItemByODName("platePlatinum"),
+  plateIridium : getTEItemByODName("plateIridium"),
+  plateSteel : getTEItemByODName("plateSteel"),
+  plateElectrum : getTEItemByODName("plateElectrum"),
+  plateInvar : getTEItemByODName("plateInvar"),
+  plateBronze : getTEItemByODName("plateBronze"),
+  plateConstantan : getTEItemByODName("plateConstantan"),
+  plateSignalum : getTEItemByODName("plateSignalum"),
+  plateLumium : getTEItemByODName("plateLumium"),
+  plateEnderium : getTEItemByODName("plateEnderium"),
 
   boltWood : getCTItemByODName("boltWood"),
   boltStone : getCTItemByODName("boltStone"),
@@ -95,28 +109,28 @@ global odItemMap as IItemStack[string] = {
   stickLumium : <moreplates:lumium_stick>,
   stickEnderium : <moreplates:enderium_stick>,
 
-  gearWood : <thermalfoundation:material:22>,
-  gearStone : <thermalfoundation:material:23>,
-  gearIron : <thermalfoundation:material:24>,
-  gearGold : <thermalfoundation:material:25>,
-  gearCopper : <thermalfoundation:material:256>,
-  gearTin : <thermalfoundation:material:257>,
-  gearSilver : <thermalfoundation:material:258>,
-  gearLead : <thermalfoundation:material:259>,
-  gearAluminum : <thermalfoundation:material:260>,
-  gearNickel : <thermalfoundation:material:261>,
-  gearPlatinum : <thermalfoundation:material:262>,
-  gearIridium : <thermalfoundation:material:263>,
-  gearSteel : <thermalfoundation:material:288>,
-  gearElectrum : <thermalfoundation:material:289>,
-  gearInvar : <thermalfoundation:material:290>,
-  gearBronze : <thermalfoundation:material:291>,
-  gearConstantan : <thermalfoundation:material:292>,
-  gearSignalum : <thermalfoundation:material:293>,
-  gearLumium : <thermalfoundation:material:294>,
-  gearEnderium : <thermalfoundation:material:295>,
-  gearDiamond : <thermalfoundation:material:26>,
-  gearEmerald : <thermalfoundation:material:27>,
+  gearWood : getTEItemByODName("gearWood"),
+  gearStone : getTEItemByODName("gearStone"),
+  gearIron : getTEItemByODName("gearIron"),
+  gearGold : getTEItemByODName("gearGold"),
+  gearCopper : getTEItemByODName("gearCopper"),
+  gearTin : getTEItemByODName("gearTin"),
+  gearSilver : getTEItemByODName("gearSilver"),
+  gearLead : getTEItemByODName("gearLead"),
+  gearAluminum : getTEItemByODName("gearAluminum"),
+  gearNickel : getTEItemByODName("gearNickel"),
+  gearPlatinum : getTEItemByODName("gearPlatinum"),
+  gearIridium : getTEItemByODName("gearIridium"),
+  gearSteel : getTEItemByODName("gearSteel"),
+  gearElectrum : getTEItemByODName("gearElectrum"),
+  gearInvar : getTEItemByODName("gearInvar"),
+  gearBronze : getTEItemByODName("gearBronze"),
+  gearConstantan : getTEItemByODName("gearConstantan"),
+  gearSignalum : getTEItemByODName("gearSignalum"),
+  gearLumium : getTEItemByODName("gearLumium"),
+  gearEnderium : getTEItemByODName("gearEnderium"),
+  gearDiamond : getTEItemByODName("gearDiamond"),
+  gearEmerald : getTEItemByODName("gearEmerald"),
   gearQuartz : <moreplates:nether_quartz_gear>
 } as IItemStack[string];
 
@@ -140,7 +154,7 @@ var joapcaOreName = [
   "Silver",
   "Thorium",
   "Tin",
-  "Tungsten",
+  // "Tungsten",
   "Uranium"
 ] as string[];
 
@@ -148,3 +162,36 @@ for i in joapcaOreName {
   odItemMap['piece' + i] = getJAOPCAItemByODName("piece" + i);
   odItemMap['ore' + i] = getJAOPCAItemByODName("ore" + i);
 }
+
+
+// Mek 粉碎机修复
+function MekanismCrusherFix(name as string) {
+  mods.mekanism.crusher.addRecipe(odItemMap['ingot' + name], odItemMap["dust" + name]);
+}
+
+// Mek 富集修复
+function MekanismEnrichmentFix(name as string) {
+  // mods.mekanism.enrichment.removeRecipe(odItemMap["dust" + name]);
+  mods.mekanism.enrichment.addRecipe(oreDict["dustDirty" + name], odItemMap["dust" + name]);
+  mods.mekanism.enrichment.addRecipe(odItemMap["ore" + name], odItemMap["dust" + name] * 2);
+}
+
+for i in ([
+  "Gold","Copper","Iron","Tin","Lead","Silver"
+  ] as string[]) {
+  MekanismCrusherFix(i);
+  MekanismEnrichmentFix(i);
+}
+MekanismCrusherFix("Steel");
+MekanismCrusherFix('Bronze');
+
+// 冶金灌注机
+// 青铜锭
+mods.mekanism.infuser.removeRecipe(<mekanism:ingot:2>);
+// 黑体辐射
+mods.mekanism.infuser.removeRecipe(<mekanismgenerators:hohlraum>);
+mods.mekanism.infuser.addRecipe("CARBON", 10, odItemMap["dustGold"] * 4, <mekanismgenerators:hohlraum>);
+mods.mekanism.infuser.addRecipe("CARBON", 10, <mekanism:enrichediron>, odItemMap["dustSteel"]);
+// 强化黑曜石粉
+mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>);
+mods.mekanism.infuser.addRecipe("DIAMOND", 10, odItemMap["dustObsidian"], <mekanism:otherdust:5>);

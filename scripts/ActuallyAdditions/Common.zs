@@ -1,4 +1,12 @@
 import mods.artisanworktables.builder.RecipeBuilder;
+import crafttweaker.item.IItemStack;
+
+// var removeItems = [
+//   <actuallyadditions:item_dust>
+// ] as IItemStack[];
+
+// removeAndHideItemList(removeItems);
+
 
 // 木质外壳
 recipes.remove(<actuallyadditions:block_misc:4>);
