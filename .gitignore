@@ -15,11 +15,13 @@ items.csv
 minecraftinstance.json
 icon.png
 server-resource-packs
-config/jei
+config/jei/bookmarks.ini
+config/jei/jei.cfg
+config/jei/searchColors.cfg
+config/jei/worldSettings.cfg
 config/InvTweaks.cfg
 config/splash.properties
 config/buildcraft/detailed.properties
-jei
 config/brandon3055/contributors.json
 config/buildcraft/detailed.properties
 config/AppliedEnergistics2/VersionChecker.cfg

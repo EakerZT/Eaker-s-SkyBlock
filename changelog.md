@@ -1,3 +1,25 @@
+
+# 0.0.14
+
+添加
+* Translocators
+
+升级
+-
+* CommonCapabilities 2.4.6 -> 2.4.7
+* Controlling 3.0.9 -> 3.0.10
+* CyclopsCore 1.6.4 -> 1.6.6
+* Engineer's Decor 1.0.20 -> 1.1.2
+* FTBQuests 1.9.0.10 -> 1.9.0.12
+* FTB Utilities 5.4.1.129 -> 5.4.1.130
+* Immersive Technology 1.7.69 -> 1.7.72
+* Integrated Dynamics 1.1.6 -> 1.1.7
+* Integrated Tunnels 1.6.11 -> 1.6.12
+* Inworldcrafting 0.13.0 -> 1.2.0
+* Item Filters 1.0.3.12 -> 1.0.4.2
+* NuclearCraft 2.18v -> 2.18w
+* Simple Storage Network 1.7.10 -> 1.7.11
+
 # 0.0.13
 
 添加
@@ -18,7 +40,7 @@
 * FTBLib 5.4.7.0 -> 5.4.7.2
 * FTB Quests 1.8.1.239 -> 1.9.0.10
 * FTB Utilities 5.4.0.124 -> 5.4.1.129
-* Immersive Technology 1.7.62 -> 1.7.68
+* Immersive Technology 1.7.62 -> 1.7.69
 * JEI 4.15.0.291 -> 4.15.0.296
 * Nuclear Craft 2.18t -> 2.18v
 * Tweakers Construct -> 1.5.3

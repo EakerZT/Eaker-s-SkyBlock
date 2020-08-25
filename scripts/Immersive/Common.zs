@@ -69,7 +69,7 @@ RecipeBuilder.get("basic")
 recipes.remove(<immersiveengineering:treated_wood>);
 recipes.remove(<immersiveengineering:treated_wood:1>);
 recipes.remove(<immersiveengineering:treated_wood:2>);
-mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood> * 8, <liquid:creosote>, <ore:plankWood> * 8, true);
+mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood> * 8, <liquid:creosote>, [<ore:plankWood> * 8], true);
 
 // 防腐木棍
 recipes.remove(<immersiveengineering:material>);
