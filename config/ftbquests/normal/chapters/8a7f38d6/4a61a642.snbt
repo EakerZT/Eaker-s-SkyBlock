@@ -1,5 +1,5 @@
 {
-	x: -17.5d,
+	x: -15.5d,
 	y: -17.0d,
 	shape: "square",
 	dependencies: [
@@ -20,6 +20,16 @@
 		type: "item",
 		items: [{
 			id: "tconstruct:pickaxe",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "23f10c5b",
+		type: "item",
+		items: [{
+			id: "tconstruct:kama",
 			tag: {}
 		}],
 		ignore_damage: true,

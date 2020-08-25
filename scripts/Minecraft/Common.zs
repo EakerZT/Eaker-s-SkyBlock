@@ -81,7 +81,13 @@ RecipeBuilder.get("mason")
 
 // 箱子
 recipes.remove(<minecraft:chest>);
-
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>],
+    [<ore:plateWood>, null, <ore:plateWood>],
+    [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>]])
+  .addOutput(<minecraft:chest>)
+  .create();
 
 // 活塞
 recipes.remove(<minecraft:piston>);

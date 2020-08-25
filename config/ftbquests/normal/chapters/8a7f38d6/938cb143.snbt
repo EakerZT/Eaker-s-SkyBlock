@@ -1,0 +1,14 @@
+{
+	x: -21.5d,
+	y: -17.0d,
+	dependencies: [
+		"9107f869"
+	],
+	tasks: [{
+		uid: "e27b0705",
+		type: "item",
+		items: [{
+			item: "practicallogistics2:hammer"
+		}]
+	}]
+}

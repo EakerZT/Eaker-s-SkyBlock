@@ -1,5 +1,5 @@
 {
-	x: -19.5d,
+	x: -17.5d,
 	y: -17.0d,
 	dependencies: [
 		"dd002328"
@@ -41,6 +41,16 @@
 			id: "tconstruct:pattern",
 			tag: {
 				PartType: "tconstruct:tool_rod"
+			}
+		}]
+	},
+	{
+		uid: "5831d768",
+		type: "item",
+		items: [{
+			id: "tconstruct:pattern",
+			tag: {
+				PartType: "tconstruct:kama_head"
 			}
 		}]
 	}]

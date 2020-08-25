@@ -17,6 +17,9 @@ for i in removeItem {
     JEI.removeAndHide(i);
 }
 
+<ore:hopper>.add(<minecraft:hopper>);
+<ore:hopper>.add(<tconstruct:wooden_hopper>);
+
 // 未烧制的黏土桶
 recipes.remove(<ceramics:unfired_clay>);
 RecipeBuilder.get("farmer")
@@ -93,9 +96,9 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<practicallogistics2:hammer>);
 RecipeBuilder.get("carpenter")
   .setShaped([
-    [<ore:stickWood>, <ore:blockIron>, <ore:stickWood>],
-    [<ore:stickWood>, null, <ore:stickWood>],
-    [<ore:stickWood>, <ore:blockIron>, <ore:stickWood>]])
+    [<ore:stickWood>, <ore:stone>, <ore:stickWood>],
+    [<ore:stickWood>, <ore:plateWood>, <ore:stickWood>],
+    [<ore:stickWood>, <ore:plateWood>, <ore:stickWood>]])
   .addOutput(<practicallogistics2:hammer>)
   .create();
 
