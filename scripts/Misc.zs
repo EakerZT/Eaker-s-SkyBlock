@@ -93,8 +93,29 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<practicallogistics2:hammer>);
 RecipeBuilder.get("carpenter")
   .setShaped([
-    [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>],
+    [<ore:stickWood>, <ore:blockIron>, <ore:stickWood>],
     [<ore:stickWood>, null, <ore:stickWood>],
-    [<ore:stickWood>, <ore:cobblestone>, <ore:stickWood>]])
+    [<ore:stickWood>, <ore:blockIron>, <ore:stickWood>]])
   .addOutput(<practicallogistics2:hammer>)
+  .create();
+
+// 挤压机
+recipes.remove(<integrateddynamics:squeezer>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>],
+    [<ore:stickIron>, null, <ore:stickIron>],
+    [<ore:stickIron>, <ore:plateIron>, <ore:stickIron>]])
+  .addTool(<ore:artisansHammer>, 4)
+  .addOutput(<integrateddynamics:squeezer>)
+  .create();
+
+// 烘干池
+recipes.remove(<integrateddynamics:drying_basin>);
+RecipeBuilder.get("carpenter")
+  .setShaped([
+    [<ore:plateWood>, null, <ore:plateWood>],
+    [<ore:plateWood>, null, <ore:plateWood>],
+    [<ore:slimeball>, <ore:plateWood>, <ore:slimeball>]])
+  .addOutput(<integrateddynamics:drying_basin>)
   .create();

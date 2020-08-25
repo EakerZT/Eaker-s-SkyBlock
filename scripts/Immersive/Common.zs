@@ -65,6 +65,10 @@ RecipeBuilder.get("basic")
   .addOutput(<immersiveengineering:wooden_device0:2>)
   .create();
 
+// 机械零件
+recipes.remove(<immersiveengineering:material:8>);
+recipes.remove(<immersiveengineering:material:9>);
+
 // 防腐木
 recipes.remove(<immersiveengineering:treated_wood>);
 recipes.remove(<immersiveengineering:treated_wood:1>);
@@ -232,7 +236,7 @@ recipes.remove(<immersiveengineering:metal_decoration0:3>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:plateIron>, <minecraft:redstone>, <ore:plateIron>],
-    [<ore:ingotTin>, <ore:ingotTin>, <ore:ingotTin>],
+    [<integrateddynamics:crystalized_menril_chunk>, <immersiveengineering:material:27>, <integrateddynamics:crystalized_menril_chunk>],
     [<ore:plateIron>, <minecraft:redstone>, <ore:plateIron>]])
   .addOutput(<immersiveengineering:metal_decoration0:3>)
   .create();
@@ -242,7 +246,7 @@ recipes.remove(<immersiveengineering:metal_decoration0:4>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>],
-    [<ore:ingotCopper>, <ore:ingotCopper>, <ore:ingotCopper>],
+    [<ore:ingotBronze>, <ore:ingotCopper>, <ore:ingotBronze>],
     [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>]])
   .addOutput(<immersiveengineering:metal_decoration0:4>)
   .create();
@@ -251,9 +255,9 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<immersiveengineering:metal_decoration0:5>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>],
+    [<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>],
     [<minecraft:piston>, <minecraft:piston>, <minecraft:piston>],
-    [<ore:plateSteel>, <ore:plateSteel>, <ore:plateSteel>]])
+    [<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>]])
   .addOutput(<immersiveengineering:metal_decoration0:5>)
   .create();
 

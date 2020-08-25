@@ -11,6 +11,10 @@ for item in removeItems {
     JEI.removeAndHide(item);
 }
 
+
+// 通透玻璃
+<ore:blockGlassColorless>.add(<tconstruct:clear_glass>);
+
 // 空白模具
 recipes.remove(<tconstruct:pattern>);
 RecipeBuilder.get("carpenter")

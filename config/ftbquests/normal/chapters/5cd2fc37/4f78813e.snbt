@@ -5,10 +5,10 @@
 		"163723db"
 	],
 	tasks: [{
-		uid: "b730b424",
+		uid: "ec4a56e5",
 		type: "item",
 		items: [{
-			item: "immersiveengineering:metal 1 8"
+			item: "thermalfoundation:material 1 160"
 		}]
 	}]
 }

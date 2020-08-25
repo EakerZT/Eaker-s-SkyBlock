@@ -2,7 +2,13 @@
 # 0.0.14
 
 添加
+-
 * Translocators
+
+移除
+-
+* Compact Drawers
+* Compact Storage
 
 升级
 -
@@ -13,12 +19,20 @@
 * FTBQuests 1.9.0.10 -> 1.9.0.12
 * FTB Utilities 5.4.1.129 -> 5.4.1.130
 * Immersive Technology 1.7.69 -> 1.7.72
-* Integrated Dynamics 1.1.6 -> 1.1.7
+* Integrated Dynamics 1.1.6 -> 1.1.8
 * Integrated Tunnels 1.6.11 -> 1.6.12
 * Inworldcrafting 0.13.0 -> 1.2.0
 * Item Filters 1.0.3.12 -> 1.0.4.2
+* Just Enough Items 4.15.0.296 -> 4.16.1.301
 * NuclearCraft 2.18v -> 2.18w
 * Simple Storage Network 1.7.10 -> 1.7.11
+
+配方
+-
+* 调整 **沉浸工程** 中的 **蓝图** **工程块** **机械零件**
+* 添加 **沉浸工程** 中的 **电路板**
+* 添加 **匠魂** 合成 **螺丝** 方式
+* 添加 **集成动力** 中的 **挤压机** **烘干池**
 
 # 0.0.13
 

@@ -11,7 +11,7 @@ recipes.remove(<railcraft:tank_water>);
 RecipeBuilder.get("carpenter")
   .setShaped([
     [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>],
-    [<ore:plateWood>, <ore:materialRubber>, <ore:plateWood>],
+    [<ore:slimeball>, <ore:slimeball>, <ore:slimeball>],
     [<ore:plateWood>, <ore:plateWood>, <ore:plateWood>]])
   .addOutput(<railcraft:tank_water>)
   .create();
