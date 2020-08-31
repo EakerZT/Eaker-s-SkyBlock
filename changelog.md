@@ -13,19 +13,22 @@
 
 升级
 -
+* Artisan Worktables 1.23.6 -> 1.23.7
+* CraftTweaker 4.1.20.574 -> 4.1.20.586
 * CommonCapabilities 2.4.6 -> 2.4.7
 * Controlling 3.0.9 -> 3.0.10
 * CyclopsCore 1.6.4 -> 1.6.6
 * Engineer's Decor 1.0.20 -> 1.1.2
 * FTBQuests 1.9.0.10 -> 1.9.0.12
 * FTB Utilities 5.4.1.129 -> 5.4.1.130
+* i18nupdate 1.0.8 -> 1.1.0
 * Immersive Technology 1.7.69 -> 1.7.72
-* Integrated Dynamics 1.1.6 -> 1.1.8
+* Integrated Dynamics 1.1.6 -> 1.1.9
 * Integrated Tunnels 1.6.11 -> 1.6.12
 * Inworldcrafting 0.13.0 -> 1.2.0
 * Item Filters 1.0.3.12 -> 1.0.4.2
 * Just Enough Items 4.15.0.296 -> 4.16.1.301
-* NuclearCraft 2.18v -> 2.18w
+* NuclearCraft 2.18v -> 2.18x
 * Simple Storage Network 1.7.10 -> 1.7.11
 
 配方
