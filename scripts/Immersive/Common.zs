@@ -1,4 +1,5 @@
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.immersiveengineering.Blueprint;
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
 
@@ -235,31 +236,46 @@ RecipeBuilder.get("blacksmith")
 recipes.remove(<immersiveengineering:metal_decoration0:3>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
-    [<ore:plateIron>, <minecraft:redstone>, <ore:plateIron>],
-    [<integrateddynamics:crystalized_menril_chunk>, <immersiveengineering:material:27>, <integrateddynamics:crystalized_menril_chunk>],
-    [<ore:plateIron>, <minecraft:redstone>, <ore:plateIron>]])
+    [<ore:plateIron>,<immersiveengineering:material:8>, <ore:plateIron>],
+    [<ore:boltIron>, <immersiveengineering:material:27>, <ore:boltIron>],
+    [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>]])
+  .addTool(<ore:artisansDriver>, 4)
   .addOutput(<immersiveengineering:metal_decoration0:3>)
   .create();
+Blueprint.addRecipe(
+  "decoration",
+   <immersiveengineering:metal_decoration0:3>,
+   [<ore:plateIron>, <ore:boltIron>, <immersiveengineering:material:8>, <immersiveengineering:material:27>]);
 
 // 轻型工程块
 recipes.remove(<immersiveengineering:metal_decoration0:4>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>],
-    [<ore:ingotBronze>, <ore:ingotCopper>, <ore:ingotBronze>],
+    [<ore:boltIron>, <ore:ingotBronze>, <ore:boltIron>],
     [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>]])
+  .addTool(<ore:artisansDriver>, 4)
   .addOutput(<immersiveengineering:metal_decoration0:4>)
   .create();
+Blueprint.addRecipe(
+  "decoration",
+   <immersiveengineering:metal_decoration0:4>,
+   [<ore:plateIron>, <ore:boltIron>, <immersiveengineering:material:8>, <ore:ingotBronze>]);
 
 // 重型工程快
 recipes.remove(<immersiveengineering:metal_decoration0:5>);
 RecipeBuilder.get("blacksmith")
   .setShaped([
     [<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>],
-    [<minecraft:piston>, <minecraft:piston>, <minecraft:piston>],
+    [<ore:boltSteel>, <minecraft:piston>, <ore:boltSteel>],
     [<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>]])
+  .addTool(<ore:artisansDriver>, 4)
   .addOutput(<immersiveengineering:metal_decoration0:5>)
   .create();
+Blueprint.addRecipe(
+  "decoration",
+   <immersiveengineering:metal_decoration0:5>,
+   [<ore:plateSteel>, <ore:boltSteel>, <immersiveengineering:material:9>, <minecraft:piston>]);
 
 // 坚韧布料
 recipes.remove(<immersiveengineering:material:5>);
@@ -689,3 +705,16 @@ RecipeBuilder.get("engineer")
     [<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extract"})]])
   .addOutput(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extractcovered"}))
   .create();
+
+// 岩芯钻井
+recipes.remove(<immersiveengineering:metal_device1:7>);
+RecipeBuilder.get("blacksmith")
+  .setShaped([
+    [<ore:scaffoldingSteel>],
+    [<ore:scaffoldingSteel>],
+    [<immersiveengineering:metal_decoration0:5>]])
+  .addOutput(<immersiveengineering:metal_device1:7>)
+  .create();
+
+
+

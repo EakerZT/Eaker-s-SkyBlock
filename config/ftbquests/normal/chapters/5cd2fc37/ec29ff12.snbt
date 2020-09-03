@@ -1,0 +1,53 @@
+{
+	x: 3.5d,
+	y: -4.5d,
+	dependencies: [
+		"1640062e"
+	],
+	tasks: [{
+		uid: "adbf00e6",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1 1 1"
+		}],
+		count: 25L
+	},
+	{
+		uid: "697c4b18",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration1_slab 1 1"
+		}],
+		count: 33L
+	},
+	{
+		uid: "8a17099a",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_device1 1 6"
+		}],
+		count: 17L
+	},
+	{
+		uid: "6656f21d",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 3"
+		}]
+	},
+	{
+		uid: "abde6dca",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:metal_decoration0 1 5"
+		}],
+		count: 4L
+	},
+	{
+		uid: "7f4e97a5",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:sheetmetal 1 9"
+		}]
+	}]
+}

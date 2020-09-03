@@ -6,3 +6,5 @@ var removeReceipItems = [
 
 for item in removeReceipItems {
 }
+
+<ore:slimeball>.add(<thermalfoundation:material:833>);

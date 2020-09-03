@@ -1,0 +1,30 @@
+base.material.iron=Iron
+base.material.gold=Gold
+base.material.copper=Copper
+base.material.silver=Silver
+base.material.tin=Tin
+base.material.lead=Lead
+base.material.steel=Steel
+base.material.bronze=Bronze
+base.material.invar=Invar
+base.material.electrum=Electrum
+base.material.constantan=Constantan
+base.material.signalum=Signalum
+base.material.enderium=Enderium
+base.material.platinum=Platinum
+base.material.nickel=Nickel
+base.material.ridium=Ridium
+base.material.lumium=Lumium
+base.material.zinc=Zinc
+base.material.brass=Brass
+base.material.osmium.name=Osmium
+base.material.refined_obsidian=Refined Obsidian
+base.material.wood=Wood
+base.material.stone=Stone
+base.material.aluminum=Aluminum
+
+
+item.contenttweaker.mold_bolt.name=Metal Press Mold: Bolt
+item.contenttweaker.cast_bolt.name=Bolt Cast
+
+desc.immersiveengineering.info.blueprint.decoration=Engineering Block

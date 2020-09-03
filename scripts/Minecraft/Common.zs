@@ -2,7 +2,7 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import mods.modularmachinery.RecipeBuilder as mRecipeBuilder;
 import mods.logistics.hammer;
 import crafttweaker.item.IItemStack;
-
+import mods.immersiveengineering.Blueprint;
 
 val toolsToNerf = [
 	<minecraft:golden_axe>,
@@ -99,6 +99,10 @@ RecipeBuilder.get("engineer")
   .addTool(<ore:artisansSpanner>, 4)
   .addOutput(<minecraft:piston>)
   .create();
+Blueprint.addRecipe(
+  "decoration",
+   <minecraft:piston>,
+   [<ore:plateWood>, <ore:bcobblestone>, <ore:gearWood>, <minecraft:redstone>]);
 
 // 粘性活塞
 recipes.remove(<minecraft:sticky_piston>);
@@ -108,6 +112,10 @@ RecipeBuilder.get("engineer")
     [<minecraft:piston>]])
   .addOutput(<minecraft:sticky_piston>)
   .create();
+Blueprint.addRecipe(
+  "decoration",
+   <minecraft:sticky_piston>,
+   [<ore:plateWood>, <ore:bcobblestone>, <ore:gearWood>, <minecraft:redstone>, <ore:slimeball>]);
 
 // 铁桶
 recipes.remove(<minecraft:bucket>);

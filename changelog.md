@@ -5,11 +5,13 @@
 -
 * Translocators
 * Morph-o-Tool
+* [SBM] Wooden Shears
 
 移除
 -
 * Compact Drawers
 * Compact Storage
+* Tiny Progressions
 
 升级
 -
@@ -22,7 +24,7 @@
 * FTBQuests 1.9.0.10 -> 1.9.0.12
 * FTB Utilities 5.4.1.129 -> 5.4.1.130
 * i18nupdate 1.0.8 -> 1.1.0
-* Immersive Technology 1.7.69 -> 1.7.72
+* Immersive Technology 1.7.69 -> 1.8.80
 * Integrated Dynamics 1.1.6 -> 1.1.9
 * Integrated Tunnels 1.6.11 -> 1.6.12
 * Inworldcrafting 0.13.0 -> 1.2.0
