@@ -195,7 +195,7 @@ RecipeBuilder.get("mason")
     [<ore:plateStone>, null, <ore:plateStone>],
     [<ore:plateStone>, null, <ore:plateStone>],
     [null, <ore:plateStone>, null]])
-  .addTool(<ore:artisansFile>, 1)
+  .addTool(<ore:artisansFile>, 4)
   .addOutput(<tcomplement:materials>)
   .create();
 

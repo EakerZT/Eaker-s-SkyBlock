@@ -3,6 +3,60 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.oredict.IOreDictEntry;
 
+<ore:ingotSteel>.remove(<immersiveengineering:metal:8>);
+<ore:ingotSteel>.remove(<mekanism:ingot:4>);
+<ore:ingotSteel>.remove(<nuclearcraft:alloy:5>);
+<ore:ingotBronze>.remove(<mekanism:ingot:2>);
+<ore:ingotBronze>.remove(<nuclearcraft:alloy:0>);
+<ore:ingotAluminum>.remove(<immersiveengineering:metal:1>);
+<ore:ingotAluminium>.remove(<immersiveengineering:metal:1>);
+<ore:ingotAluminum>.remove(<nuclearcraft:ingot:12>);
+<ore:ingotAluminium>.remove(<nuclearcraft:ingot:12>);
+<ore:ingotLead>.remove(<nuclearcraft:ingot:2>);
+<ore:ingotLead>.remove(<nuclearcraft:ingot:2>);
+<ore:ingotLead>.remove(<immersiveengineering:metal:2>);
+<ore:ingotTin>.remove(<mekanism:ingot:6>);
+<ore:ingotTin>.remove(<nuclearcraft:ingot:1>);
+<ore:ingotSilver>.remove(<immersiveengineering:metal:3>);
+<ore:ingotSilver>.remove(<nuclearcraft:ingot:13>);
+<ore:ingotCopper>.remove(<mekanism:ingot:5>);
+<ore:ingotCopper>.remove(<immersiveengineering:metal:0>);
+<ore:ingotCopper>.remove(<nuclearcraft:ingot:0>);
+<ore:ingotNickel>.remove(<immersiveengineering:metal:4>);
+
+<ore:dustWheat>.remove(<enderio:item_material:21>);
+<ore:dustCoal>.remove(<enderio:item_material:23>);
+<ore:dustIron>.remove(<enderio:item_material:24>);
+<ore:dustIron>.remove(<mekanism:dust:0>);
+<ore:dustIron>.remove(<actuallyadditions:item_dust>);
+<ore:dustIron>.remove(<appliedenergistics2:material:49>);
+<ore:dustIron>.remove(<immersiveengineering:metal:18>);
+<ore:dustGold>.remove(<appliedenergistics2:material:51>);
+<ore:dustGold>.remove(<actuallyadditions:item_dust:1>);
+<ore:dustGold>.remove(<enderio:item_material:25>);
+<ore:dustGold>.remove(<mekanism:dust:1>);
+<ore:dustGold>.remove(<immersiveengineering:metal:19>);
+<ore:dustCopper>.remove(<enderio:item_material:26>);
+<ore:dustCopper>.remove(<mekanism:dust:3>);
+mods.mekanism.crusher.removeRecipe(<mekanism:dust:3>);
+<ore:dustTin>.remove(<enderio:item_material:27>);
+<ore:dustTin>.remove(<mekanism:dust:4>);
+mods.mekanism.crusher.removeRecipe(<mekanism:dust:4>);
+<ore:dustLead>.remove(<nuclearcraft:dust:2>);
+<ore:dustLead>.remove(<immersiveengineering:metal:11>);
+<ore:dustLead>.remove(<mekanism:dust:6>);
+mods.mekanism.crusher.removeRecipe(<mekanism:dust:6>);
+<ore:dustObsidian>.remove(<enderio:item_material:29>);
+<ore:dustArdite>.remove(<enderio:item_material:30>);
+<ore:dustCobalt>.remove(<enderio:item_material:31>);
+<ore:dustLapis>.remove(<enderio:item_material:32>);
+<ore:dustSteel>.remove(<mekanism:otherdust:1>);
+mods.mekanism.crusher.removeRecipe(<mekanism:otherdust:1>);
+<ore:dustSilver>.remove(<immersiveengineering:metal:12>);
+<ore:dustSilver>.remove(<nuclearcraft:dust:13>);
+<ore:dustSilver>.remove(<mekanism:dust:5>);
+mods.mekanism.crusher.removeRecipe(<mekanism:dust:5>);
+
 global odItemMap as IItemStack[string] = {
 
   dustIron: getTEItemByODName("dustIron"),
@@ -23,7 +77,7 @@ global odItemMap as IItemStack[string] = {
   dustSignalum : getTEItemByODName("dustSignalum"),
   dustLumium : getTEItemByODName("dustLumium"),
   dustEnderium : getTEItemByODName("dustEnderium"),
-
+  dustUranium : <immersiveengineering:metal:14>,
   dustObsidian : getTEItemByODName("dustObsidian"),
 
   ingotIron : <minecraft:iron_ingot>,
@@ -44,6 +98,7 @@ global odItemMap as IItemStack[string] = {
   ingotSignalum : getTEItemByODName("ingotSignalum"),
   ingotLumium : getTEItemByODName("ingotLumium"),
   ingotEnderium : getTEItemByODName("ingotEnderium"),
+  ingotUranium : <immersiveengineering:metal:5>,
 
   plateWood : getCTItemByODName("plateWood"),
   plateStone : getCTItemByODName("plateStone"),
@@ -108,6 +163,7 @@ global odItemMap as IItemStack[string] = {
   stickSignalum : <moreplates:signalum_stick>,
   stickLumium : <moreplates:lumium_stick>,
   stickEnderium : <moreplates:enderium_stick>,
+  stickUranium : getJAOPCAItemByODName("stickUranium"),
 
   gearWood : getTEItemByODName("gearWood"),
   gearStone : getTEItemByODName("gearStone"),
@@ -134,8 +190,8 @@ global odItemMap as IItemStack[string] = {
   gearQuartz : <moreplates:nether_quartz_gear>
 } as IItemStack[string];
 
-var joapcaOreName = [
-  "Aluminium",
+var materialName = [
+  "Aluminum",
   "Ardite",
   "Boron",
   "Cobalt",
@@ -158,36 +214,59 @@ var joapcaOreName = [
   "Uranium"
 ] as string[];
 
-for i in joapcaOreName {
+<ore:oreAluminum>.add(<jaopca:item_hunkaluminium>);
+
+for i in materialName {
   odItemMap['piece' + i] = getJAOPCAItemByODName("piece" + i);
   odItemMap['ore' + i] = getJAOPCAItemByODName("ore" + i);
 }
 
+// for i in materialName {
+//   print(i);
+//   print("--------");
+//   for j in oreDict['ore'+i].items {
+//     if(j.definition.id != odItemMap['ore' + i].definition.id) {
+//       oreDict['ore'+i].remove(j);
+//     }
+//   }
+//   // print(i);
+//   // print("--------");
+//   // for j in oreDict['ingot'+i].items {
+//   //   if(j.definition.id != odItemMap['ingot' + i].definition.id) {
+//   //     oreDict['ingot'+i].remove(j);
+//   //   }
+//   // }
+// }
+
 
 // Mek 粉碎机修复
 function MekanismCrusherFix(name as string) {
-  mods.mekanism.crusher.addRecipe(odItemMap['ingot' + name], odItemMap["dust" + name]);
+  mods.mekanism.crusher.addRecipe(oreDict['ingot' + name], odItemMap["dust" + name]);
 }
 
 // Mek 富集修复
 function MekanismEnrichmentFix(name as string) {
   // mods.mekanism.enrichment.removeRecipe(odItemMap["dust" + name]);
   mods.mekanism.enrichment.addRecipe(oreDict["dustDirty" + name], odItemMap["dust" + name]);
-  mods.mekanism.enrichment.addRecipe(odItemMap["ore" + name], odItemMap["dust" + name] * 2);
+  mods.mekanism.enrichment.addRecipe(oreDict["ore" + name], odItemMap["dust" + name] * 2);
 }
 
 for i in ([
-  "Gold","Copper","Iron","Tin","Lead","Silver"
+  "Gold","Copper","Iron","Tin","Lead","Silver","Aluminum"
   ] as string[]) {
   MekanismCrusherFix(i);
   MekanismEnrichmentFix(i);
 }
 MekanismCrusherFix("Steel");
-MekanismCrusherFix('Bronze');
+MekanismCrusherFix("Bronze");
+MekanismCrusherFix("Nickel");
+MekanismCrusherFix("Invar");
+MekanismCrusherFix("Signalum");
+MekanismCrusherFix("Enderium");
+mods.mekanism.crusher.removeRecipe(odItemMap["dustBronze"], <mekanism:ingot:2>);
+mods.mekanism.crusher.removeRecipe(odItemMap["dustAluminum"], <immersiveengineering:metal:1>);
+mods.mekanism.crusher.removeRecipe(odItemMap["dustAluminum"], <nuclearcraft:ingot:12>);
 
-// 冶金灌注机
-// 青铜锭
-mods.mekanism.infuser.removeRecipe(<mekanism:ingot:2>);
 // 黑体辐射
 mods.mekanism.infuser.removeRecipe(<mekanismgenerators:hohlraum>);
 mods.mekanism.infuser.addRecipe("CARBON", 10, odItemMap["dustGold"] * 4, <mekanismgenerators:hohlraum>);
@@ -195,3 +274,6 @@ mods.mekanism.infuser.addRecipe("CARBON", 10, <mekanism:enrichediron>, odItemMap
 // 强化黑曜石粉
 mods.mekanism.infuser.removeRecipe(<mekanism:otherdust:5>);
 mods.mekanism.infuser.addRecipe("DIAMOND", 10, odItemMap["dustObsidian"], <mekanism:otherdust:5>);
+
+// 青铜锭
+mods.mekanism.infuser.removeRecipe(<mekanism:ingot:2>);

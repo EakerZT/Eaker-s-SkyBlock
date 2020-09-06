@@ -2,23 +2,26 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import mods.modularmachinery.RecipeBuilder as mRecipeBuilder;
 
 function addOreRecipes(materialName as string) {
-    var orePiece =  oreDict["piece" + materialName];
-    var oreOreItem = odItemMap["ore" + materialName];
+    var pieceItem =  odItemMap["piece" + materialName];
+    var oreItem = odItemMap["ore" + materialName];
+    var stickItem = odItemMap["stick" + materialName];
+    var dustItem = odItemMap["dust" + materialName];
+    var ingotItem = odItemMap["ingot" + materialName];
     for i in oreDict["ingot" + materialName].items {
       furnace.remove(i);
     }
     for i in oreDict["stick" + materialName].items {
       recipes.remove(i);
     }
-    furnace.addRecipe(odItemMap['ingot' + materialName], odItemMap['dust' + materialName]);
+    furnace.addRecipe(ingotItem, dustItem);
     RecipeBuilder.get("mason")
-      .setShapeless([orePiece, orePiece, orePiece, orePiece])
-      .addOutput(oreOreItem)
+      .setShapeless([pieceItem, pieceItem, pieceItem, pieceItem])
+      .addOutput(oreItem)
       .create();
     RecipeBuilder.get("blacksmith")
-      .setShapeless([orePiece, orePiece])
-      .addTool(<ore:artisansHammer>, 4)
-      .addOutput(oreOreItem)
+      .setShapeless([oreDict["ingot" + materialName]])
+      .addTool(<ore:artisansFile>, 4)
+      .addOutput(stickItem)
       .create();
 }
 
@@ -32,7 +35,7 @@ for materialName in alloyMaterialName {
   }
 }
 
-// addOreRecipes("Aluminium");
+addOreRecipes("Aluminum");
 // addOreRecipes("Ardite");
 // addOreRecipes("Boron");
 // addOreRecipes("Cobalt");
@@ -41,17 +44,20 @@ addOreRecipes("Copper");
 addOreRecipes("Gold");
 // addOreRecipes("Iridium");
 addOreRecipes("Iron");
-// addOreRecipes("Lead");
+addOreRecipes("Lead");
 // addOreRecipes("Lithium");
 // addOreRecipes("Magnesium");
 // addOreRecipes("Mithril");
-// addOreRecipes("Nickel");
+addOreRecipes("Nickel");
 // addOreRecipes("Osmium");
 // addOreRecipes("Platinum");
 addOreRecipes("Silver");
 // addOreRecipes("Thorium");
 addOreRecipes("Tin");
-// addOreRecipes("Uranium");
+addOreRecipes("Uranium");
 
-
-<ore:oreAluminum>.add(<jaopca:item_hunkaluminium>);
+RecipeBuilder.get("blacksmith")
+  .setShapeless([oreDict["ingotSteel"]])
+  .addTool(<ore:artisansFile>, 4)
+  .addOutput(odItemMap["stickSteel"])
+  .create();

@@ -1,4 +1,16 @@
 import mods.artisanworktables.builder.RecipeBuilder;
+import mods.immersiveengineering.BottlingMachine; 
+import mods.tconstruct.Casting;
+import mods.thermalexpansion.Transposer;
+
+var bucket = <minecraft:bucket> |
+  <ceramics:clay_bucket> |
+  <vefluids:vebucket> |
+  <vefluids:vebucket:1> |
+  <vefluids:vebucket:2> |
+  <vefluids:vebucket:3> |
+  <vefluids:vebucket:4> |
+  <vefluids:vebucket:5>;
 
 // 红石钟
 recipes.remove(<extrautils2:redstoneclock>);
@@ -17,7 +29,7 @@ RecipeBuilder.get("mason")
     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>],
     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]])
-  .addTool(<ore:artisansHammer>, 1)
+  .addTool(<ore:artisansHammer>, 4)
   .addOutput(<extrautils2:compressedcobblestone>)
   .create();
 
@@ -55,7 +67,7 @@ recipes.remove(<extrautils2:grocket:2>);
 RecipeBuilder.get("engineer")
   .setShaped([
     [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:pipe>, <integrateddynamics:crystalized_menril_chunk>],
-    [<integrateddynamics:crystalized_menril_chunk>, <minecraft:bucket>, <integrateddynamics:crystalized_menril_chunk>]])
+    [<integrateddynamics:crystalized_menril_chunk>, bucket, <integrateddynamics:crystalized_menril_chunk>]])
   .addOutput(<extrautils2:grocket:2>)
   .create();
 
@@ -72,7 +84,7 @@ RecipeBuilder.get("engineer")
 recipes.remove(<extrautils2:grocket:4>);
 RecipeBuilder.get("engineer")
   .setShaped([
-    [<integrateddynamics:crystalized_menril_chunk>, <minecraft:bucket>, <integrateddynamics:crystalized_menril_chunk>],
+    [<integrateddynamics:crystalized_menril_chunk>,bucket, <integrateddynamics:crystalized_menril_chunk>],
     [<integrateddynamics:crystalized_menril_chunk>, <extrautils2:pipe>, <integrateddynamics:crystalized_menril_chunk>]])
   .addOutput(<extrautils2:grocket:4>)
   .create();
@@ -134,3 +146,8 @@ RecipeBuilder.get("tailor")
   .addTool(<ore:artisansNeedle>, 4)
   .addOutput(<extrautils2:filterfluids>)
   .create();
+
+// recipes.remove(<extrautils2:machine>);
+BottlingMachine.addRecipe(<extrautils2:machine>, <immersiveengineering:metal_decoration0:3>, <liquid:lubricant> * 1000);
+Casting.addBasinRecipe(<extrautils2:machine>, <immersiveengineering:metal_decoration0:3>, <liquid:lubricant>, 1000, true);
+Transposer.addFillRecipe(<extrautils2:machine>, <immersiveengineering:metal_decoration0:3>, <liquid:lubricant> * 1000, 1000);

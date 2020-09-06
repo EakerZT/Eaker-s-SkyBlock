@@ -17,6 +17,8 @@ for i in removeItem {
     JEI.removeAndHide(i);
 }
 
+JEI.hideCategory("Painter");
+
 <ore:hopper>.add(<minecraft:hopper>);
 <ore:hopper>.add(<tconstruct:wooden_hopper>);
 

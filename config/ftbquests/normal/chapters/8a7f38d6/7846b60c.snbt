@@ -1,5 +1,5 @@
 {
-	x: -25.5d,
+	x: -23.5d,
 	y: -19.0d,
 	shape: "gear",
 	dependencies: [

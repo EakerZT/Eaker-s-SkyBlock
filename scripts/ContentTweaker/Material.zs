@@ -28,7 +28,7 @@ addBoltPart("Platinum",13893631);
 addBoltPart("Nickel",12367482);
 addBoltPart("Iridium",15723763);
 addBoltPart("Lumium",14541705);
-addBoltPart("Aluminum",14541705);
+addBoltPart("Aluminum",15723763);
 
 var stone = MaterialSystem.getMaterialBuilder().setName("Stone").setColor(Color.fromInt(8092539)).build();
 stone.registerParts(["plate"] as string[]);
