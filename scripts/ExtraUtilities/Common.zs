@@ -2,6 +2,14 @@ import mods.artisanworktables.builder.RecipeBuilder;
 import mods.immersiveengineering.BottlingMachine; 
 import mods.tconstruct.Casting;
 import mods.thermalexpansion.Transposer;
+import crafttweaker.item.IItemStack;
+
+var removeItems = [
+  <extrautils2:machine>.withTag({Type: "extrautils2:furnace"}),
+  <extrautils2:machine>.withTag({Type: "extrautils2:crusher"})
+] as IItemStack[];
+
+removeAndHideItemList(removeItems);
 
 var bucket = <minecraft:bucket> |
   <ceramics:clay_bucket> |
@@ -147,7 +155,15 @@ RecipeBuilder.get("tailor")
   .addOutput(<extrautils2:filterfluids>)
   .create();
 
-// recipes.remove(<extrautils2:machine>);
+recipes.remove(<extrautils2:machine>);
 BottlingMachine.addRecipe(<extrautils2:machine>, <immersiveengineering:metal_decoration0:3>, <liquid:lubricant> * 1000);
-Casting.addBasinRecipe(<extrautils2:machine>, <immersiveengineering:metal_decoration0:3>, <liquid:lubricant>, 1000, true);
-Transposer.addFillRecipe(<extrautils2:machine>, <immersiveengineering:metal_decoration0:3>, <liquid:lubricant> * 1000, 1000);
+mods.tconstruct.Casting.addBasinRecipe(<extrautils2:machine>, <immersiveengineering:metal_decoration0:3>, <liquid:lubricant>, 1000, true);
+mods.thermalexpansion.Transposer.addFillRecipe(<extrautils2:machine>, <immersiveengineering:metal_decoration0:3>, <liquid:lubricant> * 1000, 1000);
+
+RecipeBuilder.get("engineer")
+  .setShaped([
+    [<artisanworktables:design_pattern>.withTag({}), <artisanworktables:design_pattern>.withTag({}), <artisanworktables:design_pattern>.withTag({})],
+    [<artisanworktables:design_pattern>.withTag({}), <artisanworktables:workstation:6>, <artisanworktables:design_pattern>.withTag({})],
+    [<artisanworktables:design_pattern>.withTag({}), <artisanworktables:design_pattern>.withTag({}), <artisanworktables:design_pattern>.withTag({})]])
+  .addOutput(<extrautils2:machine>.withTag({Type: "crafttweaker:blueprint_generator"}))
+  .create();

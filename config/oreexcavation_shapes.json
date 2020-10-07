@@ -5,11 +5,11 @@
       "depth": 9999999,
       "reticle": 7,
       "mask": [
-        "OOOOO",
-        "OOOXO",
-        "OOXOO",
-        "OOOOO",
-        "OOOOO"
+        "XXXXX",
+        "XXXXX",
+        "XXXXX",
+        "XXXXX",
+        "XXXXX"
       ]
     },
     {

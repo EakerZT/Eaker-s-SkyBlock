@@ -87,6 +87,8 @@ recipes.remove(<immersiveengineering:treated_wood>);
 recipes.remove(<immersiveengineering:treated_wood:1>);
 recipes.remove(<immersiveengineering:treated_wood:2>);
 mods.inworldcrafting.FluidToItem.transform(<immersiveengineering:treated_wood> * 8, <liquid:creosote>, [<ore:plankWood> * 8], true);
+mods.tconstruct.Casting.addBasinRecipe(<immersiveengineering:treated_wood>, <ore:plankWood>, <liquid:creosote>, 100, true);
+// mods.thermalexpansion.Transposer.addFillRecipe(<immersiveengineering:treated_wood>, <ore:plankWood>, <liquid:lubricant> * 100, 1000);
 
 // 防腐木棍
 recipes.remove(<immersiveengineering:material>);
@@ -246,14 +248,6 @@ RecipeBuilder.get("blacksmith")
 
 // 红石工程块
 recipes.remove(<immersiveengineering:metal_decoration0:3>);
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:plateIron>,<immersiveengineering:material:8>, <ore:plateIron>],
-    [<ore:boltIron>, <immersiveengineering:material:27>, <ore:boltIron>],
-    [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>]])
-  .addTool(<ore:artisansDriver>, 4)
-  .addOutput(<immersiveengineering:metal_decoration0:3>)
-  .create();
 Blueprint.addRecipe(
   "decoration",
    <immersiveengineering:metal_decoration0:3>,
@@ -261,14 +255,6 @@ Blueprint.addRecipe(
 
 // 轻型工程块
 recipes.remove(<immersiveengineering:metal_decoration0:4>);
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>],
-    [<ore:boltIron>, <ore:ingotBronze>, <ore:boltIron>],
-    [<ore:plateIron>, <immersiveengineering:material:8>, <ore:plateIron>]])
-  .addTool(<ore:artisansDriver>, 4)
-  .addOutput(<immersiveengineering:metal_decoration0:4>)
-  .create();
 Blueprint.addRecipe(
   "decoration",
    <immersiveengineering:metal_decoration0:4>,
@@ -276,14 +262,6 @@ Blueprint.addRecipe(
 
 // 重型工程快
 recipes.remove(<immersiveengineering:metal_decoration0:5>);
-RecipeBuilder.get("blacksmith")
-  .setShaped([
-    [<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>],
-    [<ore:boltSteel>, <minecraft:piston>, <ore:boltSteel>],
-    [<ore:plateSteel>, <immersiveengineering:material:9>, <ore:plateSteel>]])
-  .addTool(<ore:artisansDriver>, 4)
-  .addOutput(<immersiveengineering:metal_decoration0:5>)
-  .create();
 Blueprint.addRecipe(
   "decoration",
    <immersiveengineering:metal_decoration0:5>,

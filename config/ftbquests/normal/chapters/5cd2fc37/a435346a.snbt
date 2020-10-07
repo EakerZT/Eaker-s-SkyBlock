@@ -1,0 +1,47 @@
+{
+	x: 2.0d,
+	y: -13.5d,
+	dependencies: [
+		"7f841f16"
+	],
+	tasks: [{
+		uid: "edfc33bc",
+		type: "item",
+		items: [{
+			id: "extrautils2:machine",
+			tag: {
+				Type: "crafttweaker:blueprint_generator"
+			}
+		}]
+	},
+	{
+		uid: "01ed98d8",
+		type: "item",
+		items: [{
+			id: "immersiveengineering:blueprint",
+			tag: {
+				blueprint: "components",
+				display: {
+					Name: "蓝图:组件"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "7836f58e",
+		type: "item",
+		items: [{
+			id: "immersiveengineering:blueprint",
+			tag: {
+				blueprint: "decoration",
+				display: {
+					Name: "蓝图:组件"
+				}
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

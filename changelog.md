@@ -2,19 +2,50 @@
 
 添加
 -
+* Flopper
 * Just Enough Petroleum
+* OC XNet Driver
+* Open Computer
+* XNet
+* YNot
+* OC XNext Driver
+
+升级
+-
+* Artisan Worktables 1.23.7 -> 1.24.0
+* Athenaeum 1.19.1 -> 1.19.2
+* BrandonsCore 2.4.18.210 -> 2.4.19.214
+* Common Capabilities 2.4.7 -> 2.4.8
+* Draconic Evolution 2.3.25.351 -> 2.3.27.353
+* Ender IO 5.2.59 -> 5.2.61
+* Ender IO Endergy 5.2.59 -> 5.2.61
+* Immersive Technology 1.8.80 -> 1.8.82
+* Integrated Dynamics 1.1.9 -> 1.1.10
+* Integrated Tunnels 1.6.12 -> 1.6.13
+* Just Enough Characters  3.4.7 -> 3.4.9
+* More Avaritia v3.2Fix -> v4
+* Solar Flux Reborn 12.3.8 -> 12.4.11
+* Super Factory Manager 2.0.23 -> 2.0.24
+* UniDict 2.9.6 -> 2.9.7
+* WanionLib 2.4 -> 2.5
 
 移除
 _
-* 移除 **应用能源** 中的 **磨粉机**
-* 移除 **EnderIO** 中的 **Painter** 显示
+* **应用能源** 中的 **磨粉机**
+* **EnderIO** 中的 **Painter** 显示
+* **EXU2** 中的 **磨粉机** **电炉**
 
 配方
 -
+* **实用拓展**: **浆糊球**
+* **MC** 中的 **活塞**  
+* **沉浸工程** 中的 **金属方块** **金属台阶** **输液管** **蓝图**
+* **沉浸原油** 中的 **润滑机**
+* **EXU2** 中的 **机器方块**
+
+杂项
+-
 * 修复大量矿词
-* 调整 **沉浸工程** 中的 **金属方块** **金属台阶** **输液管**
-* 添加 **沉浸原油** 中的 **润滑机**
-* 添加 **EXU2** 中的 **机器方块**
 
 # 0.0.14
 

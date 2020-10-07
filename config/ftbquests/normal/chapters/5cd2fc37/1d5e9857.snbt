@@ -1,0 +1,15 @@
+{
+	x: 4.0d,
+	y: -3.5d,
+	shape: "square",
+	dependencies: [
+		"8083ad7d"
+	],
+	tasks: [{
+		uid: "94728e17",
+		type: "item",
+		items: [{
+			item: "immersivepetroleum:metal_device"
+		}]
+	}]
+}

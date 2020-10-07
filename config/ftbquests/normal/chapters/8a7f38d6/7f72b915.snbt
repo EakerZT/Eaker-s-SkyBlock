@@ -1,0 +1,14 @@
+{
+	x: -29.5d,
+	y: -23.0d,
+	dependencies: [
+		"8e4e10f7"
+	],
+	tasks: [{
+		uid: "98f1d788",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_rice_seed"
+		}]
+	}]
+}

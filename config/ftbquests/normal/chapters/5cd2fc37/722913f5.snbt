@@ -1,0 +1,29 @@
+{
+	x: -2.0d,
+	y: -15.5d,
+	shape: "gear",
+	dependencies: [
+		"53711d33"
+	],
+	tasks: [{
+		uid: "fe7fa8dd",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wirecoil"
+		}]
+	},
+	{
+		uid: "7622adfc",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wirecoil 1 1"
+		}]
+	},
+	{
+		uid: "38e91dd2",
+		type: "item",
+		items: [{
+			item: "immersiveengineering:wirecoil 1 2"
+		}]
+	}]
+}

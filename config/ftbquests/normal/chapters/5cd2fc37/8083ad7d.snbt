@@ -1,6 +1,6 @@
 {
-	x: -0.5d,
-	y: -3.5d,
+	x: 4.0d,
+	y: -5.5d,
 	dependencies: [
 		"ec29ff12"
 	],
@@ -8,12 +8,5 @@
 		uid: "2a16f44e",
 		type: "fluid",
 		fluid: "lubricant"
-	},
-	{
-		uid: "e9d1d34d",
-		type: "item",
-		items: [{
-			item: "extrautils2:machine"
-		}]
 	}]
 }

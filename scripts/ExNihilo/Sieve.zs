@@ -15,6 +15,7 @@ Sieve.addStringMeshRecipe(<ore:dirt>, <exnihilocreatio:item_seed_cactus>, 0.05);
 Sieve.addStringMeshRecipe(<ore:dirt>, <exnihilocreatio:item_seed_sugarcane>, 0.05);
 Sieve.addStringMeshRecipe(<ore:dirt>, <exnihilocreatio:item_seed_carrot>, 0.05);
 Sieve.addStringMeshRecipe(<ore:dirt>, <exnihilocreatio:item_seed_potato>, 0.05);
+Sieve.addStringMeshRecipe(<ore:dirt>, <actuallyadditions:item_rice_seed>, 0.05);
 Sieve.addStringMeshRecipe(<ore:dirt>, <immersiveengineering:seed>, 0.05);
 
 Sieve.addStringMeshRecipe(<ore:gravel>, <minecraft:flint>, 0.5);

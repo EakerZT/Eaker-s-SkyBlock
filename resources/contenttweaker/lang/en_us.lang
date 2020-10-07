@@ -28,3 +28,5 @@ item.contenttweaker.mold_bolt.name=Metal Press Mold: Bolt
 item.contenttweaker.cast_bolt.name=Bolt Cast
 
 desc.immersiveengineering.info.blueprint.decoration=Engineering Block
+machine.crafttweaker:blueprint_generator=Blueprint Generator
+

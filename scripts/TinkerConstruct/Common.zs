@@ -210,3 +210,21 @@ RecipeBuilder.get("mason")
     [<tconstruct:materials>, <tconstruct:materials>]])
   .addOutput(<tconstruct:seared:3>)
   .create();
+
+mods.chisel.Carving.addVariation("glass", <tconstruct:clear_glass>);
+mods.chisel.Carving.addVariation("glassdyedwhite ", <tconstruct:clear_stained_glass:0>);
+mods.chisel.Carving.addVariation("glassdyedorange", <tconstruct:clear_stained_glass:1>);
+mods.chisel.Carving.addVariation("glassdyedmagenta", <tconstruct:clear_stained_glass:2>);
+mods.chisel.Carving.addVariation("glassdyedlightblue", <tconstruct:clear_stained_glass:3>);
+mods.chisel.Carving.addVariation("glassdyedyellow", <tconstruct:clear_stained_glass:4>);
+mods.chisel.Carving.addVariation("glassdyedlime", <tconstruct:clear_stained_glass:5>);
+mods.chisel.Carving.addVariation("glassdyedpink", <tconstruct:clear_stained_glass:6>);
+mods.chisel.Carving.addVariation("glassdyedgray", <tconstruct:clear_stained_glass:7>);
+mods.chisel.Carving.addVariation("glassdyedlightgray", <tconstruct:clear_stained_glass:8>);
+mods.chisel.Carving.addVariation("glassdyedcyan", <tconstruct:clear_stained_glass:9>);
+mods.chisel.Carving.addVariation("glassdyedpurple", <tconstruct:clear_stained_glass:10>);
+mods.chisel.Carving.addVariation("glassdyedblue", <tconstruct:clear_stained_glass:11>);
+mods.chisel.Carving.addVariation("glassdyedbrown", <tconstruct:clear_stained_glass:12>);
+mods.chisel.Carving.addVariation("glassdyedgreen", <tconstruct:clear_stained_glass:13>);
+mods.chisel.Carving.addVariation("glassdyedred", <tconstruct:clear_stained_glass:14>);
+mods.chisel.Carving.addVariation("glassdyedblack", <tconstruct:clear_stained_glass:15>);

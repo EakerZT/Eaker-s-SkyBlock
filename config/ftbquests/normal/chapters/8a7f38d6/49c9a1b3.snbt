@@ -1,14 +1,14 @@
 {
 	x: -29.5d,
-	y: -9.0d,
+	y: -25.0d,
 	dependencies: [
-		"0587a5e7"
+		"8e4e10f7"
 	],
 	tasks: [{
-		uid: "4ac5881c",
+		uid: "8242362b",
 		type: "item",
 		items: [{
-			item: "tconstruct:edible 1 3"
+			item: "immersiveengineering:seed"
 		}]
 	}]
 }

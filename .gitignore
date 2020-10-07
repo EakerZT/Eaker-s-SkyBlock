@@ -28,4 +28,6 @@ config/AppliedEnergistics2/VersionChecker.cfg
 backups
 i18n_update_mod.cfg
 JustEnoughCharacters.cfg
-
+OpenComputersMod*.dll
+snapshots-server/
+valkyrielib/

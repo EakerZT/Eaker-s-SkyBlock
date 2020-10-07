@@ -1,0 +1,21 @@
+{
+	x: -27.5d,
+	y: -23.0d,
+	dependencies: [
+		"7f72b915"
+	],
+	tasks: [{
+		uid: "5d3034ba",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_food 1 16"
+		}]
+	},
+	{
+		uid: "1132829d",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_misc 1 12"
+		}]
+	}]
+}

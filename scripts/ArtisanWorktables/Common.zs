@@ -81,3 +81,5 @@ RecipeBuilder.get("basic")
     [<minecraft:string>, <minecraft:string>, <minecraft:string>]])
   .addOutput(<artisanworktables:workstation>)
   .create();
+
+mods.tconstruct.Casting.addTableRecipe(<artisanworktables:design_pattern>.withTag({}), <minecraft:paper>, <liquid:menrilresin>, 100, true, 40);

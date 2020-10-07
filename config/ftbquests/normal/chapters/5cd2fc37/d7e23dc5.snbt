@@ -1,0 +1,9 @@
+{
+	x: 0.0d,
+	y: -17.5d,
+	tasks: [{
+		uid: "768e8799",
+		type: "fluid",
+		fluid: "creosote"
+	}]
+}

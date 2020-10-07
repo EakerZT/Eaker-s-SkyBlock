@@ -11,5 +11,12 @@
 		items: [{
 			item: "minecraft:piston"
 		}]
+	},
+	{
+		uid: "aa914de6",
+		type: "item",
+		items: [{
+			item: "minecraft:piston"
+		}]
 	}]
 }

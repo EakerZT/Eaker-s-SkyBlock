@@ -64,3 +64,5 @@ for name in blockMaterialName{
     .create();
   i = i +1;
 }
+
+MetalPress.addRecipe(odItemMap["gearWood"], <ore:plankWood>, <immersiveengineering:mold:1>, 2000);

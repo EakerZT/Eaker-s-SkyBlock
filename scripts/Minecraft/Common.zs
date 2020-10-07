@@ -102,7 +102,7 @@ RecipeBuilder.get("engineer")
 Blueprint.addRecipe(
   "decoration",
    <minecraft:piston>,
-   [<ore:plateWood>, <ore:bcobblestone>, <ore:gearWood>, <minecraft:redstone>]);
+   [<ore:plateWood>, <ore:cobblestone>, <ore:gearWood>, <minecraft:redstone>]);
 
 // 粘性活塞
 recipes.remove(<minecraft:sticky_piston>);
@@ -115,7 +115,7 @@ RecipeBuilder.get("engineer")
 Blueprint.addRecipe(
   "decoration",
    <minecraft:sticky_piston>,
-   [<ore:plateWood>, <ore:bcobblestone>, <ore:gearWood>, <minecraft:redstone>, <ore:slimeball>]);
+   [<ore:plateWood>, <ore:cobblestone>, <ore:gearWood>, <minecraft:redstone>, <ore:slimeball>]);
 
 // 铁桶
 recipes.remove(<minecraft:bucket>);
