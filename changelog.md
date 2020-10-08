@@ -3,12 +3,14 @@
 添加
 -
 * Flopper
+* Fx Control!
+* In Control!
 * Just Enough Petroleum
-* OC XNet Driver
+* OC XNext Driver
 * Open Computer
+* RFTools Control
 * XNet
 * YNot
-* OC XNext Driver
 
 升级
 -
@@ -24,6 +26,7 @@
 * Integrated Tunnels 1.6.12 -> 1.6.13
 * Just Enough Characters  3.4.7 -> 3.4.9
 * More Avaritia v3.2Fix -> v4
+* Nuclear Craft 2.18x -> 2.18y
 * Solar Flux Reborn 12.3.8 -> 12.4.11
 * Super Factory Manager 2.0.23 -> 2.0.24
 * UniDict 2.9.6 -> 2.9.7
